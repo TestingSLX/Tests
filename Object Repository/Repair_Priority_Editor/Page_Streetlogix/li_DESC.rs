@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>li_DESC</name>
+   <tag></tag>
+   <elementGuidId>51d9021b-5017-4a75-b80d-a7ab4a25ca44</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='ASC'])[2]/following::li[1]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;menu-correlation&quot;)/div[@class=&quot;MuiPaper-root-772 MuiMenu-paper-718 MuiPopover-paper-721 MuiPaper-elevation8-783 MuiPaper-rounded-773&quot;]/ul[@class=&quot;MuiList-root-829 MuiMenu-list-719 MuiList-padding-830&quot;]/li[@class=&quot;MuiButtonBase-root-757 MuiListItem-root-836 MuiMenuItem-root-833 MuiMenuItem-gutters-834 MuiListItem-gutters-841 MuiListItem-button-842&quot;][count(. | //*[@data-value = 'DESC' and (text() = 'DESC' or . = 'DESC')]) = count(//*[@data-value = 'DESC' and (text() = 'DESC' or . = 'DESC')])]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiButtonBase-root-757 MuiListItem-root-836 MuiMenuItem-root-833 MuiMenuItem-gutters-834 MuiListItem-gutters-841 MuiListItem-button-842</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>option</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-disabled</name>
+      <type>Main</type>
+      <value>false</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-value</name>
+      <type>Main</type>
+      <value>DESC</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>DESC</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;menu-correlation&quot;)/div[@class=&quot;MuiPaper-root-772 MuiMenu-paper-718 MuiPopover-paper-721 MuiPaper-elevation8-783 MuiPaper-rounded-773&quot;]/ul[@class=&quot;MuiList-root-829 MuiMenu-list-719 MuiList-padding-830&quot;]/li[@class=&quot;MuiButtonBase-root-757 MuiListItem-root-836 MuiMenuItem-root-833 MuiMenuItem-gutters-834 MuiListItem-gutters-841 MuiListItem-button-842&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='menu-correlation']/div[3]/ul/li[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ASC'])[2]/following::li[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[2]/following::li[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/ul/li[2]</value>
+   </webElementXpaths>
+</WebElementEntity>
