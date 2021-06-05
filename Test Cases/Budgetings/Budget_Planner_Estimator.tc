@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Budget_Planner_Estimator</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>63a304f4-d2b1-4664-aa2b-8af02a5772c0</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>d5646982-d851-48d9-8326-e96aeed17975</id>
+      <masked>true</masked>
+      <name>Budget_Planner_budget</name>
+   </variable>
+</TestCaseEntity>
