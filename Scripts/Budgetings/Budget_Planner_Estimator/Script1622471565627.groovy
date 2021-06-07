@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 CustomKeywords.'com.gis_url.test.URL.redirectURL'()
@@ -8,7 +9,7 @@ WebUI.click(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Stre
 WebUI.click(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Streetlogix/div_Budget Planner'))
 
 WebUI.setText(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Streetlogix/input_Annual budget_MuiInputBase-input-432 _7d9e17'), 
-    '139333281')
+    '100285939')
 
 WebUI.click(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Streetlogix/span_Execute'))
 
@@ -16,10 +17,10 @@ WebUI.click(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Stre
 
 WebUI.click(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Streetlogix/td_88.27'))
 
-//
-//		String conditionIndex = WebUI.getText(findTestObject('Budget-Planner-Estimator/Page_Streetlogix/td_88.27'))
-//				
-//		int conIndex =  Integer.parseInt(conditionIndex)
+String ConditionIndex = WebUI.getText(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Streetlogix/td_88.27'))
+
+String CIValue = ConditionIndex.split('\\.')[0]
+
 WebUI.click(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Streetlogix/td_103,861,987'))
 
 String Cost = WebUI.getText(findTestObject('Budget-Planner-Estimator/Page_Streetlogix/td_103,861,987'))
@@ -32,17 +33,12 @@ WebUI.click(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Stre
 
 WebUI.refresh()
 
-//WebUI.closeBrowser()
-//
-//WebUI.delay(30)
-//
-//CustomKeywords.'com.gis_url.test.URL.redirectURL'()
 WebUI.click(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Streetlogix/div_Budgeting'))
 
 WebUI.click(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Streetlogix/div_Budget Estimator'))
 
 WebUI.setText(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Streetlogix/input_Annual budget_MuiInputBase-input-432 _7d9e17'), 
-    '88')
+    CIValue)
 
 WebUI.click(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Streetlogix/span_Calculate'))
 
@@ -67,8 +63,4 @@ println(cost1 - cost2)
 int val = 100000
 
 WebUI.verifyLessThan(difference, val)
-
-WebUI.verifyGreaterThanOrEqual(difference, 0)
-
-WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 

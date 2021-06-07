@@ -12,4 +12,11 @@
       <masked>true</masked>
       <name>Budget_Planner_budget</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6194fc55-84fe-4d73-8891-42563f94c115</id>
+      <masked>false</masked>
+      <name>CIValue</name>
+   </variable>
 </TestCaseEntity>
