@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Select_group</name>
+   <name>Select_group_verify_allgroupspresent</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ab68bf43-844e-4d27-ae69-d0dad37dcaff</testCaseGuid>
