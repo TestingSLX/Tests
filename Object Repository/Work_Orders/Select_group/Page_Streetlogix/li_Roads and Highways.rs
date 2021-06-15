@@ -6,16 +6,16 @@
    <elementGuidId>0f60c7fe-4e28-4154-b1e8-e26f72c2bbc7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='menu-']/div[3]/ul/li[3]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value></value>
       </entry>
       <entry>
+         <key>XPATH</key>
+         <value>//div[@id='menu-']/div[3]/ul/li[3]</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-578 MuiMenu-paper-563 MuiPopover-paper-566 MuiPaper-elevation8-589 MuiPaper-rounded-579&quot;]/ul[@class=&quot;MuiList-root-479 MuiMenu-list-564 MuiList-padding-480&quot;]/li[@class=&quot;MuiButtonBase-root-507 MuiListItem-root-499 MuiMenuItem-root-606 MuiMenuItem-gutters-607 MuiListItem-gutters-504 MuiListItem-button-505&quot;]</value>
+         <value>//*[(text() = 'Roads and Highways' or . = 'Roads and Highways')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -32,7 +32,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root-541 MuiListItem-root-533 MuiMenuItem-root-606 MuiMenuItem-gutters-607 MuiListItem-gutters-538 MuiListItem-button-539</value>
+      <value>MuiButtonBase-root-135 MuiListItem-root-127 MuiMenuItem-root-264 MuiMenuItem-gutters-265 MuiListItem-gutters-132 MuiListItem-button-133</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -74,7 +74,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-578 MuiMenu-paper-529 MuiPopover-paper-532 MuiPaper-elevation8-589 MuiPaper-rounded-579&quot;]/ul[@class=&quot;MuiList-root-479 MuiMenu-list-530 MuiList-padding-480&quot;]/li[@class=&quot;MuiButtonBase-root-541 MuiListItem-root-533 MuiMenuItem-root-606 MuiMenuItem-gutters-607 MuiListItem-gutters-538 MuiListItem-button-539&quot;]</value>
+      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-236 MuiMenu-paper-201 MuiPopover-paper-204 MuiPaper-elevation8-247 MuiPaper-rounded-237&quot;]/ul[@class=&quot;MuiList-root-90 MuiMenu-list-202 MuiList-padding-91&quot;]/li[@class=&quot;MuiButtonBase-root-135 MuiListItem-root-127 MuiMenuItem-root-264 MuiMenuItem-gutters-265 MuiListItem-gutters-132 MuiListItem-button-133&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -88,7 +88,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Operations'])[19]/following::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Operations'])[20]/following::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

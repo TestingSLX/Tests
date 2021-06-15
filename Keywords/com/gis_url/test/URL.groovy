@@ -24,6 +24,6 @@ public class URL {
 
 	@Keyword
 	public void redirectURL() {
-		WebUI.openBrowser("http://localhost:8081/?config=9c338e84e55940e4ba48a09e9f5aef32&url=https://streetlogix-dev-server.herokuapp.com&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAyNiwibmFtZSI6IlNocnV0aWthIFNhd2FudCIsImV4cCI6MTYyNTIzMzM2MywiaWF0IjoxNjIyNjQxMzYzfQ.CQAtHuE4ODFNxvsTFTPJePUvhOfbZSdvK8Zry3EHcR8")
+		WebUI.openBrowser("http://localhost:8081/?config=9c338e84e55940e4ba48a09e9f5aef32&url=https://streetlogix-dev-server.herokuapp.com&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAyNiwibmFtZSI6IlNocnV0aWthIFNhd2FudCIsImV4cCI6MTYyNTg2MzI1NiwiaWF0IjoxNjIzMjcxMjU2fQ.8TqJCRJKpQ5Nxj5ewn7PxBMQdUWZKqwcMpL5eeyPltg")
 	}
 }

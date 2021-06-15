@@ -6,12 +6,16 @@
    <elementGuidId>458163c3-8ed5-411d-be77-4f100eb3c806</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='menu-']/div[3]/ul/li[2]</value>
+         <key>BASIC</key>
+         <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-205 MuiMenu-paper-201 MuiPopover-paper-204 MuiPaper-elevation8-216 MuiPaper-rounded-206&quot;]/ul[@class=&quot;MuiList-root-90 MuiMenu-list-202 MuiList-padding-91&quot;]/li[@class=&quot;MuiButtonBase-root-135 MuiListItem-root-127 MuiMenuItem-root-233 MuiMenuItem-gutters-234 MuiListItem-gutters-132 MuiListItem-button-133&quot;]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='All groups'])[2]/following::li[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +32,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root-541 MuiListItem-root-533 MuiMenuItem-root-606 MuiMenuItem-gutters-607 MuiListItem-gutters-538 MuiListItem-button-539</value>
+      <value>MuiButtonBase-root-512 MuiListItem-root-504 MuiMenuItem-root-576 MuiMenuItem-gutters-577 MuiListItem-gutters-509 MuiListItem-button-510</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-578 MuiMenu-paper-529 MuiPopover-paper-532 MuiPaper-elevation8-589 MuiPaper-rounded-579&quot;]/ul[@class=&quot;MuiList-root-479 MuiMenu-list-530 MuiList-padding-480&quot;]/li[@class=&quot;MuiButtonBase-root-541 MuiListItem-root-533 MuiMenuItem-root-606 MuiMenuItem-gutters-607 MuiListItem-gutters-538 MuiListItem-button-539&quot;]</value>
+      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-548 MuiMenu-paper-500 MuiPopover-paper-503 MuiPaper-elevation8-559 MuiPaper-rounded-549&quot;]/ul[@class=&quot;MuiList-root-450 MuiMenu-list-501 MuiList-padding-451&quot;]/li[@class=&quot;MuiButtonBase-root-512 MuiListItem-root-504 MuiMenuItem-root-576 MuiMenuItem-gutters-577 MuiListItem-gutters-509 MuiListItem-button-510&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
