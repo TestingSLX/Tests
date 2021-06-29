@@ -30,42 +30,41 @@ WebUI.setText(findTestObject('Object Repository/Editing/Page_Streetlogix/input_S
 
 WebUI.click(findTestObject('Object Repository/Editing/Page_Streetlogix/li_ABBY LN'))
 
-WebUI.sendKeys(findTestObject('Object Repository/Editing/Page_Streetlogix/input_Auto-update_pci'), Keys.chord(Keys.BACK_SPACE))
+WebUI.sendKeys(findTestObject('Object Repository/Editing/AttributeEditor/Page_Streetlogix/input_Auto-update_pci'), Keys.chord(
+        Keys.BACK_SPACE))
 
-WebUI.sendKeys(findTestObject('Object Repository/Editing/Page_Streetlogix/input_Auto-update_pci'), Keys.chord(Keys.BACK_SPACE))
+WebUI.sendKeys(findTestObject('Object Repository/Editing/AttributeEditor/Page_Streetlogix/input_Auto-update_pci'), Keys.chord(
+        Keys.BACK_SPACE))
 
-WebUI.setText(findTestObject('Object Repository/Editing/Page_Streetlogix/input_Auto-update_pci'), '45')
+WebUI.setText(findTestObject('Object Repository/Editing/AttributeEditor/Page_Streetlogix/input_Auto-update_pci'), '65')
 
-WebUI.click(findTestObject('Editing/Page_Streetlogix/span_Save'))
+WebUI.click(findTestObject('Object Repository/Editing/AttributeEditor/Page_Streetlogix/button_Save'))
 
-WebUI.click(findTestObject('Object Repository/Editing/Page_Streetlogix/div_Success'))
+WebUI.click(findTestObject('Object Repository/Editing/AttributeEditor/Page_Streetlogix/button_OK'))
 
-WebUI.click(findTestObject('Object Repository/Editing/Page_Streetlogix/button_OK'))
+WebUI.click(findTestObject('Object Repository/Editing/AttributeEditor/Page_Streetlogix/div_Setting'))
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/Editing/AttributeEditor/Page_Streetlogix/div_Restore Edits'))
 
-WebUI.delay(20)
+//WebUI.click(findTestObject('Object Repository/Editing/AttributeEditor/Page_Streetlogix/td_PCI'))
+//
+//WebUI.click(findTestObject('Object Repository/Editing/AttributeEditor/Page_Streetlogix/td_PCI_MuiTableCell-root-2349 MuiTableCell-_ca2ebd'))
+//
+//WebUI.click(findTestObject('Object Repository/Editing/AttributeEditor/Page_Streetlogix/td_65'))
+WebUI.click(findTestObject('Editing/AttributeEditor/Page_Streetlogix/checkbox_restore_edits'))
 
-CustomKeywords.'com.gis_url.test.URL.redirectURL'()
+WebUI.click(findTestObject('Object Repository/Editing/AttributeEditor/Page_Streetlogix/button_Restore'))
 
-WebUI.click(findTestObject('Editing/Page_Streetlogix/div_Editing'))
+WebUI.click(findTestObject('Object Repository/Editing/AttributeEditor/Page_Streetlogix/div_Editing'))
 
-WebUI.click(findTestObject('Editing/Page_Streetlogix/div_Attribute Editor'))
+WebUI.click(findTestObject('Object Repository/Editing/AttributeEditor/Page_Streetlogix/div_Attribute Editor'))
 
-WebUI.click(findTestObject('Editing/Page_Streetlogix/div_'))
+WebUI.click(findTestObject('Object Repository/Editing/Page_Streetlogix/div_'))
+
+WebUI.click(findTestObject('Editing/AttributeEditor/Page_Streetlogix/svg_Select feature by street name_MuiSvgIcon-root-477 MuiSvgIcon-fontSizeSmall-484'))
 
 WebUI.setText(findTestObject('Object Repository/Editing/Page_Streetlogix/input_Select feature by street name_mui-14634'), 
     'ABBY LN')
 
 WebUI.click(findTestObject('Object Repository/Editing/Page_Streetlogix/li_ABBY LN'))
-
-WebUI.sendKeys(findTestObject('Object Repository/Editing/Page_Streetlogix/input_Auto-update_pci'), Keys.chord(Keys.BACK_SPACE))
-
-WebUI.sendKeys(findTestObject('Object Repository/Editing/Page_Streetlogix/input_Auto-update_pci'), Keys.chord(Keys.BACK_SPACE))
-
-WebUI.setText(findTestObject('Object Repository/Editing/Page_Streetlogix/input_Auto-update_pci'), '70')
-
-WebUI.click(findTestObject('Editing/Page_Streetlogix/span_Save'))
-
-WebUI.click(findTestObject('Object Repository/Editing/Page_Streetlogix/button_OK'))
 

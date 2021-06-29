@@ -3,15 +3,13 @@ import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('http://localhost:8081/?config=9c338e84e55940e4ba48a09e9f5aef32&url=https://streetlogix-dev-server.herokuapp.com&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAyNiwibmFtZSI6IlNocnV0aWthIFNhd2FudCIsImV4cCI6MTYyNTY2NDU3NiwiaWF0IjoxNjIzMDcyNTc2fQ.vEFh0PAIs6ZT0JQnknJ_XJleZWCSWMvOzTGa6L5F4k0')
+CustomKeywords.'com.gis_url.test.URL.redirectURL'()
 
 WebUI.click(findTestObject('Object Repository/Create_work_Order/Page_Streetlogix/div_Work Orders'))
 
 WebUI.click(findTestObject('Work_Orders/Select_group/Page_Streetlogix/div_All groups'))
 
-WebUI.click(findTestObject('Object Repository/Create_work_Order/Page_Streetlogix/li_Operations'))
+WebUI.click(findTestObject('Create_work_Order/Page_Streetlogix/li_FreshCode'))
 
 WebUI.setText(findTestObject('Object Repository/Create_work_Order/Page_Streetlogix/input_Operations_MuiInputBase-input-852 Mui_49be15'), 
     'asphalt cost')

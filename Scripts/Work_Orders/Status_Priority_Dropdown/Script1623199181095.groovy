@@ -9,7 +9,7 @@ WebUI.click(findTestObject('Object Repository/Create_work_Order/Page_Streetlogix
 
 WebUI.click(findTestObject('Work_Orders/Select_group/Page_Streetlogix/div_All groups'))
 
-WebUI.click(findTestObject('Object Repository/Create_work_Order/Page_Streetlogix/li_Operations'))
+WebUI.click(findTestObject('Create_work_Order/Page_Streetlogix/li_FreshCode'))
 
 WebUI.setText(findTestObject('Object Repository/Create_work_Order/Page_Streetlogix/input_Operations_MuiInputBase-input-852 Mui_49be15'), 
     'asphalt cost')

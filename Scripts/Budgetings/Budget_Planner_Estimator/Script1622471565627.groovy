@@ -11,7 +11,7 @@ WebUI.click(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Stre
 WebUI.setText(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Streetlogix/input_Annual budget_MuiInputBase-input-432 _7d9e17'), 
     '100285939')
 
-WebUI.click(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Streetlogix/span_Execute'))
+WebUI.click(findTestObject('Budget-Planner-Estimator/Page_Streetlogix/button_Execute'))
 
 WebUI.click(findTestObject('Object Repository/Budget-Planner-Estimator/Page_Streetlogix/span_Table'))
 

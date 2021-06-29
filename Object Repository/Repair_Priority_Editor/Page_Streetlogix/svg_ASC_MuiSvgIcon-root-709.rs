@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Functional Class'])[1]/following::*[name()='svg'][2]</value>
+         <value>/html/body/div[1]/div[3]/div[1]/div[3]/div[2]/div/div[1]/div[4]/table/tbody/tr[1]/td[4]/button/span[1]/svg</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

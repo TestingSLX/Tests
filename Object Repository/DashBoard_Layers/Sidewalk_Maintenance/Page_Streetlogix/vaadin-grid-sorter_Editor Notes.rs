@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_Operations</name>
+   <name>vaadin-grid-sorter_Editor Notes</name>
    <tag></tag>
-   <elementGuidId>c8db3ae3-36cc-4145-ab27-599a18443eb2</elementGuidId>
+   <elementGuidId>899a7ca2-a4f8-4a80-8637-1f6fc37f9ed0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='menu-']/div[3]/ul/li[2]</value>
+         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[14]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[27]/vaadin-grid-sorter</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -21,97 +21,83 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>li</value>
+      <value>vaadin-grid-sorter</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root-512 MuiListItem-root-504 MuiMenuItem-root-576 MuiMenuItem-gutters-577 MuiListItem-gutters-509 MuiListItem-button-510</value>
+      <value>esri-column__sorter</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tabindex</name>
+      <name>path</name>
       <type>Main</type>
-      <value>-1</value>
+      <value>editor_notes</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>role</name>
+      <name>innerhtml</name>
       <type>Main</type>
-      <value>option</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-disabled</name>
-      <type>Main</type>
-      <value>false</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-value</name>
-      <type>Main</type>
-      <value>74</value>
+      <value>Editor Notes</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Operations</value>
+      <value>Editor Notes</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-548 MuiMenu-paper-500 MuiPopover-paper-503 MuiPaper-elevation8-559 MuiPaper-rounded-549&quot;]/ul[@class=&quot;MuiList-root-450 MuiMenu-list-501 MuiList-padding-451&quot;]/li[@class=&quot;MuiButtonBase-root-512 MuiListItem-root-504 MuiMenuItem-root-576 MuiMenuItem-gutters-577 MuiListItem-gutters-509 MuiListItem-button-510&quot;]</value>
+      <value>id(&quot;17a544841e2-widget-177_grid&quot;)/vaadin-grid-cell-content[@class=&quot;esri-field-column__header-content&quot;]/vaadin-grid-sorter[@class=&quot;esri-column__sorter&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='menu-']/div[3]/ul/li[2]</value>
+      <value>//vaadin-grid[@id='17a544841e2-widget-177_grid']/vaadin-grid-cell-content[27]/vaadin-grid-sorter</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='All groups'])[2]/following::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Last Edit'])[2]/following::vaadin-grid-sorter[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::li[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Editor Id'])[2]/following::vaadin-grid-sorter[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Roads and Highways'])[1]/preceding::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Future Event Date'])[2]/preceding::vaadin-grid-sorter[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='water group'])[1]/preceding::li[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Width (ft)'])[4]/preceding::vaadin-grid-sorter[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/ul/li[2]</value>
+      <value>//div[15]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[27]/vaadin-grid-sorter</value>
    </webElementXpaths>
 </WebElementEntity>

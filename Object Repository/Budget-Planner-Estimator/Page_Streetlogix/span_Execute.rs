@@ -6,8 +6,12 @@
    <elementGuidId>0ed1b940-fae7-4a0b-8793-17bcfeb66ee6</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>id(&quot;root&quot;)/div[@class=&quot;sc-giAqHp bSRjaA&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-381 MuiBox-root-382 makeStyles-subPanel-377 makeStyles-subPanel-380&quot;]/div[@class=&quot;MuiBox-root-381 MuiBox-root-385&quot;]/div[@class=&quot;MuiBox-root-381 MuiBox-root-386&quot;]/div[@class=&quot;MuiBox-root-381 MuiBox-root-536 makeStyles-buttonGroup-373&quot;]/button[@class=&quot;MuiButtonBase-root-461 MuiButton-root-537 makeStyles-button-374 MuiButton-text-539 MuiButton-textPrimary-540 MuiButton-textSizeLarge-551 MuiButton-sizeLarge-557&quot;]/span[@class=&quot;MuiButton-label-538&quot;][count(. | //*[(text() = 'Execute' or . = 'Execute')]) = count(//*[(text() = 'Execute' or . = 'Execute')])]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div[6]/button/span</value>
+         <value>/html/body/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div/div/div[6]/button[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -38,7 +42,7 @@
       <value>Execute</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
