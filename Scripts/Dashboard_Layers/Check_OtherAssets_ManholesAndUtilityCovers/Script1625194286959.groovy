@@ -37,6 +37,8 @@ WebUI.verifyMatch(manholesCovers, 'Manholes and Utility Covers', false)
 
 WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Other_Assets/Manhole And Utility Covers/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
 
+WebUI.delay(10)
+
 String buttonText = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/Other_Assets/Manhole And Utility Covers/Page_Streetlogix/button_Other Assets - Manholes and Utility Covers'))
 
 WebUI.verifyMatch(buttonText, 'OTHER ASSETS - MANHOLES AND UTILITY COVERS', false)

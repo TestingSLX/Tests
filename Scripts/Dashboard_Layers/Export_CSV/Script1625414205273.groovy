@@ -266,8 +266,6 @@ if(mediaPS.contains("Media - Pavement SurfaceView")) {
 	println("File not downloaded")
 }
 
-WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Export_CSV/Page_Streetlogix/span_Pavement SurfaceView'))
-
 WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Export_CSV/Page_Streetlogix/span_Pavement FrontView'))
 
 WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Export_CSV/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
@@ -378,8 +376,6 @@ if(assetsMUC.contains("Other Assets - Manholes and Utility Covers")) {
 	println("File not downloaded")
 }
 
-WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Export_CSV/Page_Streetlogix/span_Manholes and Utility Covers'))
-
 WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Export_CSV/Page_Streetlogix/span_PavementMarkings'))
 
 WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Export_CSV/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
@@ -406,8 +402,6 @@ if(assetsPM.contains("Other Assets - PavementMarkings")) {
 	println("File not downloaded")
 }
 
-WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Export_CSV/Page_Streetlogix/span_PavementMarkings'))
-
 WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Export_CSV/Page_Streetlogix/span_PavementMarkings Lines'))
 
 WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Export_CSV/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
@@ -429,7 +423,7 @@ println(theNewestFile15.name)
 String assetsPML = theNewestFile15.name
 
 if(assetsPML.contains("Other Assets - PavementMarkings Lines")) {
-	WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Export_CSV/Page_Streetlogix/expand_OtherAssets'))
+	WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Export_CSV/Page_Streetlogix/expand_OtherAssests'))
 } else {
 	println("File not downloaded")
 }
