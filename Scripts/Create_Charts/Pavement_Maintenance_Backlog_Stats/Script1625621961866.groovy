@@ -207,31 +207,57 @@ String Cth3 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pave
 
 WebUI.verifyMatch(Cth3, "10 - 25", false)
 
-WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/th_25 - 40'))
+String Cth4 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/th_25 - 40'))
 
-WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/th_40 - 55'))
+WebUI.verifyMatch(Cth4, "25 - 40", false)
 
-WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/th_55 - 70'))
+String Cth5 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/th_40 - 55'))
 
-WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/th_70 - 85'))
+WebUI.verifyMatch(Cth5, "40 - 55", false)
 
-WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/th_85 - 100'))
+String Cth6 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/th_55 - 70'))
 
-WebUI.getText(findTestObject('Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_estimated_cost3'))
+WebUI.verifyMatch(Cth6, "55 - 70", false)
 
-WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_338373'))
+String Cth7 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/th_70 - 85'))
 
-WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_1997002'))
+WebUI.verifyMatch(Cth7, "70 - 85", false)
 
-WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_19408570'))
+String Cth8 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/th_85 - 100'))
 
-WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_19149369'))
+WebUI.verifyMatch(Cth8, "85 - 100", false)
 
-WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_76374918'))
+String Ctd1 = WebUI.getText(findTestObject('Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_estimated_cost3'))
 
-WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_7567951'))
+WebUI.verifyMatch(Ctd1, "estimated_cost", false)
 
-WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_389925'))
+String Ctd2 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_338373'))
+
+WebUI.verifyGreaterThan(Ctd2, 0)
+
+String Ctd3 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_1997002'))
+
+WebUI.verifyGreaterThan(Ctd3, 0)
+
+String Ctd4 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_19408570'))
+
+WebUI.verifyGreaterThan(Ctd4, 0)
+
+String Ctd5 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_19149369'))
+
+WebUI.verifyGreaterThan(Ctd5, 0)
+
+String Ctd6 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_76374918'))
+
+WebUI.verifyGreaterThan(Ctd6, 0)
+
+String Ctd7 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_7567951'))
+
+WebUI.verifyGreaterThan(Ctd7, 0)
+
+String Ctd8 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/td_389925'))
+
+WebUI.verifyGreaterThan(Ctd8, 0)
 
 WebUI.click(findTestObject('Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/span_Chart3'))
 
@@ -241,33 +267,115 @@ WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance
 
 WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/div_Save as JPEG'))
 
-WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/button'))
+WebUI.delay(5)
+
+File jpeg = new File('C:\\Users\\shrut\\Downloads').listFiles().sort({
+	-(it.lastModified())
+}).head()
+
+println(jpeg.name)
+
+String jpegChart = jpeg.name
+
+if(jpegChart.contains("Chart") && jpegChart.endsWith('.jpeg')) {
+	WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/button'))
+} else {
+	throw new Exception("JPEG Chart Not Downloaded")
+}
 
 WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/div_Save as PNG'))
 
-WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/span_Ward'))
+WebUI.delay(5)
+
+File png = new File('C:\\Users\\shrut\\Downloads').listFiles().sort({
+	-(it.lastModified())
+}).head()
+
+println(png.name)
+
+String pngChart = png.name
+
+if(pngChart.contains("Chart") && pngChart.endsWith('.png')) {
+	WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/span_Ward'))
+} else {
+	throw new Exception("PNG Chart Not Downloaded")
+}
 
 WebUI.click(findTestObject('Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/button1'))
 
 WebUI.click(findTestObject('Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/div_Save as JPEG1'))
 
-WebUI.delay(10)
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/button1'))
+File jpeg1 = new File('C:\\Users\\shrut\\Downloads').listFiles().sort({
+	-(it.lastModified())
+}).head()
+
+println(jpeg1.name)
+
+String jpegChart1 = jpeg1.name
+
+if(jpegChart1.contains("Chart") && jpegChart1.endsWith('.jpeg')) {
+	WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/button1'))
+} else {
+	throw new Exception("JPEG Chart Not Downloaded")
+}
 
 WebUI.click(findTestObject('Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/div_Save as PNG1'))
 
-WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/span_Surface Type'))
+WebUI.delay(5)
+
+File png1 = new File('C:\\Users\\shrut\\Downloads').listFiles().sort({
+	-(it.lastModified())
+}).head()
+
+println(png1.name)
+
+String pngChart1 = png1.name
+
+if(pngChart1.contains("Chart") && pngChart1.endsWith('.png')) {
+	WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/span_Surface Type'))
+} else {
+	throw new Exception("PNG Chart Not Downloaded")
+}
 
 WebUI.click(findTestObject('Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/button2'))
 
 WebUI.click(findTestObject('Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/div_Save as JPEG2'))
 
-WebUI.delay(10)
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/button2'))
+File jpeg2 = new File('C:\\Users\\shrut\\Downloads').listFiles().sort({
+	-(it.lastModified())
+}).head()
+
+println(jpeg2.name)
+
+String jpegChart2 = jpeg2.name
+
+if(jpegChart2.contains("Chart") && jpegChart2.endsWith('.jpeg')) {
+	WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/button2'))
+} else {
+	throw new Exception("JPEG Chart Not Downloaded")
+}
 
 WebUI.click(findTestObject('Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/div_Save as PNG2'))
+
+WebUI.delay(5)
+
+File png2 = new File('C:\\Users\\shrut\\Downloads').listFiles().sort({
+	-(it.lastModified())
+}).head()
+
+println(png2.name)
+
+String pngChart2 = png2.name
+
+if(pngChart2.contains("Chart") && pngChart2.endsWith('.png')) {
+	WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/span_Condition Index'))
+} else {
+	throw new Exception("PNG Chart Not Downloaded")
+}
 
 WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/span_Condition Index'))
 
@@ -275,13 +383,39 @@ WebUI.click(findTestObject('Create_Charts/Pavement/Maintenance_Backlog_Stats/Pag
 
 WebUI.click(findTestObject('Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/div_Save as JPEG3'))
 
-WebUI.delay(10)
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/button3'))
+File jpeg3 = new File('C:\\Users\\shrut\\Downloads').listFiles().sort({
+	-(it.lastModified())
+}).head()
+
+println(jpeg3.name)
+
+String jpegChart3 = jpeg3.name
+
+if(jpegChart3.contains("Chart") && jpegChart3.endsWith('.jpeg')) {
+	WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/button3'))
+} else {
+	throw new Exception("JPEG Chart Not Downloaded")
+}
 
 WebUI.click(findTestObject('Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/div_Save as PNG3'))
 
-WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/span_Go back to options'))
+WebUI.delay(5)
+
+File png3 = new File('C:\\Users\\shrut\\Downloads').listFiles().sort({
+	-(it.lastModified())
+}).head()
+
+println(png3.name)
+
+String pngChart3 = png3.name
+
+if(pngChart3.contains("Chart") && pngChart3.endsWith('.png')) {
+	WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/span_Go back to options'))
+} else {
+	throw new Exception("PNG Chart Not Downloaded")
+}
 
 WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Maintenance_Backlog_Stats/Page_Streetlogix/h6_Pavement'))
 

@@ -202,7 +202,7 @@ String jpegChart = jpeg.name
 if(jpegChart.contains("Chart") && jpegChart.endsWith('.jpeg')) {
 	WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/button'))
 } else {
-	println("JPEG Chart not downloaded")
+	throw new Exception("JPEG Chart Not Downloaded")
 }
 
 WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/div_Save as PNG'))
@@ -220,7 +220,7 @@ String pngChart = png.name
 if(pngChart.contains("Chart") && pngChart.endsWith('.png')) {
 	WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/span_Ward'))
 } else {
-	println("PNG Chart not downloaded")
+	throw new Exception("PNG Chart Not Downloaded")
 }
 
 WebUI.click(findTestObject('Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/button1'))
@@ -240,7 +240,7 @@ String jpegChart1 = jpeg1.name
 if(jpegChart1.contains("Chart") && jpegChart1.endsWith('.jpeg')) {
 	WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/button1'))
 } else {
-	println("JPEG Chart not downloaded")
+	throw new Exception("JPEG Chart Not Downloaded")
 }
 
 WebUI.click(findTestObject('Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/div_Save as PNG1'))
@@ -258,7 +258,7 @@ String pngChart1 = png1.name
 if(pngChart1.contains("Chart") && pngChart1.endsWith('.png')) {
 	WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/svg_Surface Type_MuiSvgIcon-root-462 MuiSvg_0fb56f'))
 } else {
-	println("PNG Chart not downloaded")
+	throw new Exception("PNG Chart Not Downloaded")
 }
 
 WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/span_Surface Type'))
@@ -280,7 +280,7 @@ String jpegChart2 = jpeg2.name
 if(jpegChart2.contains("Chart") && jpegChart2.endsWith('.jpeg')) {
 	WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/button2'))
 } else {
-	println("JPEG Chart not downloaded")
+	throw new Exception("JPEG Chart Not Downloaded")
 }
 
 WebUI.click(findTestObject('Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/div_Save as PNG2'))
@@ -298,7 +298,7 @@ String pngChart2 = png2.name
 if(pngChart2.contains("Chart") && pngChart2.endsWith('.png')) {	
 	WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/span_Go back to options'))
 } else {
-	println("PNG Chart not downloaded")
+	throw new Exception("PNG Chart Not Downloaded")
 }
 
 WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/h6_Pavement'))
