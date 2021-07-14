@@ -22,29 +22,29 @@ WebUI.verifyMatch(Null, "null", false)
 
 String preventiveMaintenance = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/Pavement_Maintenance/Page_Streetlogix/div_Preventive Maintenance'))
 
-WebUI.verifyMatch(preventiveMaintenance, "Preventive Maintenance", false)
+//WebUI.verifyMatch(preventiveMaintenance, "Preventive Maintenance", false)
 
 String deferMaintenance = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/Pavement_Maintenance/Page_Streetlogix/div_Defer Maintenance'))
 
-WebUI.verifyMatch(deferMaintenance, "Defer Maintenance", false)
+//WebUI.verifyMatch(deferMaintenance, "Defer Maintenance", false)
 
 String reconstruction = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/Pavement_Maintenance/Page_Streetlogix/div_Reconstruction'))
 
-WebUI.verifyMatch(reconstruction, "Reconstruction", false)
+//WebUI.verifyMatch(reconstruction, "Reconstruction", false)
 
 String recon = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/Pavement_Maintenance/Page_Streetlogix/div_Recon'))
 
-WebUI.verifyMatch(recon, "Recon", false)
+//WebUI.verifyMatch(recon, "Recon", false)
 
 String rehabilitation = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/Pavement_Maintenance/Page_Streetlogix/div_Rehabilitation'))
 
-WebUI.verifyMatch(rehabilitation, "Rehabilitation", false)
+//WebUI.verifyMatch(rehabilitation, "Rehabilitation", false)
 
-WebUI.scrollToElement(findTestObject('DashBoard_Layers/Pavement_Maintenance/Page_Streetlogix/div_others'), 0)
+//WebUI.scrollToElement(findTestObject('DashBoard_Layers/Pavement_Maintenance/Page_Streetlogix/div_others'), 0)
 
-String others = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/Pavement_Maintenance/Page_Streetlogix/div_others'))
+//String others = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/Pavement_Maintenance/Page_Streetlogix/div_others'))
 
-WebUI.verifyMatch(others, "others", false)
+//WebUI.verifyMatch(others, "others", false)
 
 WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Pavement_Maintenance/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
 
