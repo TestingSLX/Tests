@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "C113C702C2E53CEFF3692314FAF653AD",
+  "keywordClasses": [
+    {
+      "name": "com.Filter_Sidewalk_Evaluation.Sidewalk_Evaluation",
+      "keywordMethods": [
+        {
+          "name": "code",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

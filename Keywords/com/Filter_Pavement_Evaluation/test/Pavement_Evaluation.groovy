@@ -1590,7 +1590,7 @@ public class Pavement_Evaluation {
 
 		WebUI.click(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_Select_Field_Name'))
 
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/li_Need Year'))
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/li_need_year'))
 
 		WebUI.click(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_Select_Filter'))
 
@@ -1826,6 +1826,53 @@ public class Pavement_Evaluation {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/span_AND'))
 
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input_AND_input2'))
+		
+		WebUI.click(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_Select_Field_Name'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/li_st_length(shape)'))
+		
+		WebUI.click(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_Select_Filter'))
+		
+		List<WebElement> listSelectFilter43 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),30)
+		
+		List<WebElement> allFilters43List1 = new ArrayList()
+		
+		def allFilters43List2 = ((['is', 'is not', 'is at least', 'is at most', 'is less than', 'is greater than', 'is between', 'is not between'
+					, 'is blank', 'is not blank']) as String[])
+		
+		for (WebElement el : listSelectFilter43) {
+			allFilters43List1.add(el.getText())
+		}
+		
+		println(allFilters43List1)
+		
+		if (allFilters43List1.containsAll(allFilters43List2)) {
+			println('All Correct Filters Present')
+		} else {
+			throw new Exception('All filters are not in the dropdown')
+		}
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/li_is'))
+		
+		WebUI.click(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_Select_Filter'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/li_is between'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input_is between_input'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/span_AND'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input_AND_input2'))
+		
+		WebUI.click(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_Select_Filter'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/li_is not between'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input_is between_input'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/span_AND'))
+		
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input_AND_input2'))
 	}
 }
