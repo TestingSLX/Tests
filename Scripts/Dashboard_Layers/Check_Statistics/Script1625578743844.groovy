@@ -25,25 +25,27 @@ WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Statistics/Page_S
 
 String pci = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/Statistics/Page_Streetlogix/h6_Pavement Average PCI 65'))
 
-String pciAvg = pci.split("(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)")[1]
+String pciAvg = pci.replaceAll("[^0-9]", "")
 
-WebUI.verifyGreaterThan(pciAvg, 0)
+String avgPCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCI'()
+
+WebUI.verifyMatch(pciAvg, avgPCI, false)
 
 String milesPCI = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/Statistics/Page_Streetlogix/p_Total Length 342 miles'))
 
-String pciMiles = milesPCI.substring(14, 16)
+String pciMiles = milesPCI.replaceAll("[^0-9]", "")
 
-WebUI.verifyGreaterThan(pciMiles, 0)
+String totalMilesPCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getPavementMiles'()
+
+WebUI.verifyMatch(pciMiles, totalMilesPCI, false)
 
 String backlogPCI = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/Statistics/Page_Streetlogix/p_Total Backlog  125,226,108'))
 
-String pciBacklog = backlogPCI.substring(18, 28)
+String pciBacklog = backlogPCI.replaceAll("[^0-9]", "")
 
-String newPCIBacklog = pciBacklog.replace(',', '')
+String totalBacklogPCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getPavementBacklog'()
 
-int pcibacklog = Integer.parseInt(newPCIBacklog)
-
-WebUI.verifyGreaterThan(pcibacklog, 0)
+WebUI.verifyMatch(pciBacklog, totalBacklogPCI, false)
 
 WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Statistics/Page_Streetlogix/button_Pavement Average PCI 65_MuiButtonBas_02e04c'))
 
@@ -51,25 +53,27 @@ WebUI.delay(5)
 
 String sci = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/Statistics/Page_Streetlogix/h6_Sidewalk Average SCI 69'))
 
-String sciAvg = sci.split("(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)")[1]
+String sciAvg = sci.replaceAll("[^0-9]", "")
 
-WebUI.verifyGreaterThan(sciAvg, 0)
+String avgSCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAverageSCI'()
+
+WebUI.verifyMatch(sciAvg, avgSCI, false)
 
 String milesSCI = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/Statistics/Page_Streetlogix/p_Total Length 344 miles'))
 
-String sciMiles = milesSCI.substring(14, 16)
+String sciMiles = milesSCI.replaceAll("[^0-9]", "")
 
-WebUI.verifyGreaterThan(sciMiles, 0)
+String totalMilesSCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getSidewalkMiles'()
+
+WebUI.verifyMatch(sciMiles, totalMilesSCI, false)
 
 String backlogSCI = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/Statistics/Page_Streetlogix/p_Total Backlog  219,604,111'))
 
-String sciBacklog = backlogSCI.substring(18, 28)
+String sciBacklog = backlogSCI.replaceAll("[^0-9]", "")
 
-String newSCIBacklog = sciBacklog.replace(',', '')
-
-int scibacklog = Integer.parseInt(newSCIBacklog)
-
-WebUI.verifyGreaterThan(scibacklog, 0)
+String totalBacklogSCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getSidewalkBacklog'()
+ 
+WebUI.verifyMatch(sciBacklog, totalBacklogSCI, false)
 
 WebUI.click(findTestObject('Object Repository/DashBoard_Layers/Statistics/Page_Streetlogix/button_Pavement Average PCI 65_MuiButtonBas_02e04c'))
 

@@ -49,6 +49,8 @@ public class Pavement_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Maintenance/Page_Streetlogix/li_Pavement Maintenance'))
 
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Maintenance/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
+
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Maintenance/Page_Streetlogix/span_Add Expression'))
 
 		WebUI.click(findTestObject('Filter/Filter_Pavement_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
@@ -101,7 +103,15 @@ public class Pavement_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Maintenance/Page_Streetlogix/li_is'))
 
-		WebUI.click(findTestObject('Filter/Filter_Pavement_Maintenance/Page_Streetlogix/input__input_value'))
+		WebUI.setText(findTestObject('Filter/Filter_Pavement_Maintenance/Page_Streetlogix/input__input_value'), "88")
+
+		WebUI.mouseOver(findTestObject('Filter/Filter_Pavement_Maintenance/Page_Streetlogix/input__input_value'))
+			
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Maintenance/Page_Streetlogix/vaadin-grid-sorter_OBJECTID'), "OBJECTID")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_1'), "88")
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Maintenance/Page_Streetlogix/svg__0'))
 

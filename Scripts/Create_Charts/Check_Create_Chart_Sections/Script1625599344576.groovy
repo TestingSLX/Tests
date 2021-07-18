@@ -25,17 +25,35 @@ WebUI.click(findTestObject('Create_Charts/Chart_Section_Types/Page_Streetlogix/s
 
 WebUI.click(findTestObject('Create_Charts/Chart_Section_Types/Page_Streetlogix/svg_Pavement_MuiSvgIcon-root-102'))
 
-String pciAvg = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/h6_Pavement Average PCI 65'))
+String pci = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/h6_Pavement Average PCI 65'))
 
-WebUI.verifyMatch(pciAvg, '^Pavement Average PCI.*', true, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyMatch(pci, '^Pavement Average PCI.*', true, FailureHandling.STOP_ON_FAILURE)
 
-String pavementTotalLength = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/p_Total Length 342 miles'))
+String pciAvg = pci.replaceAll("[^0-9]", "")
 
-WebUI.verifyMatch(pavementTotalLength, '^Total Length.*', true, FailureHandling.STOP_ON_FAILURE)
+String avgPCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCI'()
 
-String pavementTotalBacklog = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/p_Total Backlog  125,226,108'))
+WebUI.verifyMatch(pciAvg, avgPCI, false)
 
-WebUI.verifyMatch(pavementTotalBacklog, '^Total Backlog.*', true, FailureHandling.STOP_ON_FAILURE)
+String milesPCI = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/p_Total Length 342 miles'))
+
+WebUI.verifyMatch(milesPCI, '^Total Length.*', true, FailureHandling.STOP_ON_FAILURE)
+
+String pciMiles = milesPCI.replaceAll("[^0-9]", "")
+
+String totalMilesPCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getPavementMiles'()
+
+WebUI.verifyMatch(pciMiles, totalMilesPCI, false)
+
+String backlogPCI = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/p_Total Backlog  125,226,108'))
+
+WebUI.verifyMatch(backlogPCI, '^Total Backlog.*', true, FailureHandling.STOP_ON_FAILURE)
+
+String pciBacklog = backlogPCI.replaceAll("[^0-9]", "")
+
+String totalBacklogPCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getPavementBacklog'()
+
+WebUI.verifyMatch(pciBacklog, totalBacklogPCI, false)
 
 String avgPCIStats = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/div_Average PCI Stats'))
 
@@ -65,17 +83,35 @@ String sidewalk = WebUI.getText(findTestObject('Object Repository/Create_Charts/
 
 WebUI.verifyMatch(sidewalk, 'Sidewalk', true, FailureHandling.STOP_ON_FAILURE)
 
-String sidewalkAvg = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/h6_Sidewalk Average SCI 69'))
+String sci = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/h6_Sidewalk Average SCI 69'))
 
-WebUI.verifyMatch(sidewalkAvg, '^Sidewalk Average SCI.*', true, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyMatch(sci, '^Sidewalk Average SCI.*', true, FailureHandling.STOP_ON_FAILURE)
 
-String sidewalkTotalLength = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/p_Total Length 344 miles'))
+String sciAvg = sci.replaceAll("[^0-9]", "")
 
-WebUI.verifyMatch(sidewalkTotalLength, '^Total Length.*', true, FailureHandling.STOP_ON_FAILURE)
+String avgSCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAverageSCI'()
 
-String sidewalkTotalBacklog = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/p_Total Backlog  219,604,111'))
+WebUI.verifyMatch(sciAvg, avgSCI, false)
 
-WebUI.verifyMatch(sidewalkTotalBacklog, '^Total Backlog.*', true, FailureHandling.STOP_ON_FAILURE)
+String milesSCI = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/p_Total Length 344 miles'))
+
+WebUI.verifyMatch(milesSCI, '^Total Length.*', true, FailureHandling.STOP_ON_FAILURE)
+
+String sciMiles = milesSCI.replaceAll("[^0-9]", "")
+
+String totalMilesSCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getSidewalkMiles'()
+
+WebUI.verifyMatch(sciMiles, totalMilesSCI, false)
+
+String backlogSCI = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/p_Total Backlog  219,604,111'))
+
+WebUI.verifyMatch(backlogSCI, '^Total Backlog.*', true, FailureHandling.STOP_ON_FAILURE)
+
+String sciBacklog = backlogSCI.replaceAll("[^0-9]", "")
+
+String totalBacklogSCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getSidewalkBacklog'()
+ 
+WebUI.verifyMatch(sciBacklog, totalBacklogSCI, false)
 
 String avgSCIStats = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/div_Average SCI Stats'))
 
