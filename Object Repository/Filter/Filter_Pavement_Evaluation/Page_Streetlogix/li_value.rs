@@ -6,12 +6,12 @@
    <elementGuidId>46cd43ec-9f71-4eea-a5e2-d34afff7da16</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='lock-menu']/div[3]/ul/li</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>li.MuiButtonBase-root-419.MuiListItem-root-723.MuiMenuItem-root-720.Mui-selected.MuiMenuItem-gutters-721.MuiListItem-gutters-728.MuiListItem-button-729.Mui-selected</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[92]/div[3]/ul/li[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

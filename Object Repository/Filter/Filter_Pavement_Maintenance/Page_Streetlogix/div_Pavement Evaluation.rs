@@ -6,12 +6,12 @@
    <elementGuidId>cd1bf1dd-16d4-4b69-8c5b-429fad95055a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div[2]/div/div/div/div</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.MuiSelect-root-477.MuiSelect-select-478.MuiSelect-selectMenu-481.MuiSelect-outlined-480.MuiInputBase-input-507.MuiOutlinedInput-input-494.MuiInputBase-inputMarginDense-508.MuiOutlinedInput-inputMarginDense-495</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;root&quot;]/div[3]/div[1]/div[2]/div[2]/div/div[1]/div[2]/div/div[1]/div/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

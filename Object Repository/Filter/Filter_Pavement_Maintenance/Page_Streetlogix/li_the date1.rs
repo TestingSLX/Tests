@@ -6,12 +6,12 @@
    <elementGuidId>4830f114-0977-462e-9205-a1b169b4bc8c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='menu-dateOption1']/div[3]/ul/li</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#menu-dateOption1 > div.MuiPaper-root-376.MuiMenu-paper-233.MuiPopover-paper-236.MuiPaper-elevation8-387.MuiPaper-rounded-377 > ul.MuiList-root-424.MuiMenu-list-234.MuiList-padding-425 > li.MuiButtonBase-root-129.MuiListItem-root-431.MuiMenuItem-root-428.MuiMenuItem-gutters-429.MuiListItem-gutters-436.MuiListItem-button-437</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[178]/div[3]/ul/li[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

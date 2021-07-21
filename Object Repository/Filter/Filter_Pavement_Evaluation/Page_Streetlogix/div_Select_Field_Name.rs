@@ -6,8 +6,12 @@
    <elementGuidId>9e96dd52-7c64-45f5-9997-a23d183acad1</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'mui-component-select-field' and (text() = '​' or . = '​')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[1]/div[2]/div[2]/div/div[1]/div[4]/div/div/div/div[1]/div/div</value>
+         <value>//*[@id=&quot;mui-component-select-field&quot;]</value>
       </entry>
       <entry>
          <key>CSS</key>

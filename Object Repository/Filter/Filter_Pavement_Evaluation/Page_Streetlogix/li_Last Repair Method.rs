@@ -6,12 +6,11 @@
    <elementGuidId>97f09d19-e2b1-4596-9657-1e5ae6be96bf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//li[@id='0'])[19]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>/html/body/div[93]/div[3]/ul/li[19]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

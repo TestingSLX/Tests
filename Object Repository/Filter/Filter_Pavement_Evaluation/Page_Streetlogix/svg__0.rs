@@ -6,12 +6,12 @@
    <elementGuidId>a1cbff76-1bb3-4a75-89b0-cf93b14747b8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[6]/following::*[name()='svg'][2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#0</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[1]/div[2]/div[2]/div/div[1]/div[3]/div/div/svg</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

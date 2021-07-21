@@ -24,7 +24,7 @@ public class URL {
 
 	@Keyword
 	public void redirectURL() {
-//		WebUI.openBrowser("http://localhost:8081/?config=6477e9530cb64cafb07cc153da28ac98&url=https://streetlogix-dev-server.herokuapp.com&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAyNiwibmFtZSI6IlNocnV0aWthIFNhd2FudCIsImV4cCI6MTYyNzE2NjM3OSwiaWF0IjoxNjI0NTc0Mzc5fQ.lfJ6w6AynIdt2n-CGEC9TW9JvJOWH3188kZhjBv6qvs")
-				WebUI.openBrowser("https://streetlogix-gis-react-app.herokuapp.com/?config=6477e9530cb64cafb07cc153da28ac98&url=https://streetlogix-dev-server.herokuapp.com&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAyNiwibmFtZSI6IlNocnV0aWthIFNhd2FudCIsImV4cCI6MTYyNzE2NjM3OSwiaWF0IjoxNjI0NTc0Mzc5fQ.lfJ6w6AynIdt2n-CGEC9TW9JvJOWH3188kZhjBv6qvs")
+				WebUI.openBrowser("http://localhost:8081/?config=6477e9530cb64cafb07cc153da28ac98&url=https://streetlogix-dev-server.herokuapp.com&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAyNiwibmFtZSI6IlNocnV0aWthIFNhd2FudCIsImV4cCI6MTYyOTMwOTM4MCwiaWF0IjoxNjI2NzE3MzgwfQ.hRwcHCcKTIoe7godUiuQ_N_vulhO_IYVxV7iq53yMzI")
+//		WebUI.openBrowser("https://streetlogix-gis-react-app.herokuapp.com/?config=6477e9530cb64cafb07cc153da28ac98&url=https://streetlogix-dev-server.herokuapp.com&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAyNiwibmFtZSI6IlNocnV0aWthIFNhd2FudCIsImV4cCI6MTYyOTMwOTM4MCwiaWF0IjoxNjI2NzE3MzgwfQ.hRwcHCcKTIoe7godUiuQ_N_vulhO_IYVxV7iq53yMzI")
 	}
 }

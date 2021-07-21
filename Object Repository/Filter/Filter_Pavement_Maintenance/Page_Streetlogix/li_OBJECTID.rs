@@ -6,12 +6,12 @@
    <elementGuidId>b0518fb8-c483-4a45-9e45-f6c0cfdc8b97</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//li[@id='0']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#menu-field > div.MuiPaper-root-668.MuiMenu-paper-523.MuiPopover-paper-526.MuiPaper-elevation8-679.MuiPaper-rounded-669 > ul.MuiList-root-716.MuiMenu-list-524.MuiList-padding-717 > #0</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[178]/div[3]/ul/li[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

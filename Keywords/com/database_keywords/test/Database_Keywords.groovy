@@ -94,7 +94,7 @@ public class Database_Keywords {
 		return totalBacklog.round()
 		closeConnection()
 	}
-	
+
 	@Keyword
 	public int getAverageSCI() {
 		openConnection()
