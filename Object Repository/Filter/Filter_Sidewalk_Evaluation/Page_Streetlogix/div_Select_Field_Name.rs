@@ -6,12 +6,12 @@
    <elementGuidId>e8405d5e-cf96-48ec-8b15-87d48ac7aeeb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[1]/div[2]/div[2]/div/div[1]/div[4]/div/div/div/div[1]/div/div</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#mui-component-select-field</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[1]/div[2]/div[2]/div/div[1]/div[3]/div/div/div[1]/div/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

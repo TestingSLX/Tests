@@ -6,12 +6,12 @@
    <elementGuidId>5bc36ccc-cdd7-434a-86ed-da6a0cbe9d4d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div[4]/div/div/div/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.MuiCardContent-root-664 > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[1]/div[2]/div[2]/div/div[1]/div[3]/div/div/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
