@@ -19,13 +19,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import org.openqa.selenium.Keys as Keys
 
 import internal.GlobalVariable
 
 public class Sidewalk_Maintenance {
 
 
-	@Keyword
+@Keyword
 	public void code() {
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Filter'))
 
@@ -50,6 +51,8 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_Sidewalk Maintenance'))
 
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
+
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/span_Add Expression'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
@@ -61,8 +64,8 @@ public class Sidewalk_Maintenance {
 
 		def allFieldsList2 = ((['OBJECTID', 'SCI_historic', 'notes', 'UID', 'TravelLane', 'SS_ID', 'streetname', 'fromstreetname'
 			, 'tostreetname', 'SCI', 'Functional Class', 'Functional Class', 'Length (ft)', 'Width (ft)', 'Maintenance Suggestion'
-			, 'Estimated Cost ($)', 'Repair Priority', 'Area (sy)', 'video', 'Last Repair Method', 'Last Repair Cost', 'Last Repair Date'
-			, 'Future Event', 'Editor Name', 'Editor Id', 'Last Edit', 'Editor Notes', 'Future Event Date', 'Width (ft)', 'Length (ft)'
+			, 'Estimated Cost ($)', 'Repair Priority', 'Area (sy)', 'Last Repair Method', 'Last Repair Cost', 'Last Repair Date'
+			, 'Future Event', 'Editor Name', 'Editor Id', 'Last Edit', 'Editor Notes', 'Geometry Edit', 'Master Update', 'Future Event Date', 'Width (ft)', 'Length (ft)'
 			, 'Ward', 'Surface Type', 'Surface Type ID', 'globalid', 'City', 'State', 'Country', 'need_year']) as String[])
 
 		for (WebElement el : listSelectField) {
@@ -79,7 +82,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFiltersList1 = new ArrayList()
@@ -101,28 +104,36 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
-		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'))
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "88")
 
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/svg__0'))
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
 
-		List<WebElement> listSelectInput = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Input_Type'),
-				30)
+		WebUI.delay(5)
 
-		List<WebElement> allInputsList1 = new ArrayList()
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_OBJECTID'), "OBJECTID")
 
-		def allInputsList2 = ((['value', 'field', 'unique']) as String[])
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_1'), "88")
 
-		for (WebElement el : listSelectInput) {
-			allInputsList1.add(el.getText())
-		}
-
-		if (allInputsList1.containsAll(allInputsList2)) {
-			println('All Input Types Present')
-		} else {
-			throw new Exception('All input types are not in the dropdown')
-		}
-
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_value'))
+		//		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/svg__0'))
+		//
+		//		List<WebElement> listSelectInput = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Input_Type'),
+		//				30)
+		//
+		//		List<WebElement> allInputsList1 = new ArrayList()
+		//
+		//		def allInputsList2 = ((['value', 'field', 'unique']) as String[])
+		//
+		//		for (WebElement el : listSelectInput) {
+		//			allInputsList1.add(el.getText())
+		//		}
+		//
+		//		if (allInputsList1.containsAll(allInputsList2)) {
+		//			println('All Input Types Present')
+		//		} else {
+		//			throw new Exception('All input types are not in the dropdown')
+		//		}
+		//
+		//		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_value'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -146,11 +157,11 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_PCI_historic'))
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_SCI_historic'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter1 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter1 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters1List1 = new ArrayList()
@@ -171,6 +182,26 @@ public class Sidewalk_Maintenance {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "88")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_SCI_historic'), "SCI_historic")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_SCIHistoric'), "88")
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -198,7 +229,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter2 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter2 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters2List1 = new ArrayList()
@@ -219,13 +250,33 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+		
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+		
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "Width Measured Manually")
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+		
+		WebUI.delay(5)
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_notes'), "notes")
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Notes'), "Width Measured Manually")
+
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_UID'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter3 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter3 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters3List1 = new ArrayList()
@@ -246,13 +297,33 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "15900_1")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_UID'), "UID")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_UID'), "15900_1")
+
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_TravelLane'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter4 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter4 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters4List1 = new ArrayList()
@@ -273,6 +344,26 @@ public class Sidewalk_Maintenance {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "2")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_TravelLane'), "TravelLane")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_TravelLane'), "2")
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -300,7 +391,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter5 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter5 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters5List1 = new ArrayList()
@@ -321,6 +412,26 @@ public class Sidewalk_Maintenance {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "60")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_SS_ID'), "SS_ID")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_SS_ID'), "60")
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -348,7 +459,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter6 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter6 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters6List1 = new ArrayList()
@@ -369,13 +480,33 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "CONGRESS ST")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_streetname'), "streetname")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_streetname'), "CONGRESS ST")
+
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_fromstreetname'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter7 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter7 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters7List1 = new ArrayList()
@@ -396,13 +527,33 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "WASHINGTON AVE")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_fromstreetname'), "fromstreetname")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_fromstreetname'), "WASHINGTON AVE")
+
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_tostreetname'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter8 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter8 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters8List1 = new ArrayList()
@@ -423,13 +574,33 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "BEDFORD ST")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_tostreetname'), "tostreetname")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_tostreetname'), "BEDFORD ST")
+
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_PCI'))
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_SCI'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter9 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter9 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters9List1 = new ArrayList()
@@ -450,6 +621,26 @@ public class Sidewalk_Maintenance {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "75")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_SCI'), "SCI")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_SCI'), "75")
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -477,7 +668,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter10 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter10 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters10List1 = new ArrayList()
@@ -498,13 +689,33 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+		
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+		
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "Local")
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+		
+		WebUI.delay(5)
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Functional Class'), "Functional Class")
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Functional Class'), "Local")
+
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_Functional Class ID'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter11 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter11 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters11List1 = new ArrayList()
@@ -525,6 +736,26 @@ public class Sidewalk_Maintenance {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "7")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Functional Class ID'), "Functional Class")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Functional Class Id'), "7")
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -552,7 +783,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter12 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter12 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters12List1 = new ArrayList()
@@ -573,6 +804,26 @@ public class Sidewalk_Maintenance {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "751")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Length (ft)'), "Length (ft)")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Length'), "751")
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -600,7 +851,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter13 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter13 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters13List1 = new ArrayList()
@@ -622,13 +873,33 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "13")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Width (ft)'), "Width (ft)")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Width'), "13")
+
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_Maintenance Suggestion'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter14 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter14 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters14List1 = new ArrayList()
@@ -649,13 +920,33 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+		
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+		
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "Grinding")
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+		
+		WebUI.delay(5)
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Maintenance Suggestion'), "Maintenance Suggestion")
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Maintenance Suggestion'), "Grinding")
+
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_Estimated Cost ()'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter15 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter15 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters15List1 = new ArrayList()
@@ -676,6 +967,26 @@ public class Sidewalk_Maintenance {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "2601")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Estimated Cost ()'), 'Estimated Cost (\$)')
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Estimated Cost'), "2601")
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -703,7 +1014,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter16 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter16 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters16List1 = new ArrayList()
@@ -724,6 +1035,26 @@ public class Sidewalk_Maintenance {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "18.12770958")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Repair Priority'), "Repair Priority")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Repair Priority'), "18.12770958")
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -751,7 +1082,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter17 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter17 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters17List1 = new ArrayList()
@@ -772,6 +1103,26 @@ public class Sidewalk_Maintenance {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "1126")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Area (sy)'), "Area (sy)")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Area'), "1126")
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -795,38 +1146,11 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_video'))
-
-		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
-
-		List<WebElement> listSelectFilter18 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
-				30)
-
-		List<WebElement> allFilters18List1 = new ArrayList()
-
-		def allFilters18List2 = ((['is', 'is not', 'starts with', 'ends with', 'contains', 'does not contain', 'is blank', 'is not blank']) as String[])
-
-		for (WebElement el : listSelectFilter18) {
-			allFilters18List1.add(el.getText())
-		}
-
-		println(allFilters18List1)
-
-		if (allFilters18List1.containsAll(allFilters18List2)) {
-			println('All Correct Filters Present')
-		} else {
-			throw new Exception('All filters are not in the dropdown')
-		}
-
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
-
-		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
-
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_Last Repair Method'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter19 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter19 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters19List1 = new ArrayList()
@@ -847,13 +1171,33 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+		
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+		
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "Preventive Maintenance")
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+		
+		WebUI.delay(5)
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Last Repair Method'), "Last Repair Method")
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Last Repair Method'), "Preventive Maintenance")
+
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_Last Repair Cost'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter20 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter20 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters20List1 = new ArrayList()
@@ -901,7 +1245,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter21 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter21 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters21List1 = new ArrayList()
@@ -957,7 +1301,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter22 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter22 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters22List1 = new ArrayList()
@@ -984,7 +1328,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter23 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter23 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters23List1 = new ArrayList()
@@ -1005,13 +1349,33 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+		
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+		
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "Streetlogix")
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+		
+		WebUI.delay(5)
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Editor Name'), "Editor Name")
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Editor Name'), "Streetlogix")
+
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_Editor Id'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter24 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter24 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters24List1 = new ArrayList()
@@ -1032,6 +1396,26 @@ public class Sidewalk_Maintenance {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "1030")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Editor Id'), "Editor Id")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Editor Id'), "1030")
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -1059,7 +1443,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter25 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter25 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters25List1 = new ArrayList()
@@ -1115,7 +1499,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter26 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter26 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters26List1 = new ArrayList()
@@ -1142,7 +1526,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter27 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter27 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters27List1 = new ArrayList()
@@ -1198,7 +1582,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter28 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter28 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters28List1 = new ArrayList()
@@ -1219,6 +1603,26 @@ public class Sidewalk_Maintenance {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "41")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Width (ft)1'), "Width (ft)")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Width1'), "41")
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -1246,7 +1650,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter29 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter29 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters29List1 = new ArrayList()
@@ -1267,6 +1671,26 @@ public class Sidewalk_Maintenance {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "811")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Length (ft)1'), "Length (ft)")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Length1'), "811")
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -1294,7 +1718,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter30 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter30 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters30List1 = new ArrayList()
@@ -1315,6 +1739,26 @@ public class Sidewalk_Maintenance {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "4")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Ward'), "Ward")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Ward'), "4")
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -1342,7 +1786,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter31 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter31 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters31List1 = new ArrayList()
@@ -1363,13 +1807,33 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+		
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+		
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "Concrete")
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+		
+		WebUI.delay(5)
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Surface Type'), "Surface Type")
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Surface Type'), "Concrete")
+
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_Surface Type ID'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter32 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter32 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters32List1 = new ArrayList()
@@ -1390,6 +1854,26 @@ public class Sidewalk_Maintenance {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
+
+//		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+//		
+//		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+//		
+//		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "875")
+//		
+//		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+//		
+//		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+//		
+//		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+//		
+//		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+//		
+//		WebUI.delay(5)
+//		
+//		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_Surface Type ID'), "Editor Id")
+//		
+//		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Surface Type ID'), "875")
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -1417,7 +1901,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter33 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter33 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters33List1 = new ArrayList()
@@ -1438,6 +1922,26 @@ public class Sidewalk_Maintenance {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+		
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+		
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "{D938D1B3-EEE9-47A9-B56D-9C264EC43DBF}")
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+		
+		WebUI.delay(5)
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_globalid'), "globalid")
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_globalid'), "{D938D1B3-EEE9-47A9-B56D-9C264EC43DBF}")
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
@@ -1465,7 +1969,7 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter34 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter34 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters34List1 = new ArrayList()
@@ -1486,13 +1990,33 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+		
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+		
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "Portland")
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+		
+		WebUI.delay(5)
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_city'), "City")
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_City'), "Portland")
+
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_state'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter35 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter35 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters35List1 = new ArrayList()
@@ -1513,13 +2037,33 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "ME")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_state'), "State")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_State'), "ME")
+
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_country'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter36 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter36 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters36List1 = new ArrayList()
@@ -1540,13 +2084,33 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+
+		WebUI.sendKeys(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+
+		WebUI.setText(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input__input_value'), "USA")
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/button_Pavement_Maintenance1'))
+
+		WebUI.delay(5)
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-sorter_country'), "Country")
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_Country'), "USA")
+
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Field_Name'))
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_need_year'))
 
 		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
 
-		List<WebElement> listSelectFilter38 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Pavement_Maintenance'),
+		List<WebElement> listSelectFilter38 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter_Sidewalk_Maintenance'),
 				30)
 
 		List<WebElement> allFilters38List1 = new ArrayList()
@@ -1568,25 +2132,5 @@ public class Sidewalk_Maintenance {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is'))
 
-		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
-
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is between'))
-
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input_is between_input'))
-
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/span_AND'))
-
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input_AND_input2'))
-
-		WebUI.click(findTestObject('Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/div_Select_Filter'))
-
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/li_is not between'))
-
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input_is between_input'))
-
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/span_AND'))
-
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Maintenance/Page_Streetlogix/input_AND_input2'))
 	}
 }
-

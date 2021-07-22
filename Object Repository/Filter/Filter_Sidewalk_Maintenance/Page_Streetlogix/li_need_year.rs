@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//li[@id='0'])[38]</value>
+         <value>//div[@id='menu-field']/div[3]/ul/li[39]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -28,7 +28,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root-419 MuiListItem-root-680 MuiMenuItem-root-677 MuiMenuItem-gutters-678 MuiListItem-gutters-685 MuiListItem-button-686</value>
+      <value>MuiButtonBase-root-421 MuiListItem-root-718 MuiMenuItem-root-715 MuiMenuItem-gutters-716 MuiListItem-gutters-723 MuiListItem-button-724</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,13 +52,6 @@
       <value>false</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>0</value>
-   </webElementProperties>
-   <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-value</name>
@@ -77,21 +70,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;menu-field&quot;)/div[@class=&quot;MuiPaper-root-625 MuiMenu-paper-523 MuiPopover-paper-526 MuiPaper-elevation8-636 MuiPaper-rounded-626&quot;]/ul[@class=&quot;MuiList-root-673 MuiMenu-list-524 MuiList-padding-674&quot;]/li[@id=&quot;0&quot;]</value>
+      <value>id(&quot;menu-field&quot;)/div[@class=&quot;MuiPaper-root-659 MuiMenu-paper-525 MuiPopover-paper-528 MuiPaper-elevation8-670 MuiPaper-rounded-660&quot;]/ul[@class=&quot;MuiList-root-711 MuiMenu-list-526 MuiList-padding-712&quot;]/li[@class=&quot;MuiButtonBase-root-421 MuiListItem-root-718 MuiMenuItem-root-715 MuiMenuItem-gutters-716 MuiListItem-gutters-723 MuiListItem-button-724&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>(//li[@id='0'])[38]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='menu-field']/div[3]/ul/li[38]</value>
+      <value>//div[@id='menu-field']/div[3]/ul/li[39]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -112,6 +98,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[38]</value>
+      <value>//li[39]</value>
    </webElementXpaths>
 </WebElementEntity>

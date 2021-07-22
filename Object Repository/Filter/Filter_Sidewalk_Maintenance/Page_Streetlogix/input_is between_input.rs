@@ -6,12 +6,12 @@
    <elementGuidId>a2050ac2-116a-47c9-9166-752e88947139</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='basic']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#basic</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[1]/div[2]/div[2]/div/div[1]/div[3]/div/div/div[3]/div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

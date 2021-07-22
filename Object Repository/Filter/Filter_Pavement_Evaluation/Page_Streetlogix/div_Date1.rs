@@ -6,12 +6,12 @@
    <elementGuidId>62c681d6-4dc3-4fa5-9ab3-f96f0de6c217</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='mui-component-select-dateOption1']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#mui-component-select-dateOption1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[1]/div[2]/div[2]/div/div[1]/div[3]/div/div/div[3]/div/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

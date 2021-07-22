@@ -6,11 +6,12 @@
    <elementGuidId>84113ed0-4712-4530-a29d-2ac027e8ad74</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//div[@id='menu-field']/div[3]/ul/li[34]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[93]/div[3]/ul/li[32]</value>
+         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -27,7 +28,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root-419 MuiListItem-root-637 MuiMenuItem-root-634 MuiMenuItem-gutters-635 MuiListItem-gutters-642 MuiListItem-button-643</value>
+      <value>MuiButtonBase-root-450 MuiListItem-root-662 MuiMenuItem-root-659 MuiMenuItem-gutters-660 MuiListItem-gutters-667 MuiListItem-button-668</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -51,13 +52,6 @@
       <value>false</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>0</value>
-   </webElementProperties>
-   <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-value</name>
@@ -76,21 +70,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;menu-field&quot;)/div[@class=&quot;MuiPaper-root-582 MuiMenu-paper-523 MuiPopover-paper-526 MuiPaper-elevation8-593 MuiPaper-rounded-583&quot;]/ul[@class=&quot;MuiList-root-630 MuiMenu-list-524 MuiList-padding-631&quot;]/li[@id=&quot;0&quot;]</value>
+      <value>id(&quot;menu-field&quot;)/div[@class=&quot;MuiPaper-root-603 MuiMenu-paper-554 MuiPopover-paper-557 MuiPaper-elevation8-614 MuiPaper-rounded-604&quot;]/ul[@class=&quot;MuiList-root-655 MuiMenu-list-555 MuiList-padding-656&quot;]/li[@class=&quot;MuiButtonBase-root-450 MuiListItem-root-662 MuiMenuItem-root-659 MuiMenuItem-gutters-660 MuiListItem-gutters-667 MuiListItem-button-668&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>(//li[@id='0'])[32]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='menu-field']/div[3]/ul/li[32]</value>
+      <value>//div[@id='menu-field']/div[3]/ul/li[34]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,20 +98,20 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='globalid'])[2]/preceding::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Video'])[1]/preceding::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='City'])[2]/preceding::li[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='shape'])[1]/preceding::li[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[32]</value>
+      <value>//li[34]</value>
    </webElementXpaths>
 </WebElementEntity>

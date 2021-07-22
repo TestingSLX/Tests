@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//li[@id='0'])[12]</value>
+         <value>//div[@id='menu-field']/div[3]/ul/li[12]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -28,7 +28,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root-448 MuiListItem-root-710 MuiMenuItem-root-707 MuiMenuItem-gutters-708 MuiListItem-gutters-715 MuiListItem-button-716</value>
+      <value>MuiButtonBase-root-421 MuiListItem-root-718 MuiMenuItem-root-715 MuiMenuItem-gutters-716 MuiListItem-gutters-723 MuiListItem-button-724</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,13 +52,6 @@
       <value>false</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>0</value>
-   </webElementProperties>
-   <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-value</name>
@@ -77,17 +70,10 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;menu-field&quot;)/div[@class=&quot;MuiPaper-root-655 MuiMenu-paper-552 MuiPopover-paper-555 MuiPaper-elevation8-666 MuiPaper-rounded-656&quot;]/ul[@class=&quot;MuiList-root-703 MuiMenu-list-553 MuiList-padding-704&quot;]/li[@id=&quot;0&quot;]</value>
+      <value>id(&quot;menu-field&quot;)/div[@class=&quot;MuiPaper-root-659 MuiMenu-paper-525 MuiPopover-paper-528 MuiPaper-elevation8-670 MuiPaper-rounded-660&quot;]/ul[@class=&quot;MuiList-root-711 MuiMenu-list-526 MuiList-padding-712&quot;]/li[@class=&quot;MuiButtonBase-root-421 MuiListItem-root-718 MuiMenuItem-root-715 MuiMenuItem-gutters-716 MuiListItem-gutters-723 MuiListItem-button-724&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>(//li[@id='0'])[12]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
@@ -98,28 +84,28 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Functional Class'])[4]/following::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Functional Class'])[6]/following::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='PCI'])[3]/following::li[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SCI'])[2]/following::li[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Length (ft)'])[5]/preceding::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Length (ft)'])[7]/preceding::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Width (ft)'])[5]/preceding::li[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Width (ft)'])[7]/preceding::li[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
