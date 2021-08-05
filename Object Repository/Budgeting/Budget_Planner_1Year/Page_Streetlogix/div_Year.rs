@@ -3,15 +3,15 @@
    <description></description>
    <name>div_Year</name>
    <tag></tag>
-   <elementGuidId>c45491cc-e19d-493b-afd7-582c737db4e6</elementGuidId>
+   <elementGuidId>2804c3b8-ea7c-482e-9e8b-1fc3b6ee505d</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[2]/div[1]/div/div[1]/div[3]/div[1]/div[2]/div[1]/div[2]/div[2]/div/div/div/div/div/div[1]</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>div.esri-legend__layer-caption</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[2]/div[1]/div/div[1]/div[3]/div[1]/div[2]/div[1]/div[2]/div[2]/div/div/div/div/div/div[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -42,14 +42,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;17ac03a9f7b-widget-1_controls_content&quot;)/div[@class=&quot;esri-legend esri-widget esri-widget--panel&quot;]/div[1]/div[@class=&quot;esri-legend__service&quot;]/div[@class=&quot;esri-legend__layer&quot;]/div[@class=&quot;esri-legend__layer-table esri-legend__layer-table--size-ramp&quot;]/div[@class=&quot;esri-legend__layer-caption&quot;]</value>
+      <value>id(&quot;17af9cca1ee-widget-1_controls_content&quot;)/div[@class=&quot;esri-legend esri-widget esri-widget--panel&quot;]/div[1]/div[@class=&quot;esri-legend__service&quot;]/div[@class=&quot;esri-legend__layer&quot;]/div[@class=&quot;esri-legend__layer-table esri-legend__layer-table--size-ramp&quot;]/div[@class=&quot;esri-legend__layer-caption&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='17ac03a9f7b-widget-1_controls_content']/div/div/div/div/div/div</value>
+      <value>//div[@id='17af9cca1ee-widget-1_controls_content']/div/div/div/div/div/div</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

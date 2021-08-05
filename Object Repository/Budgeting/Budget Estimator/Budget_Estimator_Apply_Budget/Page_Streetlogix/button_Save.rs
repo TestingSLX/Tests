@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Save</name>
+   <tag></tag>
+   <elementGuidId>b04beba7-109f-4732-8669-6f97ea13ed70</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.MuiBox-root-2350.MuiBox-root-2585.makeStyles-buttonGroup-2342 > button.MuiButtonBase-root-2451.MuiButton-root-2522.makeStyles-button-2343.MuiButton-text-2524.MuiButton-textPrimary-2525.MuiButton-textSizeLarge-2536.MuiButton-sizeLarge-2542</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@type='button'])[18]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiButtonBase-root-2451 MuiButton-root-2522 makeStyles-button-2343 MuiButton-text-2524 MuiButton-textPrimary-2525 MuiButton-textSizeLarge-2536 MuiButton-sizeLarge-2542</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Save</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-2350 MuiBox-root-2550 makeStyles-subPanel-2346 makeStyles-subPanel-2549&quot;]/div[@class=&quot;MuiBox-root-2350 MuiBox-root-2553&quot;]/div[@class=&quot;MuiBox-root-2350 MuiBox-root-2584&quot;]/div[@class=&quot;MuiBox-root-2350 MuiBox-root-2585 makeStyles-buttonGroup-2342&quot;]/button[@class=&quot;MuiButtonBase-root-2451 MuiButton-root-2522 makeStyles-button-2343 MuiButton-text-2524 MuiButton-textPrimary-2525 MuiButton-textSizeLarge-2536 MuiButton-sizeLarge-2542&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@type='button'])[18]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div[3]/div/div[3]/div[2]/div[2]/div/div[2]/div/button</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[1]/following::button[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Scenario'])[1]/following::button[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Discard'])[1]/preceding::button[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/button</value>
+   </webElementXpaths>
+</WebElementEntity>

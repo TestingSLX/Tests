@@ -27,7 +27,7 @@ WebUI.click(findTestObject('Create_Charts/Chart_Section_Types/Page_Streetlogix/s
 
 String pci = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/h6_Pavement Average PCI 65'))
 
-WebUI.verifyMatch(pci, '^Pavement Average PCI.*', true, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyMatch(pci, '^Pavement Average Condition.*', true, FailureHandling.STOP_ON_FAILURE)
 
 String pciAvg = pci.replaceAll("[^0-9]", "")
 
@@ -85,7 +85,7 @@ WebUI.verifyMatch(sidewalk, 'Sidewalk', true, FailureHandling.STOP_ON_FAILURE)
 
 String sci = WebUI.getText(findTestObject('Object Repository/Create_Charts/Chart_Section_Types/Page_Streetlogix/h6_Sidewalk Average SCI 69'))
 
-WebUI.verifyMatch(sci, '^Sidewalk Average SCI.*', true, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyMatch(sci, '^Sidewalk Average Condition*', true, FailureHandling.STOP_ON_FAILURE)
 
 String sciAvg = sci.replaceAll("[^0-9]", "")
 

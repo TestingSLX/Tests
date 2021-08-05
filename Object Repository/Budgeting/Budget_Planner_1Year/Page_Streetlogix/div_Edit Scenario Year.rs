@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Edit Scenario Year</name>
+   <tag></tag>
+   <elementGuidId>d75021ea-ec3a-4385-9fb7-2e76b4a139cb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.MuiInputBase-root-440.MuiOutlinedInput-root-654</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div[2]/div/div/div/div[3]/div[2]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiInputBase-root-440 MuiOutlinedInput-root-654</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>1​</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-397 MuiBox-root-581 makeStyles-subPanel-393 makeStyles-subPanel-580&quot;]/div[@class=&quot;MuiBox-root-397 MuiBox-root-584&quot;]/div[@class=&quot;MuiBox-root-397 MuiBox-root-585&quot;]/div[@class=&quot;MuiPaper-root-587 MuiCard-root-586 MuiPaper-elevation1-591 MuiPaper-rounded-588&quot;]/div[@class=&quot;MuiBox-root-397 MuiBox-root-651&quot;]/div[@class=&quot;sc-iTVJFM kPnDNF&quot;]/div[@class=&quot;MuiInputBase-root-440 MuiOutlinedInput-root-654&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div[2]/div/div/div/div[3]/div[2]/div</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Scenario'])[1]/following::div[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Report'])[1]/following::div[5]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/preceding::div[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div[3]/div[2]/div</value>
+   </webElementXpaths>
+</WebElementEntity>

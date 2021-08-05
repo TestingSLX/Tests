@@ -7,14 +7,18 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[531]/div/ul/li[4]</value>
+         <value>/html/body/div[459]/div/ul/li[4]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Export to CSV' or . = 'Export to CSV')]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>#17a7293fc6a-widget-496-menu-item-3-label > span.esri-button-menu__item-label-content</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

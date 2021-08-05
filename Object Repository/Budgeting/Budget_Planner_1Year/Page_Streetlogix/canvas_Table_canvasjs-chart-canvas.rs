@@ -3,15 +3,15 @@
    <description></description>
    <name>canvas_Table_canvasjs-chart-canvas</name>
    <tag></tag>
-   <elementGuidId>d9299756-d425-4b67-bdb6-0f6e0ecdeb22</elementGuidId>
+   <elementGuidId>979d56f9-35c4-486c-b85b-59b5cfa7cb1d</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//div[@id='canvasjs-react-chart-container-0']/div/canvas[2]</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='canvasjs-react-chart-container-0']/div/canvas[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

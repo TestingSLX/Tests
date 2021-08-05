@@ -7,86 +7,86 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 CustomKeywords.'com.gis_url.test.URL.redirectURL'()
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Budgeting'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Budget Planner'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Pavement Maintenance'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Budgeting/Budget_Planner_1Year/Page_Streetlogix/li_Pavement Maintenance'))
+WebUI.click(findTestObject('null'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/label_Select layer'), 
+WebUI.verifyElementText(findTestObject('null'), 
     'Select layer:')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/label_Filter by'), 
+WebUI.verifyElementText(findTestObject('null'), 
     'Filter by:')
 
-WebUI.click(findTestObject('Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_No Filter'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/li_No Filter'))
+WebUI.click(findTestObject('null'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/label_Program duration'), 
+WebUI.verifyElementText(findTestObject('null'), 
     'Program duration:')
 
-WebUI.click(findTestObject('Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_1 year'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/li_1 year'))
+WebUI.click(findTestObject('null'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/label_Annual budget'), 
+WebUI.verifyElementText(findTestObject('null'), 
     'Annual budget:')
 
 String budget1 = '123456789'
 
 int budget = 123456789
 
-WebUI.setText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/input_Annual budget_MuiInputBase-input-433 _ae0c06'), 
+WebUI.setText(findTestObject('null'), 
     budget1)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/label_Scenario name'), 
+WebUI.verifyElementText(findTestObject('null'), 
     'Scenario name:')
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/input_Scenario name_MuiInputBase-input-433 _2d5739'))
+WebUI.click(findTestObject('null'))
 
-WebUI.setText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/input_Scenario name_MuiInputBase-input-433 _2d5739_1_2_3_4_5'), 
+WebUI.setText(findTestObject('null'), 
     'T')
 
-WebUI.setText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/input_Scenario name_MuiInputBase-input-433 _2d5739_1_2_3_4_5_6'), 
+WebUI.setText(findTestObject('null'), 
     'Te')
 
-WebUI.setText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/input_Scenario name_MuiInputBase-input-433 _2d5739_1_2_3_4_5_6_7'), 
+WebUI.setText(findTestObject('null'), 
     'Tes')
 
-WebUI.setText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/input_Scenario name_MuiInputBase-input-433 _2d5739_1_2_3_4_5_6_7_8'), 
+WebUI.setText(findTestObject('null'), 
     'Test')
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/span_Apply Management Section'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/span_Apply Management Section'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/span_Execute'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/canvas_Table_canvasjs-chart-canvas'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/span_Table'))
+WebUI.click(findTestObject('null'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/th_Year'), 'Year')
+WebUI.verifyElementText(findTestObject('null'), 'Year')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/th_Length (ft)'), 
+WebUI.verifyElementText(findTestObject('null'), 
     'Length (ft)')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/th_Cost'), 'Cost')
+WebUI.verifyElementText(findTestObject('null'), 'Cost')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/th_Average Condition Index'), 
+WebUI.verifyElementText(findTestObject('null'), 
     'Average Condition Index')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/th_Condition Index Change'), 
+WebUI.verifyElementText(findTestObject('null'), 
     'Condition Index Change')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/td_1'), '1')
+WebUI.verifyElementText(findTestObject('null'), '1')
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/td_1,787,514'))
+WebUI.click(findTestObject('null'))
 
-String estimatedCost = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/td_121,772,145'))
+String estimatedCost = WebUI.getText(findTestObject('null'))
 
 int cost = estimatedCost.replaceAll('[^0-9]', '').toInteger()
 
@@ -96,17 +96,17 @@ if ((budget > cost) && (cost > 100000000)) {
     throw new Exception('Estimated cost difference is more')
 }
 
-String avgCI = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/td_99.64'))
+String avgCI = WebUI.getText(findTestObject('null'))
 
-String totalCI = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/td_32.55'))
+String totalCI = WebUI.getText(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/button_Year'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
+WebUI.click(findTestObject('null'))
 
-WebUI.scrollToElement(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Estimated_Cost_Values'), 10)
+WebUI.scrollToElement(findTestObject('null'), 10)
 
-List<WebElement> formnameAddress = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Estimated_Cost_Values'), 30)
+List<WebElement> formnameAddress = WebUiCommonHelper.findWebElements(findTestObject('null'), 30)
 
 		int value = 0
 		int count = 0

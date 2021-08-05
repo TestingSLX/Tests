@@ -3,15 +3,15 @@
    <description></description>
    <name>div_Reconstruction</name>
    <tag></tag>
-   <elementGuidId>fe2a44c7-62cc-4d25-8eed-7b024bcb8012</elementGuidId>
+   <elementGuidId>68ca5199-102a-4b6f-94cf-6cfae887b26c</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[2]/div[1]/div/div[1]/div[3]/div[1]/div[2]/div[1]/div[2]/div[2]/div/div/div/div/div/div[2]/div[5]/div[2]</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[2]/div[1]/div/div[1]/div[3]/div[1]/div[2]/div[1]/div[2]/div[2]/div/div/div/div/div/div[2]/div[4]/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -42,14 +42,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;17ac03a9f7b-widget-1_controls_content&quot;)/div[@class=&quot;esri-legend esri-widget esri-widget--panel&quot;]/div[1]/div[@class=&quot;esri-legend__service&quot;]/div[@class=&quot;esri-legend__layer&quot;]/div[@class=&quot;esri-legend__layer-table esri-legend__layer-table--size-ramp&quot;]/div[@class=&quot;esri-legend__layer-body&quot;]/div[@class=&quot;esri-legend__layer-row&quot;]/div[@class=&quot;esri-legend__layer-cell esri-legend__layer-cell--info&quot;]</value>
+      <value>id(&quot;17af9cca1ee-widget-1_controls_content&quot;)/div[@class=&quot;esri-legend esri-widget esri-widget--panel&quot;]/div[1]/div[@class=&quot;esri-legend__service&quot;]/div[@class=&quot;esri-legend__layer&quot;]/div[@class=&quot;esri-legend__layer-table esri-legend__layer-table--size-ramp&quot;]/div[@class=&quot;esri-legend__layer-body&quot;]/div[@class=&quot;esri-legend__layer-row&quot;]/div[@class=&quot;esri-legend__layer-cell esri-legend__layer-cell--info&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='17ac03a9f7b-widget-1_controls_content']/div/div/div/div/div/div[2]/div[5]/div[2]</value>
+      <value>//div[@id='17af9cca1ee-widget-1_controls_content']/div/div/div/div/div/div[2]/div[4]/div[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -91,6 +91,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/div/div/div/div/div[2]/div[5]/div[2]</value>
+      <value>//div[2]/div/div/div/div/div/div[2]/div[4]/div[2]</value>
    </webElementXpaths>
 </WebElementEntity>

@@ -3,15 +3,15 @@
    <description></description>
    <name>vaadin-grid-sorter_Surface Type</name>
    <tag></tag>
-   <elementGuidId>685e5632-0cbd-4082-91a1-d801d9ed4b0c</elementGuidId>
+   <elementGuidId>2de5ba3f-f44a-48ff-bd1e-b14e5deef730</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[17]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[15]/vaadin-grid-sorter</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[17]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[15]/vaadin-grid-sorter</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -56,14 +56,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;17ac03c6ac0-widget-93_grid&quot;)/vaadin-grid-cell-content[@class=&quot;esri-field-column__header-content&quot;]/vaadin-grid-sorter[@class=&quot;esri-column__sorter&quot;]</value>
+      <value>id(&quot;17af9ce4a79-widget-93_grid&quot;)/vaadin-grid-cell-content[@class=&quot;esri-field-column__header-content&quot;]/vaadin-grid-sorter[@class=&quot;esri-column__sorter&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//vaadin-grid[@id='17ac03c6ac0-widget-93_grid']/vaadin-grid-cell-content[15]/vaadin-grid-sorter</value>
+      <value>//vaadin-grid[@id='17af9ce4a79-widget-93_grid']/vaadin-grid-cell-content[15]/vaadin-grid-sorter</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -91,7 +91,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='NEWBURY ST'])[1]/preceding::vaadin-grid-sorter[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FORE ST'])[2]/preceding::vaadin-grid-sorter[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

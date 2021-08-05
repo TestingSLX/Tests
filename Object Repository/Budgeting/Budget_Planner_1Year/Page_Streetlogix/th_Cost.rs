@@ -3,15 +3,15 @@
    <description></description>
    <name>th_Cost</name>
    <tag></tag>
-   <elementGuidId>b76a3538-f772-4619-80ca-51f56d00491c</elementGuidId>
+   <elementGuidId>3445f364-2181-4bf9-9b9f-b9a70b3af4f6</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div[2]/div/div/div/div/div[3]/div/table/thead/tr/th[3]</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div[2]/div/div/div/div/div[3]/div/table/thead/tr/th[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiTableCell-root-725 MuiTableCell-head-726 MuiTableCell-alignCenter-733</value>
+      <value>MuiTableCell-root-726 MuiTableCell-head-727 MuiTableCell-alignCenter-734</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -49,7 +49,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;sc-bYwzuL hKaSEl&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-566 makeStyles-subPanel-378 makeStyles-subPanel-565&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-569&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-570&quot;]/div[@class=&quot;MuiPaper-root-572 MuiCard-root-571 MuiPaper-elevation1-576 MuiPaper-rounded-573&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-705&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-714 makeStyles-container-704 makeStyles-show-700&quot;]/div[@class=&quot;MuiPaper-root-572 MuiTableContainer-root-717 MuiPaper-elevation1-576 MuiPaper-rounded-573&quot;]/table[@class=&quot;MuiTable-root-718&quot;]/thead[@class=&quot;MuiTableHead-root-720&quot;]/tr[@class=&quot;MuiTableRow-root-721 makeStyles-headRow-715 MuiTableRow-head-723&quot;]/th[@class=&quot;MuiTableCell-root-725 MuiTableCell-head-726 MuiTableCell-alignCenter-733&quot;]</value>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-567 makeStyles-subPanel-379 makeStyles-subPanel-566&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-570&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-571&quot;]/div[@class=&quot;MuiPaper-root-573 MuiCard-root-572 MuiPaper-elevation1-577 MuiPaper-rounded-574&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-706&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-715 makeStyles-container-705 makeStyles-show-701&quot;]/div[@class=&quot;MuiPaper-root-573 MuiTableContainer-root-718 MuiPaper-elevation1-577 MuiPaper-rounded-574&quot;]/table[@class=&quot;MuiTable-root-719&quot;]/thead[@class=&quot;MuiTableHead-root-721&quot;]/tr[@class=&quot;MuiTableRow-root-722 makeStyles-headRow-716 MuiTableRow-head-724&quot;]/th[@class=&quot;MuiTableCell-root-726 MuiTableCell-head-727 MuiTableCell-alignCenter-734&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

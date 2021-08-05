@@ -6,12 +6,16 @@
    <elementGuidId>69a52680-aae8-4566-bdae-4e3ff49f9062</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#menu-dateOption2 > div.MuiPaper-root-376.MuiMenu-paper-233.MuiPopover-paper-236.MuiPaper-elevation8-387.MuiPaper-rounded-377 > ul.MuiList-root-424.MuiMenu-list-234.MuiList-padding-425 > li.MuiButtonBase-root-129.MuiListItem-root-431.MuiMenuItem-root-428.MuiMenuItem-gutters-429.MuiListItem-gutters-436.MuiListItem-button-437</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'the date...' or . = 'the date...')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[168]/div[3]/ul/li[1]</value>
+         <value>/html/body/div[167]/div[3]/ul/li[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#menu-dateOption2 > div.MuiPaper-root-376.MuiMenu-paper-233.MuiPopover-paper-236.MuiPaper-elevation8-387.MuiPaper-rounded-377 > ul.MuiList-root-424.MuiMenu-list-234.MuiList-padding-425 > li.MuiButtonBase-root-129.MuiListItem-root-431.MuiMenuItem-root-428.MuiMenuItem-gutters-429.MuiListItem-gutters-436.MuiListItem-button-437</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

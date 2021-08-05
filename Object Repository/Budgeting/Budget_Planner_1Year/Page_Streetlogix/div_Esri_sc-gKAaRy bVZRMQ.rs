@@ -3,15 +3,15 @@
    <description></description>
    <name>div_Esri_sc-gKAaRy bVZRMQ</name>
    <tag></tag>
-   <elementGuidId>9576c162-90a7-4552-b492-2d369dd91207</elementGuidId>
+   <elementGuidId>fde45ea9-a980-41e5-b1e8-7a4a4b328f55</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[2]/div[2]/div[1]</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>div.sc-gKAaRy.bVZRMQ</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div[3]/div[2]/div[2]/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -35,7 +35,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;sc-bYwzuL hKaSEl&quot;]/div[2]/div[2]/div[@class=&quot;sc-gKAaRy bVZRMQ&quot;]</value>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[2]/div[2]/div[@class=&quot;sc-gKAaRy bVZRMQ&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pavement Evaluation - Pavement Condition Index (Features: 1,462, Selected: 0)'])[1]/preceding::div[27]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pavement Evaluation - Pavement Condition Index (Features: 1,461, Selected: 0)'])[1]/preceding::div[27]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

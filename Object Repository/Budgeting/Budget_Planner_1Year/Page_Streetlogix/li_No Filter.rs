@@ -3,15 +3,15 @@
    <description></description>
    <name>li_No Filter</name>
    <tag></tag>
-   <elementGuidId>f39b8368-1866-44c7-8f48-a565f8cfe2a2</elementGuidId>
+   <elementGuidId>32f9371f-24ed-45ac-8f40-8fb654587151</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li.MuiButtonBase-root-463.MuiListItem-root-643.MuiMenuItem-root-640.Mui-selected.MuiMenuItem-gutters-641.MuiListItem-gutters-648.MuiListItem-button-649.Mui-selected.Mui-focusVisible.Mui-focusVisible</value>
+      </entry>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='menu-']/div[3]/ul/li</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>li.MuiButtonBase-root-462.MuiListItem-root-642.MuiMenuItem-root-639.Mui-selected.MuiMenuItem-gutters-640.MuiListItem-gutters-647.MuiListItem-button-648.Mui-selected.Mui-focusVisible.Mui-focusVisible</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root-462 MuiListItem-root-642 MuiMenuItem-root-639 Mui-selected MuiMenuItem-gutters-640 MuiListItem-gutters-647 MuiListItem-button-648 Mui-selected Mui-focusVisible Mui-focusVisible</value>
+      <value>MuiButtonBase-root-463 MuiListItem-root-643 MuiMenuItem-root-640 Mui-selected MuiMenuItem-gutters-641 MuiListItem-gutters-648 MuiListItem-button-649 Mui-selected Mui-focusVisible Mui-focusVisible</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-572 MuiMenu-paper-449 MuiPopover-paper-452 MuiPaper-elevation8-583 MuiPaper-rounded-573&quot;]/ul[@class=&quot;MuiList-root-635 MuiMenu-list-450 MuiList-padding-636&quot;]/li[@class=&quot;MuiButtonBase-root-462 MuiListItem-root-642 MuiMenuItem-root-639 Mui-selected MuiMenuItem-gutters-640 MuiListItem-gutters-647 MuiListItem-button-648 Mui-selected Mui-focusVisible Mui-focusVisible&quot;]</value>
+      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-573 MuiMenu-paper-450 MuiPopover-paper-453 MuiPaper-elevation8-584 MuiPaper-rounded-574&quot;]/ul[@class=&quot;MuiList-root-636 MuiMenu-list-451 MuiList-padding-637&quot;]/li[@class=&quot;MuiButtonBase-root-463 MuiListItem-root-643 MuiMenuItem-root-640 Mui-selected MuiMenuItem-gutters-641 MuiListItem-gutters-648 MuiListItem-button-649 Mui-selected Mui-focusVisible Mui-focusVisible&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -105,14 +105,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Last Repair Method'])[2]/preceding::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Maintenance Suggestion'])[2]/preceding::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ward'])[2]/preceding::li[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Functional Class'])[2]/preceding::li[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

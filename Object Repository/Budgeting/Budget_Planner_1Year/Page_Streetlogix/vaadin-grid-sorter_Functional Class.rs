@@ -3,15 +3,15 @@
    <description></description>
    <name>vaadin-grid-sorter_Functional Class</name>
    <tag></tag>
-   <elementGuidId>0cfa623e-1d4d-43b6-a333-2472e824512f</elementGuidId>
+   <elementGuidId>e68b9d3a-a26e-48aa-a8c7-cf17113fb684</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[17]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[7]/vaadin-grid-sorter</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[17]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[7]/vaadin-grid-sorter</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -56,14 +56,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;17ac03c6ac0-widget-93_grid&quot;)/vaadin-grid-cell-content[@class=&quot;esri-field-column__header-content&quot;]/vaadin-grid-sorter[@class=&quot;esri-column__sorter&quot;]</value>
+      <value>id(&quot;17af9ce4a79-widget-93_grid&quot;)/vaadin-grid-cell-content[@class=&quot;esri-field-column__header-content&quot;]/vaadin-grid-sorter[@class=&quot;esri-column__sorter&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//vaadin-grid[@id='17ac03c6ac0-widget-93_grid']/vaadin-grid-cell-content[7]/vaadin-grid-sorter</value>
+      <value>//vaadin-grid[@id='17af9ce4a79-widget-93_grid']/vaadin-grid-cell-content[7]/vaadin-grid-sorter</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button__MuiButtonBase-root-463 MuiButton-ro_a7d11c</name>
+   <tag></tag>
+   <elementGuidId>f57f03ba-e9cb-4e17-a238-dfb9f84cc781</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.MuiButtonBase-root-463.MuiButton-root-539.makeStyles-add-680.MuiButton-text-541.MuiButton-textSizeSmall-552.MuiButton-sizeSmall-558</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@type='button'])[12]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiButtonBase-root-463 MuiButton-root-539 makeStyles-add-680 MuiButton-text-541 MuiButton-textSizeSmall-552 MuiButton-sizeSmall-558</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-567 makeStyles-subPanel-379 makeStyles-subPanel-566&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-570&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-571&quot;]/div[@class=&quot;MuiPaper-root-573 MuiCard-root-572 MuiPaper-elevation1-577 MuiPaper-rounded-574&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-682&quot;]/button[@class=&quot;MuiButtonBase-root-463 MuiButton-root-539 makeStyles-add-680 MuiButton-text-541 MuiButton-textSizeSmall-552 MuiButton-sizeSmall-558&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@type='button'])[12]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div[2]/div/div/div/div[3]/button</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[1]/following::button[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Scenario'])[1]/following::button[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/preceding::button[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Discard'])[1]/preceding::button[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div[3]/button</value>
+   </webElementXpaths>
+</WebElementEntity>

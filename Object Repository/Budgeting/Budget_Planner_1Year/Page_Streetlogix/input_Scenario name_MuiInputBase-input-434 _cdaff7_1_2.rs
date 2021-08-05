@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Scenario name_MuiInputBase-input-434 _cdaff7_1_2</name>
+   <tag></tag>
+   <elementGuidId>0a25e075-6854-4aca-8cf6-c60522886b1e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.MuiInputBase-root-426.MuiInput-root-415.MuiInput-underline-418.Mui-focused.Mui-focused > input.MuiInputBase-input-434.MuiInput-input-422</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@value='']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>T</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiInputBase-input-434 MuiInput-input-422</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-384 makeStyles-subPanel-379 makeStyles-subPanel-382&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-387&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-388&quot;]/div[@class=&quot;sc-jcwpoC xgIFN&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-464&quot;]/div[@class=&quot;MuiInputBase-root-426 MuiInput-root-415 MuiInput-underline-418 Mui-focused Mui-focused&quot;]/input[@class=&quot;MuiInputBase-input-434 MuiInput-input-422&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@value='']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div[4]/div/div/input</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div[4]/div/div/input</value>
+   </webElementXpaths>
+</WebElementEntity>

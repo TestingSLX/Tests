@@ -3,15 +3,15 @@
    <description></description>
    <name>span_Table</name>
    <tag></tag>
-   <elementGuidId>f934f9f0-a130-453c-bf15-7932f4cd4668</elementGuidId>
+   <elementGuidId>b77ec7fc-6170-4959-937a-cc2647e55109</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.MuiBox-root-383.MuiBox-root-707 > button.MuiButtonBase-root-463.MuiButton-root-539.MuiButton-text-541.MuiButton-textPrimary-542 > span.MuiButton-label-540</value>
+      </entry>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div[2]/div/div/div/div/div/button/span</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>div.MuiBox-root-382.MuiBox-root-706 > button.MuiButtonBase-root-462.MuiButton-root-538.MuiButton-text-540.MuiButton-textPrimary-541 > span.MuiButton-label-539</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButton-label-539</value>
+      <value>MuiButton-label-540</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,7 +42,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;sc-bYwzuL hKaSEl&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-566 makeStyles-subPanel-378 makeStyles-subPanel-565&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-569&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-570&quot;]/div[@class=&quot;MuiPaper-root-572 MuiCard-root-571 MuiPaper-elevation1-576 MuiPaper-rounded-573&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-705&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-706&quot;]/button[@class=&quot;MuiButtonBase-root-462 MuiButton-root-538 MuiButton-text-540 MuiButton-textPrimary-541&quot;]/span[@class=&quot;MuiButton-label-539&quot;]</value>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-567 makeStyles-subPanel-379 makeStyles-subPanel-566&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-570&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-571&quot;]/div[@class=&quot;MuiPaper-root-573 MuiCard-root-572 MuiPaper-elevation1-577 MuiPaper-rounded-574&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-706&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-707&quot;]/button[@class=&quot;MuiButtonBase-root-463 MuiButton-root-539 MuiButton-text-541 MuiButton-textPrimary-542&quot;]/span[@class=&quot;MuiButton-label-540&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

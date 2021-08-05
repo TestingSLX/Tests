@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#menu-field > div.MuiPaper-root-367.MuiMenu-paper-235.MuiPopover-paper-238.MuiPaper-elevation8-378.MuiPaper-rounded-368 > ul.MuiList-root-419.MuiMenu-list-236.MuiList-padding-420 > li.MuiButtonBase-root-131.MuiListItem-root-426.MuiMenuItem-root-423.Mui-selected.MuiMenuItem-gutters-424.MuiListItem-gutters-431.MuiListItem-button-432.Mui-selected</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -28,14 +28,14 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root-131 MuiListItem-root-426 MuiMenuItem-root-423 Mui-selected MuiMenuItem-gutters-424 MuiListItem-gutters-431 MuiListItem-button-432 Mui-selected</value>
+      <value>MuiButtonBase-root-428 MuiListItem-root-682 MuiMenuItem-root-679 MuiMenuItem-gutters-680 MuiListItem-gutters-687 MuiListItem-button-688</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tabindex</name>
       <type>Main</type>
-      <value>0</value>
+      <value>-1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,13 +50,6 @@
       <name>aria-disabled</name>
       <type>Main</type>
       <value>false</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-selected</name>
-      <type>Main</type>
-      <value>true</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +70,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;menu-field&quot;)/div[@class=&quot;MuiPaper-root-367 MuiMenu-paper-235 MuiPopover-paper-238 MuiPaper-elevation8-378 MuiPaper-rounded-368&quot;]/ul[@class=&quot;MuiList-root-419 MuiMenu-list-236 MuiList-padding-420&quot;]/li[@class=&quot;MuiButtonBase-root-131 MuiListItem-root-426 MuiMenuItem-root-423 Mui-selected MuiMenuItem-gutters-424 MuiListItem-gutters-431 MuiListItem-button-432 Mui-selected&quot;]</value>
+      <value>id(&quot;menu-field&quot;)/div[@class=&quot;MuiPaper-root-623 MuiMenu-paper-532 MuiPopover-paper-535 MuiPaper-elevation8-634 MuiPaper-rounded-624&quot;]/ul[@class=&quot;MuiList-root-675 MuiMenu-list-533 MuiList-padding-676&quot;]/li[@class=&quot;MuiButtonBase-root-428 MuiListItem-root-682 MuiMenuItem-root-679 MuiMenuItem-gutters-680 MuiListItem-gutters-687 MuiListItem-button-688&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

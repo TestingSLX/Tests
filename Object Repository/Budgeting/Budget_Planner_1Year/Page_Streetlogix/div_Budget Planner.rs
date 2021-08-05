@@ -3,15 +3,15 @@
    <description></description>
    <name>div_Budget Planner</name>
    <tag></tag>
-   <elementGuidId>a4f2a90a-a3e9-400e-9dd8-3a7a6a4b165e</elementGuidId>
+   <elementGuidId>6637e246-94cb-46e8-8a04-545c131f6cbc</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div/div[5]/div[2]/div</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>div.sc-kEqXSa.goSxze.subWidget</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div[3]/div/div[2]/div/div[5]/div[2]/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -42,7 +42,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;sc-bYwzuL hKaSEl&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-bqGGPW grWgNt&quot;]/div[1]/div[@class=&quot;sc-iqAclL giqiai group&quot;]/div[@class=&quot;sc-crzoAE imGNnb&quot;]/div[@class=&quot;sc-kEqXSa goSxze subWidget&quot;]</value>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-bqGGPW grWgNt&quot;]/div[1]/div[@class=&quot;sc-iqAclL giqiai group&quot;]/div[@class=&quot;sc-crzoAE imGNnb&quot;]/div[@class=&quot;sc-kEqXSa goSxze subWidget&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

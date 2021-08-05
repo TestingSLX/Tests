@@ -3,15 +3,15 @@
    <description></description>
    <name>div_Budgeting</name>
    <tag></tag>
-   <elementGuidId>5f6fc63b-187b-4b05-b79c-fec0b37a731e</elementGuidId>
+   <elementGuidId>cfe78aba-85bc-4289-a5b5-220cf3477fcd</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div/div[5]/div</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>div.sc-iqAclL.giqiai.group > div.sc-kEqXSa.goSxze</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div[3]/div/div[2]/div/div[5]/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -42,7 +42,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;sc-bYwzuL hKaSEl&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-bqGGPW grWgNt&quot;]/div[1]/div[@class=&quot;sc-iqAclL giqiai group&quot;]/div[@class=&quot;sc-kEqXSa goSxze&quot;]</value>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-bqGGPW grWgNt&quot;]/div[1]/div[@class=&quot;sc-iqAclL giqiai group&quot;]/div[@class=&quot;sc-kEqXSa goSxze&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

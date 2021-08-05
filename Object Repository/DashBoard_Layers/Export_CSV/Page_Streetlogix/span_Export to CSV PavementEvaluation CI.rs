@@ -6,19 +6,19 @@
    <elementGuidId>9fad7b5e-2096-4522-9815-8cae1b724245</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>id(&quot;17a72958751-widget-90-menu-item-3-label&quot;)/span[@class=&quot;esri-button-menu__item-label-content&quot;][count(. | //*[(text() = 'Export to CSV' or . = 'Export to CSV')]) = count(//*[(text() = 'Export to CSV' or . = 'Export to CSV')])]</value>
+         <key>XPATH</key>
+         <value>/html/body/div[46]/div/ul/li[4]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[47]/div/ul/li[4]</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Export to CSV' or . = 'Export to CSV')]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>#17a72958751-widget-90-menu-item-3-label > span.esri-button-menu__item-label-content</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +42,7 @@
       <value>Export to CSV</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

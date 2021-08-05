@@ -3,15 +3,19 @@
    <description></description>
    <name>li_Pavement Maintenance</name>
    <tag></tag>
-   <elementGuidId>ae979762-fd08-48e1-8557-89343fde2263</elementGuidId>
+   <elementGuidId>511d2ef6-2134-49c7-bdb2-f7aa351f2407</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Pavement Maintenance' or . = 'Pavement Maintenance')]</value>
+      </entry>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='menu-']/div[3]/ul/li</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>li.MuiButtonBase-root-462.MuiListItem-root-627.MuiMenuItem-root-624.Mui-selected.MuiMenuItem-gutters-625.MuiListItem-gutters-632.MuiListItem-button-633.Mui-selected.Mui-focusVisible.Mui-focusVisible</value>
+         <value>li.MuiButtonBase-root-463.MuiListItem-root-628.MuiMenuItem-root-625.Mui-selected.MuiMenuItem-gutters-626.MuiListItem-gutters-633.MuiListItem-button-634.Mui-selected.Mui-focusVisible.Mui-focusVisible</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +32,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root-462 MuiListItem-root-627 MuiMenuItem-root-624 Mui-selected MuiMenuItem-gutters-625 MuiListItem-gutters-632 MuiListItem-button-633 Mui-selected Mui-focusVisible Mui-focusVisible</value>
+      <value>MuiButtonBase-root-463 MuiListItem-root-628 MuiMenuItem-root-625 Mui-selected MuiMenuItem-gutters-626 MuiListItem-gutters-633 MuiListItem-button-634 Mui-selected Mui-focusVisible Mui-focusVisible</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +81,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-572 MuiMenu-paper-449 MuiPopover-paper-452 MuiPaper-elevation8-583 MuiPaper-rounded-573&quot;]/ul[@class=&quot;MuiList-root-620 MuiMenu-list-450 MuiList-padding-621&quot;]/li[@class=&quot;MuiButtonBase-root-462 MuiListItem-root-627 MuiMenuItem-root-624 Mui-selected MuiMenuItem-gutters-625 MuiListItem-gutters-632 MuiListItem-button-633 Mui-selected Mui-focusVisible Mui-focusVisible&quot;]</value>
+      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-573 MuiMenu-paper-450 MuiPopover-paper-453 MuiPaper-elevation8-584 MuiPaper-rounded-574&quot;]/ul[@class=&quot;MuiList-root-621 MuiMenu-list-451 MuiList-padding-622&quot;]/li[@class=&quot;MuiButtonBase-root-463 MuiListItem-root-628 MuiMenuItem-root-625 Mui-selected MuiMenuItem-gutters-626 MuiListItem-gutters-633 MuiListItem-button-634 Mui-selected Mui-focusVisible Mui-focusVisible&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

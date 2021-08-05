@@ -2225,6 +2225,8 @@ public class Sidewalk_Evaluation {
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Evaluation/Page_Streetlogix/span_AND'))
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Evaluation/Page_Streetlogix/input_AND_input2'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Sidewalk_Evaluation/Page_Streetlogix/svg_delete expression'))
 	}
 }
 

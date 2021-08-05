@@ -6,15 +6,19 @@
    <elementGuidId>4682cab5-eae7-4048-ade1-d39e2834ed0d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#17ac62ce544-widget-176-menu-item-1-label</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Refresh data' or . = 'Refresh data')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>/html/body/div[134]/div/ul/li[2]</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#17ac62ce544-widget-176-menu-item-1-label</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <value>17ac62ce544-widget-176-menu-item-1</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>

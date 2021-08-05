@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_68,231</name>
+   <tag></tag>
+   <elementGuidId>3cedbc79-54e8-482e-9868-ab2e273307d8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div[3]/div/div[3]/div[2]/div[2]/div/div/div/div/div[3]/div/table/tbody/tr/td[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTableCell-root-2634 MuiTableCell-body-2636 MuiTableCell-alignCenter-2642</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>68,231</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-2350 MuiBox-root-2550 makeStyles-subPanel-2346 makeStyles-subPanel-2549&quot;]/div[@class=&quot;MuiBox-root-2350 MuiBox-root-2553&quot;]/div[@class=&quot;MuiBox-root-2350 MuiBox-root-2554&quot;]/div[@class=&quot;MuiPaper-root-2556 MuiCard-root-2555 MuiPaper-elevation1-2560 MuiPaper-rounded-2557&quot;]/div[@class=&quot;MuiBox-root-2350 MuiBox-root-2614&quot;]/div[@class=&quot;MuiBox-root-2350 MuiBox-root-2623 makeStyles-container-2613 makeStyles-show-2609&quot;]/div[@class=&quot;MuiPaper-root-2556 MuiTableContainer-root-2626 MuiPaper-elevation1-2560 MuiPaper-rounded-2557&quot;]/table[@class=&quot;MuiTable-root-2627&quot;]/tbody[@class=&quot;MuiTableBody-root-2646&quot;]/tr[@class=&quot;MuiTableRow-root-2630 makeStyles-bodyRow-2625&quot;]/td[@class=&quot;MuiTableCell-root-2634 MuiTableCell-body-2636 MuiTableCell-alignCenter-2642&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div[3]/div/div[3]/div[2]/div[2]/div/div/div/div/div[3]/div/table/tbody/tr/td[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Condition Index Change'])[1]/following::td[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Average Condition Index'])[1]/following::td[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Year'])[3]/preceding::td[4]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Report'])[1]/preceding::td[4]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/table/tbody/tr/td[2]</value>
+   </webElementXpaths>
+</WebElementEntity>

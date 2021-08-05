@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_1_estimator</name>
+   <tag></tag>
+   <elementGuidId>37b2f776-5440-4922-8d40-63f5711ed294</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td.MuiTableCell-root-1955.MuiTableCell-body-1957.MuiTableCell-alignCenter-1963</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[1]/div[2]/div[2]/div[2]/div/div[1]/div/div[2]/div/table/tbody/tr/td[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTableCell-root-1955 MuiTableCell-body-1957 MuiTableCell-alignCenter-1963</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-1699 MuiBox-root-1908 makeStyles-subPanel-1695 makeStyles-subPanel-1907&quot;]/div[@class=&quot;MuiBox-root-1699 MuiBox-root-1911&quot;]/div[@class=&quot;MuiBox-root-1699 MuiBox-root-1912&quot;]/div[@class=&quot;MuiPaper-root-1851 makeStyles-resultCard-1694 MuiPaper-elevation1-1855 MuiPaper-rounded-1852&quot;]/div[@class=&quot;MuiBox-root-1699 MuiBox-root-1944&quot;]/div[@class=&quot;MuiPaper-root-1851 MuiTableContainer-root-1947 MuiPaper-elevation1-1855 MuiPaper-rounded-1852&quot;]/table[@class=&quot;MuiTable-root-1948&quot;]/tbody[@class=&quot;MuiTableBody-root-1967&quot;]/tr[@class=&quot;MuiTableRow-root-1951 makeStyles-bodyRow-1946&quot;]/td[@class=&quot;MuiTableCell-root-1955 MuiTableCell-body-1957 MuiTableCell-alignCenter-1963&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div[3]/div/div[3]/div[2]/div[2]/div/div/div/div[2]/div/table/tbody/tr/td</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Condition Index'])[1]/following::td[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Budget'])[1]/following::td[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Apply'])[1]/preceding::td[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::td[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td</value>
+   </webElementXpaths>
+</WebElementEntity>

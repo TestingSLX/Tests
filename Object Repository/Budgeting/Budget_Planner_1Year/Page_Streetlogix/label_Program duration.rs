@@ -3,15 +3,15 @@
    <description></description>
    <name>label_Program duration</name>
    <tag></tag>
-   <elementGuidId>ad81c397-3adb-41dc-a5ff-c42649eb20de</elementGuidId>
+   <elementGuidId>6b458d99-8399-4e61-9ba1-0c251f7f62f9</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.MuiBox-root-383.MuiBox-root-388 > div.sc-jcwpoC.xgIFN > label.MuiFormLabel-root-400.MuiInputLabel-root-392.makeStyles-textLabel-389.MuiInputLabel-animated-397</value>
+      </entry>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div[2]/label</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>div.MuiBox-root-382.MuiBox-root-387 > div.sc-hiKfDv.fcCmgx > label.MuiFormLabel-root-399.MuiInputLabel-root-391.makeStyles-textLabel-388.MuiInputLabel-animated-396</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiFormLabel-root-399 MuiInputLabel-root-391 makeStyles-textLabel-388 MuiInputLabel-animated-396</value>
+      <value>MuiFormLabel-root-400 MuiInputLabel-root-392 makeStyles-textLabel-389 MuiInputLabel-animated-397</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,7 +42,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;sc-bYwzuL hKaSEl&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-383 makeStyles-subPanel-378 makeStyles-subPanel-381&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-386&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-387&quot;]/div[@class=&quot;sc-hiKfDv fcCmgx&quot;]/label[@class=&quot;MuiFormLabel-root-399 MuiInputLabel-root-391 makeStyles-textLabel-388 MuiInputLabel-animated-396&quot;]</value>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-384 makeStyles-subPanel-379 makeStyles-subPanel-382&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-387&quot;]/div[@class=&quot;MuiBox-root-383 MuiBox-root-388&quot;]/div[@class=&quot;sc-jcwpoC xgIFN&quot;]/label[@class=&quot;MuiFormLabel-root-400 MuiInputLabel-root-392 makeStyles-textLabel-389 MuiInputLabel-animated-397&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
