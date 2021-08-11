@@ -25,13 +25,13 @@ WebUI.click(findTestObject('Object Repository/Repair_Priority_Editor/Page_Street
 
 WebUI.click(findTestObject('Object Repository/Repair_Priority_Editor/Page_Streetlogix/td_ASC'))
 
-WebUI.click(findTestObject('Editing/AttributeEditor/Page_Streetlogix/button_ASC_MuiButtonBase-root-480 MuiIconButton-root-559'))
+WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('Repair_Priority_Editor/Page_Streetlogix/div_ASC'))
 
 WebUI.click(findTestObject('Object Repository/Repair_Priority_Editor/Page_Streetlogix/li_DESC'))
 
-WebUI.click(findTestObject('Editing/AttributeEditor/Page_Streetlogix/button_ASC_MuiButtonBase-root-480 MuiIconButton-root-559'))
+WebUI.click(findTestObject('null'))
 
 String orderD = WebUI.getText(findTestObject('Object Repository/Repair_Priority_Editor/Page_Streetlogix/td_DESC'))
 

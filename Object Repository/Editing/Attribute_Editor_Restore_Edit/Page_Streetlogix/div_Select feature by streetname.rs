@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Select feature by streetname</name>
+   <tag></tag>
+   <elementGuidId>824accc4-72bc-40ff-8279-fec710826321</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.MuiInputBase-root-530.MuiOutlinedInput-root-578.MuiAutocomplete-inputRoot-556.MuiInputBase-fullWidth-537.MuiInputBase-formControl-531.MuiInputBase-adornedEnd-533.MuiOutlinedInput-adornedEnd-581.MuiInputBase-marginDense-534.MuiOutlinedInput-marginDense-582</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiInputBase-root-530 MuiOutlinedInput-root-578 MuiAutocomplete-inputRoot-556 MuiInputBase-fullWidth-537 MuiInputBase-formControl-531 MuiInputBase-adornedEnd-533 MuiOutlinedInput-adornedEnd-581 MuiInputBase-marginDense-534 MuiOutlinedInput-marginDense-582</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>​</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-385 MuiBox-root-386 makeStyles-subPanel-381 makeStyles-subPanel-384&quot;]/div[@class=&quot;MuiBox-root-385 MuiBox-root-389&quot;]/div[@class=&quot;MuiBox-root-385 MuiBox-root-390&quot;]/div[@class=&quot;sc-jcwpoC xgIFN&quot;]/div[@class=&quot;MuiBox-root-385 MuiBox-root-549&quot;]/div[@class=&quot;MuiAutocomplete-root-550 MuiAutocomplete-fullWidth-551 MuiAutocomplete-hasClearIcon-555 MuiAutocomplete-hasPopupIcon-554&quot;]/div[@class=&quot;MuiFormControl-root-574 MuiTextField-root-573 MuiFormControl-marginDense-576 MuiFormControl-fullWidth-577&quot;]/div[@class=&quot;MuiInputBase-root-530 MuiOutlinedInput-root-578 MuiAutocomplete-inputRoot-556 MuiInputBase-fullWidth-537 MuiInputBase-formControl-531 MuiInputBase-adornedEnd-533 MuiOutlinedInput-adornedEnd-581 MuiInputBase-marginDense-534 MuiOutlinedInput-marginDense-582&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select feature by street name'])[1]/following::div[4]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pavement Maintenance'])[2]/following::div[6]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select feature on map to edit attribute values.'])[1]/preceding::div[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div[2]/div/div/div/div</value>
+   </webElementXpaths>
+</WebElementEntity>
