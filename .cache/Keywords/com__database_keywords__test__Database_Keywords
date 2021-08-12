@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "5B4A31600AE1EB2E1C906247A530EB00",
+  "keywordFileContentHash": "BB62FF2F560631A43ADB42788A966E9F",
   "keywordClasses": [
     {
       "name": "com.database_keywords.test.Database_Keywords",
@@ -41,6 +41,16 @@
         },
         {
           "name": "getSidewalkBacklog",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "array",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "autoUpdate",
           "parameters": [],
           "javadoc": ""
         }

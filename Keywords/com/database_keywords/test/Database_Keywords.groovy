@@ -1,28 +1,15 @@
 package com.database_keywords.test
 
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.checkpoint.Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.testcase.TestCase
-import com.kms.katalon.core.testdata.TestData
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.Statement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 
-import internal.GlobalVariable
+import com.kms.katalon.core.annotation.Keyword
+
+import groovy.json.JsonSlurper
+
+
 
 public class Database_Keywords {
 
@@ -141,4 +128,70 @@ public class Database_Keywords {
 		return totalBacklog.round()
 		closeConnection()
 	}
+
+	@Keyword
+	def array() {
+		openConnection()
+		def queryString = "SELECT * from sde.pavement_evaluation_loc WHERE objectid = 25"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		def woww = []
+
+		while(result.next()) {
+			for(int i=1; i <= 48 ; i++) {
+				woww.add(result.getString(i))
+			}
+		}
+		return woww
+		closeConnection()
+	}
+	
+	@Keyword
+	def autoUpdate() {
+		openConnection()
+		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/_common_db", "sde", "V0ters!23");
+		def queryString = "SELECT * FROM sde.decision_tree ORDER BY id DESC LIMIT 1"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+
+		def decisionTree = null
+		def list = null
+		while(result.next()){
+			decisionTree = result.getString('decision_tree')
+			list = new JsonSlurper().parseText(decisionTree )
+		}
+		def maintenanceSuggestion = []
+		def costs = []
+		def pciBoundary = []
+		def boundary = null
+		list.each{
+			def res = it.getAt('query')
+			boundary = res.findAll(/\d{1,3}(?:\.\d{1,2})?/) 
+			pciBoundary.add(boundary)
+			maintenanceSuggestion.add(it.getAt('ms'))
+			costs.add(it.getAt('uc'))
+		}
+
+		def map = [maintenanceSuggestion, pciBoundary, costs].transpose()
+		def pci = 85
+		def val = null
+		int min = 0
+		int max = 0
+		def item = null
+		def cost = 0
+		def array = []
+		for(int i = 0; i < map.size(); i++) {
+			item = map[i]
+			val = item[1]
+			min = Integer.parseInt(val[0])
+			max = Integer.parseInt(val[1])
+			if(pci > min && pci < max) {
+				array.add(item[0])
+				array.add(item[2])
+			}
+		}
+		return array
+		closeConnection()
+	}
+	
 }

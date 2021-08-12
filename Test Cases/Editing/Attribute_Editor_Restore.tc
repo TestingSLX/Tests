@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Attribute_Editor</name>
+   <name>Attribute_Editor_Restore</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>fa550c55-c08a-4ad9-96b6-bbc4199ad462</testCaseGuid>
