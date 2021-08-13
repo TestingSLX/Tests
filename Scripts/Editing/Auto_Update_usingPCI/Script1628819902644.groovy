@@ -44,9 +44,9 @@ WebUI.sendKeys(findTestObject("Editing/Attribute_Editor_Restore_Edit/Page_Street
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_PCI'))
 
-String length = WebUI.getText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__length_ft'))
+String length = WebUI.getAttribute(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__length_ft'), 'value')
 
-String width = WebUI.getText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__width_ft'))
+String width = WebUI.getAttribute(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__width_ft'), 'value')
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/span_Auto-update'))
 
@@ -70,8 +70,14 @@ double cost = Integer.parseInt(length)*Integer.parseInt(width)*0.111
 
 int estimate = cost.round()
 
-int finalEstimatedCost = estimate * Integer.parseInt(maintenanceSuggestionDecisionTree[1])
+double finalEstimatedCost = estimate * Double.parseDouble(maintenanceSuggestionDecisionTree[1])
 
-println(finalEstimatedCost)
+double newEstimatedCost = estimatedCost.toDouble()
+
+WebUI.verifyMatch(newEstimatedCost.toString(), finalEstimatedCost.toString(), false)
+
+//println(newEstimatedCost)
+//println(finalEstimatedCost)
+
 
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Auto_Update_PCI</name>
+   <name>Auto_Update_usingPCI</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>d93ce57c-e404-46d1-84bc-8649ac1ad393</testCaseGuid>
