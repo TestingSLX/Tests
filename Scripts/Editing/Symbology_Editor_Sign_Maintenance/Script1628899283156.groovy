@@ -93,3 +93,4 @@ WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Edit
 
 WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Sign_Maintenance/Page_Streetlogix/div_Sign Maintenance (Features 21,844, Selected 0)'))
 
+WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Sign_Maintenance/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
