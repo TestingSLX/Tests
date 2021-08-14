@@ -12,7 +12,7 @@ double cost = Integer.parseInt(length)*Integer.parseInt(width)*0.111
 
 int estimate = cost.round()
 
-int finalEstimatedCost = estimate * 11
+int finalEstimatedCost = estimate * 25
 
 println(finalEstimatedCost)
 
