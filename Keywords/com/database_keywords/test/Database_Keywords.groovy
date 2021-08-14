@@ -145,7 +145,7 @@ public class Database_Keywords {
 		return woww
 		closeConnection()
 	}
-	
+
 	@Keyword
 	def autoUpdate() {
 		openConnection()
@@ -166,7 +166,7 @@ public class Database_Keywords {
 		def boundary = null
 		list.each{
 			def res = it.getAt('query')
-			boundary = res.findAll(/\d{1,3}(?:\.\d{1,2})?/) 
+			boundary = res.findAll(/\d{1,3}(?:\.\d{1,2})?/)
 			pciBoundary.add(boundary)
 			maintenanceSuggestion.add(it.getAt('ms'))
 			costs.add(it.getAt('uc'))
@@ -193,5 +193,4 @@ public class Database_Keywords {
 		return array
 		closeConnection()
 	}
-	
 }
