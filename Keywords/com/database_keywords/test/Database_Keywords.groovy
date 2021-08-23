@@ -193,4 +193,73 @@ public class Database_Keywords {
 		return array
 		closeConnection()
 	}
+	
+	@Keyword
+	def decisionTreeMinMaxPCI() {
+		openConnection()
+		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/_common_db", "sde", "V0ters!23");
+		def queryString = "SELECT * FROM sde.decision_tree ORDER BY id DESC LIMIT 1"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+
+		def decisionTree = null
+		def list = null
+		while(result.next()){
+			decisionTree = result.getString('decision_tree')
+			list = new JsonSlurper().parseText(decisionTree )
+		}
+		def pciBoundary = []
+		def boundary = null
+		list.each{
+			def res = it.getAt('query')
+			boundary = res.findAll(/\d{1,3}(?:\.\d{1,2})?/)
+			pciBoundary.add(boundary)
+		}
+		return pciBoundary
+		closeConnection()
+	}
+	
+	@Keyword
+	def decisionTreeMaintenanceSuggestion() {
+		openConnection()
+		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/_common_db", "sde", "V0ters!23");
+		def queryString = "SELECT * FROM sde.decision_tree ORDER BY id DESC LIMIT 1"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+
+		def decisionTree = null
+		def list = null
+		while(result.next()){
+			decisionTree = result.getString('decision_tree')
+			list = new JsonSlurper().parseText(decisionTree )
+		}
+		def maintenanceSuggestion = []
+		list.each{
+			maintenanceSuggestion.add(it.getAt('ms'))
+		}
+		return maintenanceSuggestion
+		closeConnection()
+	}
+	
+	@Keyword
+	def decisionTreeCost() {
+		openConnection()
+		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/_common_db", "sde", "V0ters!23");
+		def queryString = "SELECT * FROM sde.decision_tree ORDER BY id DESC LIMIT 1"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+
+		def decisionTree = null
+		def list = null
+		while(result.next()){
+			decisionTree = result.getString('decision_tree')
+			list = new JsonSlurper().parseText(decisionTree )
+		}
+		def cost = []
+		list.each{
+			cost.add(it.getAt('uc'))
+		}
+		return cost
+		closeConnection()
+	}
 }

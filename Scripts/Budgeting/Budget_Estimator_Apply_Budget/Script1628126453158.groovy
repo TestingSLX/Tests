@@ -136,9 +136,9 @@ WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Apply_Bu
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/button_Save'))
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/h2_Success'))
+//WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/h2_Success'))
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/p_Scenario is saved'))
+//WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/p_Scenario is saved'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/span_OK'))
 

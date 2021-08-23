@@ -26,6 +26,7 @@ WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_E
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/div_Attribute Editor'))
 
 def data = []
+
 data = CustomKeywords.'com.database_keywords.test.Database_Keywords.array'()
 
 WebUI.click(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/div_Pavement Maintenance'))
@@ -39,12 +40,13 @@ WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_E
 WebUI.setText(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_Select feature by street name'), 
     'ABBY LN')
 
-WebUI.sendKeys(findTestObject("Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_Select feature by street name"), Keys.chord(Keys.DOWN))
+WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_Select feature by street name'), 
+    Keys.chord(Keys.DOWN))
 
-WebUI.sendKeys(findTestObject("Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_Select feature by street name"), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_Select feature by street name'), 
+    Keys.chord(Keys.ENTER))
 
 //WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/li_ABBY LN'))
-
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_SS_ID'))
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_streetname'))
@@ -240,11 +242,10 @@ WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_TravelLane'))
 
-WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__travellane'), Keys.chord(
-	Keys.CONTROL, 'a'))
+WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__travellane'), Keys.chord(Keys.CONTROL, 
+        'a'))
 
-WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__travellane'), Keys.chord(
-	Keys.BACK_SPACE))
+WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__travellane'), Keys.chord(Keys.BACK_SPACE))
 
 WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__travellane'), 
     '2')
@@ -386,22 +387,25 @@ WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/span_Save'))
 
-WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/h2_Success'))
-
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Feature attribute updated'))
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/button_OK'))
 
 WebUI.delay(10)
 
-def array = ((['25', '55',  'Test', '15031_1', '2', '385', 'ABBY LN', 'ADAMS ST', 'ACCESS RD', '85', 'Minor Arterial', '7', '222', '33', 'Reconstruction', '8888', '77.66000000', '4444', '<iframe src="http://pavemon.com/RAID/bulkmedia/ME_Portland_PMT_2019/customer_movies/599.mp4" width="500" height ="400" allowfullscreen></iframe>', 'Preventive Maintenance', '56565', 'null', 'Test', 'Shrutika Sawant', '1026', '2021-08-03 20:00:56', 'Test', 'null', 'false', 'null', '43', '343', '2', 'Asphalt', 'null', 'http://pavemon.com/RAID/bulkmedia/ME_Portland_PMT_2019/customer_movies/384.mp4', 'null', '0102000020110F0000020000009CA22361FDD75DC1784F1E6A05A55441228E750118D85DC190A0F811FDA45441', '{55B47CA8-3BAF-4E45-A61D-7D7946AADBE5}', 'Portland', 'ME', 'USA', 'null', '8', '10', '10', '10', '10']) as String[])
+def array = ((['25', '55', 'Test', '15031_1', '2', '385', 'ABBY LN', 'ADAMS ST', 'ACCESS RD', '85', 'Minor Arterial', '7'
+        , '222', '33', 'Reconstruction', '8888', '77.66000000', '4444', '<iframe src="http://pavemon.com/RAID/bulkmedia/ME_Portland_PMT_2019/customer_movies/599.mp4" width="500" height ="400" allowfullscreen></iframe>'
+        , 'Preventive Maintenance', '56565', 'null', 'Test', 'Shrutika Sawant', '1026', '2021-08-03 20:00:56', 'Test', 'null'
+        , 'false', 'null', '43', '343', '2', 'Asphalt', 'null', 'http://pavemon.com/RAID/bulkmedia/ME_Portland_PMT_2019/customer_movies/384.mp4'
+        , 'null', '0102000020110F0000020000009CA22361FDD75DC1784F1E6A05A55441228E750118D85DC190A0F811FDA45441', '{55B47CA8-3BAF-4E45-A61D-7D7946AADBE5}'
+        , 'Portland', 'ME', 'USA', 'null', '8', '10', '10', '10', '10']) as String[])
 
 def newData = ((CustomKeywords.'com.database_keywords.test.Database_Keywords.array'()) as String[])
 
-if(newData) {
-	println('Attributes changed for selected feature')
+if (newData) {
+    println('Attributes changed for selected feature')
 } else {
-	throw new Exception('Attributes are not changed for selected feature')
+    throw new Exception('Attributes are not changed for selected feature')
 }
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/div_Setting'))
@@ -419,10 +423,12 @@ WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_E
 WebUI.delay(10)
 
 def newData2 = []
+
 newData2 = CustomKeywords.'com.database_keywords.test.Database_Keywords.array'()
 
-if(data.equals(newData2)) {
-	println('Attributes restored')
+if (data.equals(newData2)) {
+    println('Attributes restored')
 } else {
-	throw new Exception('Restore did not work')
+    throw new Exception('Restore did not work')
 }
+

@@ -29,9 +29,9 @@ WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Function
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/li_Pavement Maintenance'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/label_Select layer'), 'Select layer:')
+WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/label_Select layer'), 'Select layer')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/label_Filter by'), 'Filter by:')
+WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/label_Filter by'), 'Filter by')
 
 WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/div_No Filter'))
 
@@ -53,13 +53,13 @@ double doubleCI = stringCI.toDouble()
 
 String targetCI = doubleCI.round() + 1
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/label_Select category'), 'Select category:')
+WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/label_Select category'), 'Select category')
 
 WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/div_Other princ arterial'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/li_Other princ arterial'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/label_Program duration'), 'Program duration:')
+WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/label_Program duration'), 'Program duration')
 
 WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/div_1'))
 

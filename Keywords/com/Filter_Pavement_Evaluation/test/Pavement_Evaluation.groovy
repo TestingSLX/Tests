@@ -106,6 +106,12 @@ public class Pavement_Evaluation {
 
 		WebUI.setText(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), "88")
 
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/label_Refresh data'))
+
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement_Maintenance1'))
 
 		WebUI.delay(5)

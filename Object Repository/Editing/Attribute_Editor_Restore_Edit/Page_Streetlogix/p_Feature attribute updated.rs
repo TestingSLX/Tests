@@ -6,15 +6,19 @@
    <elementGuidId>893e9c30-af76-4770-9bf8-e3b956d8813e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#alert-dialog-description</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//p[@id='alert-dialog-description']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'alert-dialog-description' and (text() = 'Feature attribute updated!' or . = 'Feature attribute updated!')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#alert-dialog-description</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

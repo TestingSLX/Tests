@@ -192,9 +192,9 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Pag
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/span_Save'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/h2_Success'), "Success")
+//WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/h2_Success'), "Success")
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Scenario is saved'), "Scenario is saved!")
+//WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Scenario is saved'), "Scenario is saved!")
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/button_OK'))
 

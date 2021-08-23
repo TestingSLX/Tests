@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "DBFA60E072B067D853D6B6E9450E644C",
+  "keywordFileContentHash": "68191090DC019B9788CA21A8385D8684",
   "keywordClasses": [
     {
       "name": "com.database_keywords.test.Database_Keywords",
@@ -51,6 +51,21 @@
         },
         {
           "name": "autoUpdate",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "decisionTreeMinMaxPCI",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "decisionTreeMaintenanceSuggestion",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "decisionTreeCost",
           "parameters": [],
           "javadoc": ""
         }

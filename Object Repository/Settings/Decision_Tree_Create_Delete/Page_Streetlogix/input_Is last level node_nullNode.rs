@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Is last level node_nullNode</name>
+   <tag></tag>
+   <elementGuidId>fa7736c1-4beb-49fc-95c9-0437ca991c09</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@name='nullNode']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input[name=&quot;nullNode&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>PrivateSwitchBase-input-755 MuiSwitch-input-771</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>nullNode</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>checkbox</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@class=&quot;MuiDialog-root-454&quot;]/div[@class=&quot;MuiDialog-container-457 MuiDialog-scrollPaper-455&quot;]/div[@class=&quot;MuiPaper-root-677 MuiDialog-paper-458 MuiDialog-paperScrollPaper-459 MuiDialog-paperWidthSm-463 MuiPaper-elevation24-704 MuiPaper-rounded-678&quot;]/div[3]/label[@class=&quot;MuiFormControlLabel-root-743&quot;]/span[@class=&quot;MuiSwitch-root-764&quot;]/span[@class=&quot;MuiButtonBase-root-439 MuiIconButton-root-756 PrivateSwitchBase-root-752 MuiSwitch-switchBase-767 MuiSwitch-colorPrimary-768&quot;]/span[@class=&quot;MuiIconButton-label-763&quot;]/input[@class=&quot;PrivateSwitchBase-input-755 MuiSwitch-input-771&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@name='nullNode']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/label/span/span/span/input</value>
+   </webElementXpaths>
+</WebElementEntity>

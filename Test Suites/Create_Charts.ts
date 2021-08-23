@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>0226633e-a7c2-4018-b09f-3b80dede9523</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Check_Create_Chart_Sections</testCaseId>
    </testCaseLink>
    <testCaseLink>

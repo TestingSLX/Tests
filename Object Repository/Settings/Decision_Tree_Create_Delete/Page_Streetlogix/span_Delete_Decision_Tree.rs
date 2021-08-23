@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Delete_Decision_Tree</name>
+   <tag></tag>
+   <elementGuidId>facd9e6a-a066-4476-998d-b0c7878fce4a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Shrutika Sawant'])[51]/following::span[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.MuiButtonBase-root-1839.MuiIconButton-root-1965.MuiIconButton-colorPrimary-1969</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiButtonBase-root-1839 MuiIconButton-root-1965 MuiIconButton-colorPrimary-1969</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-disabled</name>
+      <type>Main</type>
+      <value>false</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>delete</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@class=&quot;MuiDialog-root-1852 makeStyles-popup-1870&quot;]/div[@class=&quot;MuiDialog-container-1855 MuiDialog-scrollPaper-1853&quot;]/div[@class=&quot;MuiPaper-root-1879 MuiDialog-paper-1856 MuiDialog-paperScrollPaper-1857 MuiDialog-paperWidthMd-1862 MuiDialog-paperFullWidth-1865 MuiPaper-elevation24-1906 MuiPaper-rounded-1880&quot;]/div[@class=&quot;MuiDialogContent-root-1938&quot;]/div[@class=&quot;MuiPaper-root-1879 MuiTableContainer-root-1940 MuiPaper-elevation1-1883 MuiPaper-rounded-1880&quot;]/table[@class=&quot;MuiTable-root-1941 makeStyles-table-1869&quot;]/tbody[@class=&quot;todo-list&quot;]/tr[@class=&quot;MuiTableRow-root-1944 makeStyles-bodyRow-1872 MuiTableRow-hover-1945&quot;]/td[@class=&quot;MuiTableCell-root-1948 MuiTableCell-sizeSmall-1952&quot;]/span[@class=&quot;MuiButtonBase-root-1839 MuiIconButton-root-1965 MuiIconButton-colorPrimary-1969&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Shrutika Sawant'])[51]/following::span[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pavement'])[2]/following::span[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='test warning'])[1]/preceding::span[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pavement'])[3]/preceding::span[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[7]/span</value>
+   </webElementXpaths>
+</WebElementEntity>
