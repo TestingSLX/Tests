@@ -112,7 +112,8 @@ cost.add(cost4.find('\\d{1,3}(?:\\.\\d{1,2})?'))
 def costDB = []
 
 costDB = CustomKeywords.'com.database_keywords.test.Database_Keywords.decisionTreeCost'()
-
+println(cost)
+println(costDB)
 if (cost == costDB) {
 	println('Correct Decision Tree Loaded')
 } else {

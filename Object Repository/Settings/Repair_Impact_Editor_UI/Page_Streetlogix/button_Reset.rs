@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Save_Decision_Tree</name>
+   <name>button_Reset</name>
    <tag></tag>
-   <elementGuidId>7246550a-5d5f-402b-843f-bbbee91207db</elementGuidId>
+   <elementGuidId>38139f1b-9170-40cb-b6c3-9808f1949c00</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[9]</value>
+         <value>(//button[@type='button'])[8]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>button.MuiButtonBase-root-439.MuiButton-root-412.MuiButton-text-414.MuiButton-textPrimary-415.MuiButton-textSizeLarge-426.MuiButton-sizeLarge-432</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root-439 MuiButton-root-412 MuiButton-text-414 MuiButton-textPrimary-415 MuiButton-textSizeLarge-426 MuiButton-sizeLarge-432</value>
+      <value>MuiButtonBase-root-460 MuiButton-root-433 MuiButton-text-435 MuiButton-textPrimary-436 MuiButton-textSizeLarge-447 MuiButton-sizeLarge-453</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -49,55 +49,55 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Save</value>
+      <value>Reset</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd cbDJXF visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-393 MuiBox-root-394&quot;]/div[@class=&quot;MuiBox-root-393 MuiBox-root-410&quot;]/div[@class=&quot;MuiBox-root-393 MuiBox-root-411 buttonGroup&quot;]/button[@class=&quot;MuiButtonBase-root-439 MuiButton-root-412 MuiButton-text-414 MuiButton-textPrimary-415 MuiButton-textSizeLarge-426 MuiButton-sizeLarge-432&quot;]</value>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd cbDJXF visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-387 MuiBox-root-388&quot;]/div[@class=&quot;MuiBox-root-387 MuiBox-root-432&quot;]/button[@class=&quot;MuiButtonBase-root-460 MuiButton-root-433 MuiButton-text-435 MuiButton-textPrimary-436 MuiButton-textSizeLarge-447 MuiButton-sizeLarge-453&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//button[@type='button'])[9]</value>
+      <value>(//button[@type='button'])[8]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div[2]/div/button</value>
+      <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div[2]/button[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='+'])[10]/following::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Unit Cost ($/yd²): 1.5'])[1]/following::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Original Condition Index Range'])[1]/following::button[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reset'])[1]/preceding::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dashboard'])[2]/preceding::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/button</value>
+      <value>//div[2]/button[2]</value>
    </webElementXpaths>
 </WebElementEntity>

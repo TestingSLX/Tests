@@ -1,76 +1,87 @@
 {
-  "keywordFileContentHash": "68191090DC019B9788CA21A8385D8684",
+  "keywordFileContentHash": "2797080B243C8E8532C34E8B96EB2DA2",
   "keywordClasses": [
     {
       "name": "com.database_keywords.test.Database_Keywords",
       "keywordMethods": [
         {
           "name": "openConnection",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "closeConnection",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getAveragePCI",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getPavementMiles",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getPavementBacklog",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getAverageSCI",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getSidewalkMiles",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getSidewalkBacklog",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "array",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "autoUpdate",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "decisionTreeMinMaxPCI",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "decisionTreeMaintenanceSuggestion",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "decisionTreeCost",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
+        },
+        {
+          "name": "decisionTreeMinMaxPCILoadNew",
+          "parameters": []
+        },
+        {
+          "name": "decisionTreeMaintenanceSuggestionLoadNew",
+          "parameters": []
+        },
+        {
+          "name": "decisionTreeCostLoadNew",
+          "parameters": []
+        },
+        {
+          "name": "repairImpactMaintenanceSuggestion",
+          "parameters": []
+        },
+        {
+          "name": "repairImpactValues",
+          "parameters": []
+        },
+        {
+          "name": "repairImpactBoundaries",
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
