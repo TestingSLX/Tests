@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>label_Select surface type</name>
+   <name>label_Select layer</name>
    <tag></tag>
-   <elementGuidId>928e2797-ece6-44e6-91e1-a6b3ebbea95c</elementGuidId>
+   <elementGuidId>4c945e5f-4bad-4841-9e7e-0c36886abcbf</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div[2]/label</value>
+         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div/label</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>label.MuiFormLabel-root-508.MuiInputLabel-root-500.makeStyles-textLabel-497.MuiInputLabel-animated-505</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,69 +28,69 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiFormLabel-root-401 MuiInputLabel-root-393 makeStyles-textLabel-390 MuiInputLabel-animated-398</value>
+      <value>MuiFormLabel-root-508 MuiInputLabel-root-500 makeStyles-textLabel-497 MuiInputLabel-animated-505</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Select surface type</value>
+      <value>Select layer</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd cbDJXF visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-387 MuiBox-root-388&quot;]/div[@class=&quot;MuiBox-root-387 MuiBox-root-389&quot;]/div[@class=&quot;sc-carFqZ eDhcqS&quot;]/label[@class=&quot;MuiFormLabel-root-401 MuiInputLabel-root-393 makeStyles-textLabel-390 MuiInputLabel-animated-398&quot;]</value>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd cbDJXF visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-389 MuiBox-root-390 makeStyles-subPanel-385 makeStyles-subPanel-388&quot;]/div[@class=&quot;MuiBox-root-389 MuiBox-root-393&quot;]/div[@class=&quot;MuiBox-root-389 MuiBox-root-394&quot;]/div[@class=&quot;sc-carFqZ eDhcqS&quot;]/label[@class=&quot;MuiFormLabel-root-508 MuiInputLabel-root-500 makeStyles-textLabel-497 MuiInputLabel-animated-505&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div[2]/label</value>
+      <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div/label</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pavement Maintenance'])[2]/following::label[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Attribute Editor'])[2]/following::label[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select layer'])[1]/following::label[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Decrease opacity'])[22]/following::label[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Asphalt'])[1]/preceding::label[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pavement Maintenance'])[2]/preceding::label[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Maintenance Suggestion'])[1]/preceding::label[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select feature by street name'])[1]/preceding::label[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Select surface type']/parent::*</value>
+      <value>//*/text()[normalize-space(.)='Select layer']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/label</value>
+      <value>//label</value>
    </webElementXpaths>
 </WebElementEntity>

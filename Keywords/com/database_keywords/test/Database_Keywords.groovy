@@ -331,7 +331,7 @@ public class Database_Keywords {
 		return cost
 		closeConnection()
 	}
-	
+
 	@Keyword
 	def repairImpactMaintenanceSuggestion() {
 		openConnection()
@@ -339,7 +339,7 @@ public class Database_Keywords {
 		def queryString = "SELECT * FROM sde.repair_impact WHERE id = 82"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
-		
+
 		def decisionTree = null
 		def list = null
 		while(result.next()){
@@ -350,10 +350,10 @@ public class Database_Keywords {
 		list.each{
 			maintenanceSuggestion.add(it.getKey())
 		}
-		return maintenanceSuggestion		
+		return maintenanceSuggestion
 		closeConnection()
 	}
-	
+
 	@Keyword
 	def repairImpactValues() {
 		openConnection()
@@ -361,7 +361,7 @@ public class Database_Keywords {
 		def queryString = "SELECT * FROM sde.repair_impact WHERE id = 82"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
-		
+
 		def decisionTree = null
 		def list = null
 		while(result.next()){
@@ -382,7 +382,7 @@ public class Database_Keywords {
 		return impactValues
 		closeConnection()
 	}
-	
+
 	@Keyword
 	def repairImpactBoundaries() {
 		openConnection()
@@ -390,7 +390,7 @@ public class Database_Keywords {
 		def queryString = "SELECT * FROM sde.repair_impact WHERE id = 82"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
-		
+
 		def decisionTree = null
 		def list = null
 		while(result.next()){
@@ -411,4 +411,53 @@ public class Database_Keywords {
 		return pciBoundary
 		closeConnection()
 	}
+	
+	@Keyword
+	def repairImpactAttributeEditorValidation(def pci) {
+		openConnection()
+		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/_common_db", "sde", "V0ters!23");
+		def queryString = "SELECT * FROM sde.decision_tree ORDER BY id DESC LIMIT 1"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+
+		def decisionTree = null
+		def list = null
+		while(result.next()){
+			decisionTree = result.getString('decision_tree')
+			list = new JsonSlurper().parseText(decisionTree )
+		}
+		def maintenanceSuggestion = []
+		def costs = []
+		def pciBoundary = []
+		def boundary = null
+		list.each{
+			def res = it.getAt('query')
+			boundary = res.findAll(/\d{1,3}(?:\.\d{1,2})?/)
+			pciBoundary.add(boundary)
+			maintenanceSuggestion.add(it.getAt('ms'))
+			costs.add(it.getAt('uc'))
+		}
+
+		def map = [maintenanceSuggestion, pciBoundary, costs].transpose()
+		def val = null
+		int min = 0
+		int max = 0
+		def item = null
+		def cost = 0
+		def array = []
+		for(int i = 0; i < map.size(); i++) {
+			item = map[i]
+			val = item[1]
+			min = Integer.parseInt(val[0])
+			max = Integer.parseInt(val[1])
+			if(pci > min && pci <= max) {
+				array.add(item[0])
+				array.add(item[1])
+				array.add(item[2])
+			}
+		}
+		return array
+		closeConnection()
+	}
+	
 }

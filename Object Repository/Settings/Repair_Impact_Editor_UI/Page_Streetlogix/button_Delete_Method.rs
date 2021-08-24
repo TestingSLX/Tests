@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>label_Select surface type</name>
+   <name>button_Delete_Method</name>
    <tag></tag>
-   <elementGuidId>928e2797-ece6-44e6-91e1-a6b3ebbea95c</elementGuidId>
+   <elementGuidId>77e443e9-1fc2-4a65-a78f-162704acc498</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div[2]/label</value>
+         <value>(//button[@type='button'])[20]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>li.MuiButtonBase-root-460.MuiListItem-root-660.MuiMenuItem-root-657.Mui-selected.MuiMenuItem-gutters-658.MuiListItem-gutters-665.MuiListItem-button-666.Mui-selected > button.MuiButtonBase-root-460.MuiIconButton-root-668.MuiIconButton-sizeSmall-674</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,76 +21,83 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>label</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiFormLabel-root-401 MuiInputLabel-root-393 makeStyles-textLabel-390 MuiInputLabel-animated-398</value>
+      <value>MuiButtonBase-root-460 MuiIconButton-root-668 MuiIconButton-sizeSmall-674</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>type</name>
       <type>Main</type>
-      <value>Select surface type</value>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>delete</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd cbDJXF visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-387 MuiBox-root-388&quot;]/div[@class=&quot;MuiBox-root-387 MuiBox-root-389&quot;]/div[@class=&quot;sc-carFqZ eDhcqS&quot;]/label[@class=&quot;MuiFormLabel-root-401 MuiInputLabel-root-393 makeStyles-textLabel-390 MuiInputLabel-animated-398&quot;]</value>
+      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-625 MuiMenu-paper-505 MuiPopover-paper-508 MuiPaper-elevation8-636 MuiPaper-rounded-626&quot;]/ul[@class=&quot;MuiList-root-653 MuiMenu-list-506 MuiList-padding-654&quot;]/li[@class=&quot;MuiButtonBase-root-460 MuiListItem-root-660 MuiMenuItem-root-657 Mui-selected MuiMenuItem-gutters-658 MuiListItem-gutters-665 MuiListItem-button-666 Mui-selected&quot;]/button[@class=&quot;MuiButtonBase-root-460 MuiIconButton-root-668 MuiIconButton-sizeSmall-674&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@type='button'])[20]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div[2]/label</value>
+      <value>//div[@id='menu-']/div[3]/ul/li[6]/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pavement Maintenance'])[2]/following::label[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='T'])[2]//button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select layer'])[1]/following::label[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Defer 1'])[1]/following::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Asphalt'])[1]/preceding::label[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Maintenance Suggestion'])[1]/preceding::label[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Select surface type']/parent::*</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add a new method'])[1]/preceding::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/label</value>
+      <value>//li[6]/button</value>
    </webElementXpaths>
 </WebElementEntity>

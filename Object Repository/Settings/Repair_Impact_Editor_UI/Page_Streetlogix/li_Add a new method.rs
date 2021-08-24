@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Setting</name>
+   <name>li_Add a new method</name>
    <tag></tag>
-   <elementGuidId>90d84813-b4a7-493c-ad4f-f85d60691fed</elementGuidId>
+   <elementGuidId>de0f51dd-ba44-43b2-8217-60f95986429a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div/div[7]/div</value>
+         <value>//div[@id='menu-']/div[3]/ul/li[6]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -21,62 +21,90 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
+      <value>li</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>sc-kEqXSa goSxze</value>
+      <value>MuiButtonBase-root-460 MuiListItem-root-645 MuiMenuItem-root-642 MuiMenuItem-gutters-643 MuiListItem-gutters-650 MuiListItem-button-651</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>option</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-disabled</name>
+      <type>Main</type>
+      <value>false</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-value</name>
+      <type>Main</type>
+      <value>addnew</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Setting</value>
+      <value>Add a new method</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-bqGGPW grWgNt&quot;]/div[1]/div[@class=&quot;sc-iqAclL giqiai group&quot;]/div[@class=&quot;sc-kEqXSa goSxze&quot;]</value>
+      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-610 MuiMenu-paper-505 MuiPopover-paper-508 MuiPaper-elevation8-621 MuiPaper-rounded-611&quot;]/ul[@class=&quot;MuiList-root-638 MuiMenu-list-506 MuiList-padding-639&quot;]/li[@class=&quot;MuiButtonBase-root-460 MuiListItem-root-645 MuiMenuItem-root-642 MuiMenuItem-gutters-643 MuiListItem-gutters-650 MuiListItem-button-651&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div[3]/div/div[2]/div/div[7]/div</value>
+      <value>//div[@id='menu-']/div[3]/ul/li[6]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Management Section Editor'])[1]/following::div[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Defer 1'])[1]/following::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Symbology Editor'])[1]/following::div[5]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Extensive Patching'])[1]/following::li[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Decision Tree Editor'])[1]/preceding::div[4]</value>
+      <value>//*/text()[normalize-space(.)='Add a new method']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[7]/div</value>
+      <value>//div[3]/ul/li[6]</value>
    </webElementXpaths>
 </WebElementEntity>
