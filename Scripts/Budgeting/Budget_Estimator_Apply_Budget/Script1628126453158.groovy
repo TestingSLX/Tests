@@ -111,14 +111,14 @@ String averageConditionIndex = WebUI.getText(findTestObject('Object Repository/B
 String conditionIndexChange = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/td_-0.01'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/span_Chart'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/h3_from budget estimator'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_Year'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_1'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_others'))
+//
+//WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/h3_from budget estimator'))
+//
+//WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_Year'))
+//
+//WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_1'))
+//
+//WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_others'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
 

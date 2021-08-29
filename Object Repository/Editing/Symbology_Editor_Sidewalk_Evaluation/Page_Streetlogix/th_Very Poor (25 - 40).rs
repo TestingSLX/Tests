@@ -6,12 +6,15 @@
    <elementGuidId>1f17c6ad-8bbf-483a-a010-817ed779a24a</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Very Poor (25 - 40)' or . = 'Very Poor (25 - 40)')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div[2]/table/tbody/tr[3]/th</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

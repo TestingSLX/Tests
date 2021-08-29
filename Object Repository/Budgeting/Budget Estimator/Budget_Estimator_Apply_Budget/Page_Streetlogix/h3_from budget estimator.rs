@@ -6,25 +6,29 @@
    <elementGuidId>fac1ba4a-36f9-4c6f-ae42-26653345ba81</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>h3.esri-widget__heading.esri-legend__service-label</value>
+         <key>BASIC</key>
+         <value>id(&quot;17b13e65a07-widget-1_controls_content&quot;)/div[@class=&quot;esri-legend esri-widget esri-widget--panel&quot;]/div[1]/div[@class=&quot;esri-legend__service&quot;]/h3[@class=&quot;esri-widget__heading esri-legend__service-label&quot;][count(. | //h3[@class = 'esri-widget__heading esri-legend__service-label' and (text() = 'from budget estimator' or . = 'from budget estimator')]) = count(//h3[@class = 'esri-widget__heading esri-legend__service-label' and (text() = 'from budget estimator' or . = 'from budget estimator')])]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>/html/body/div[1]/div[3]/div[2]/div[1]/div/div[1]/div[3]/div[1]/div[2]/div[1]/div[2]/div[2]/div/div/div/h3</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h3.esri-widget__heading.esri-legend__service-label</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>h3</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
@@ -38,7 +42,7 @@
       <value>from budget estimator</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

@@ -411,7 +411,7 @@ public class Database_Keywords {
 		return pciBoundary
 		closeConnection()
 	}
-	
+
 	@Keyword
 	def repairImpactAttributeEditorValidation(def pci) {
 		openConnection()
@@ -459,5 +459,4 @@ public class Database_Keywords {
 		return array
 		closeConnection()
 	}
-	
 }

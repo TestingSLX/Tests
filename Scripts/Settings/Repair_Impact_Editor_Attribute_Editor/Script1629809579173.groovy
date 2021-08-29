@@ -98,10 +98,14 @@ def index = null
 
 String updatedPCI = null
 
-for(i = 0; i < 5; i++) {
-	if(pciBoundaries[i].toString() == repairImpactAutoUpdate[1].toString()) {
+def min, max, val = null
+for(i = 0; i < 4 ; i++) {
+	val = pciBoundaries[i]
+	min = val[0] as Integer
+	max = val[1] as Integer
+	if(initialPCI.toInteger() > min && initialPCI.toInteger() <= max) {
 		index = i
-	} 
+	}
 }
 
 String initialMaintenanceSuggestion = WebUI.getAttribute(findTestObject('Object Repository/Settings/Repair_Impact_Editor_Validation/Page_Streetlogix/input__Maintenance_Suggestion'), 'value')
@@ -186,8 +190,12 @@ String newPCI2 = WebUI.getAttribute(findTestObject('Object Repository/Settings/R
 
 def index1 = null
 
-for(i = 0; i < 5; i++) {
-	if(pciBoundaries1[i].toString() == repairImpactAutoUpdate[1].toString()) {
+def min1, max1, val1 = null
+for(i = 0; i < 4 ; i++) {
+	val1 = pciBoundaries[i]
+	min1 = val1[0] as Integer
+	max1 = val1[1] as Integer
+	if(initialPCI.toInteger() > min1 && initialPCI.toInteger() <= max1) {
 		index1 = i
 	}
 }
@@ -262,8 +270,12 @@ String newPCI3 = WebUI.getAttribute(findTestObject('Object Repository/Settings/R
 
 def index2 = null
 
-for(i = 0; i < 5; i++) {
-	if(pciBoundaries2[i].toString() == repairImpactAutoUpdate[1].toString()) {
+def min2, max2, val2 = null
+for(i = 0; i < 4 ; i++) {
+	val2 = pciBoundaries[i]
+	min2 = val2[0] as Integer
+	max2 = val2[1] as Integer
+	if(initialPCI.toInteger() > min2 && initialPCI.toInteger() <= max2) {
 		index2 = i
 	}
 }
@@ -338,8 +350,12 @@ String newPCI4 = WebUI.getAttribute(findTestObject('Object Repository/Settings/R
 
 def index3 = null
 
-for(i = 0; i < 5; i++) {
-	if(pciBoundaries3[i].toString() == repairImpactAutoUpdate[1].toString()) {
+def min3, max3, val3 = null
+for(i = 0; i < 4 ; i++) {
+	val3 = pciBoundaries[i]
+	min3 = val3[0] as Integer
+	max3 = val3[1] as Integer
+	if(initialPCI.toInteger() > min3 && initialPCI.toInteger() <= max3) {
 		index3 = i
 	}
 }

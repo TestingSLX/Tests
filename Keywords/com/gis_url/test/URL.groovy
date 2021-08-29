@@ -24,7 +24,9 @@ public class URL {
 
 	@Keyword
 	public void redirectURL() {
-		//		WebUI.openBrowser("http://streetlogix-gis-react-app.herokuapp.com/?config=9c338e84e55940e4ba48a09e9f5aef32&url=https://streetlogix-dev-server.herokuapp.com&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAyNiwibmFtZSI6IlNocnV0aWthIFNhd2FudCIsImV4cCI6MTYzMTkxMTIyMSwiaWF0IjoxNjI5MzE5MjIxfQ.oTrSdCjLD00x4CRmvTyAJEZUUPNvvmLx-KCZG1B1Nv4")
-		WebUI.openBrowser("http://localhost:8081/?config=6477e9530cb64cafb07cc153da28ac98&url=https://streetlogix-dev-server.herokuapp.com&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAyNiwibmFtZSI6IlNocnV0aWthIFNhd2FudCIsImV4cCI6MTYzMjE2Njk5OSwiaWF0IjoxNjI5NTc0OTk5fQ.pt4-3bF7kp8Hnoi6tJAzb46mtZg4-XqQCnTKjT37M3E")
+				WebUI.openBrowser("http://streetlogix-gis-react-app.herokuapp.com/?config=6477e9530cb64cafb07cc153da28ac98&url=https://streetlogix-dev-server.herokuapp.com&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAyNiwibmFtZSI6IlNocnV0aWthIFNhd2FudCIsImV4cCI6MTYzMjQ5MTAzNCwiaWF0IjoxNjI5ODk5MDM0fQ.rCDhhFBjYlYE-LpoWUf1kn3kxPhwCMx-lywMDKapxdg")
+//		        WebUI.openBrowser("http://localhost:8081/?config=6477e9530cb64cafb07cc153da28ac98&url=https://streetlogix-dev-server.herokuapp.com&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAyNiwibmFtZSI6IlNocnV0aWthIFNhd2FudCIsImV4cCI6MTYzMjQ5MTAzNCwiaWF0IjoxNjI5ODk5MDM0fQ.rCDhhFBjYlYE-LpoWUf1kn3kxPhwCMx-lywMDKapxdg")
+		//		WebUI.openBrowser("http://localhost:8081/?config=d400dc6a3750429893266a80d148a93e&url=https://slx4-dev-server.herokuapp.com&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAzOSwibmFtZSI6IlRlc3QgQWRtaW4iLCJleHAiOjE2MzI0ODc0NzcsImlhdCI6MTYyOTg5NTQ3N30.bKx2jYXprDu_iykwH6EcfmnAVD6iPOiYTInxFBOUn0s")
+		//		WebUI.openBrowser("http://localhost:8081/?config=d400dc6a3750429893266a80d148a93e&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAzOSwibmFtZSI6IlRlc3QgQWRtaW4iLCJleHAiOjE2MzI0ODc0NzcsImlhdCI6MTYyOTg5NTQ3N30.bKx2jYXprDu_iykwH6EcfmnAVD6iPOiYTInxFBOUn0s&url=https://slx4-dev-server.herokuapp.com")
 	}
 }

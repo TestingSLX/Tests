@@ -98,8 +98,12 @@ def index = null
 
 String updatedPCI = null
 
-for(i = 0; i < 5; i++) {
-	if(pciBoundaries[i].toString() == repairImpactAutoUpdate[1].toString()) {
+def min, max, val = null
+for(i = 0; i < 4 ; i++) {
+	val = pciBoundaries[i]
+	min = val[0] as Integer
+	max = val[1] as Integer
+	if(initialPCI.toInteger() > min && initialPCI.toInteger() <= max) {
 		index = i
 	}
 }
@@ -183,23 +187,24 @@ String newPCI2 = WebUI.getAttribute(findTestObject('Object Repository/Settings/R
 def repairImpactAutoUpdate1 = CustomKeywords.'com.database_keywords.test.Database_Keywords.repairImpactAttributeEditorValidation'(newPCI1.toInteger())
 
 def index1 = null
-
-for(i = 0; i < 5; i++) {
-	if(pciBoundaries1[i].toString() == repairImpactAutoUpdate1[1].toString()) {
+def min1, max1, val1 = null
+for(i = 0; i < 4 ; i++) {
+	val1 = pciBoundaries[i]
+	min1 = val1[0] as Integer
+	max1 = val1[1] as Integer
+	if(newPCI1.toInteger() > min1 && newPCI1.toInteger() <= max1) {
 		index1 = i
 	}
 }
-
 def calculatePCI2 = null
 
 calculatePCI2 = newPCI1.toInteger() + impactValues1[index1]
-println(calculatePCI2)
-println(newPCI2)
+
 if(calculatePCI2.toInteger() > 100) {
 	newPCI2.toInteger() == 100
 	println('PCI updated and maximised to 100')
 } else if (calculatePCI2.toInteger() < 100) {
-	if(newPCI2.toInteger() == initialPCI.toInteger() + impactValues1[index1]) {
+	if(newPCI2.toInteger() == newPCI1.toInteger() + impactValues1[index1]) {
 		println('PCI autoupdated')
 	} else {
 		throw new Exception('PCI is not autoupdated')
@@ -211,7 +216,7 @@ String newMaintenanceSuggestion2 = WebUI.getAttribute(findTestObject('Object Rep
 def updatedRepairImpactAutoUpdate2 = CustomKeywords.'com.database_keywords.test.Database_Keywords.repairImpactAttributeEditorValidation'(newPCI2.toInteger())
 
 if(updatedRepairImpactAutoUpdate2 == []) {
-	if(newMaintenanceSuggestion2 == initialMaintenanceSuggestion) {
+	if(newMaintenanceSuggestion2 == newMaintenanceSuggestion1) {
 		println('Maintenance is and should be same')
 	} else {
 		throw new Exception('Maintenance suggestion should be same but it is updated')
@@ -229,7 +234,7 @@ if(updatedRepairImpactAutoUpdate2 == []) {
 String newEstimatedCost2 = WebUI.getAttribute(findTestObject('Object Repository/Settings/Repair_Impact_Editor_Validation/Page_Streetlogix/input__estimated_cost'), 'value')
 
 if(updatedRepairImpactAutoUpdate2 == []) {
-	if(newEstimatedCost2 == initialEstimatedCost) {
+	if(newEstimatedCost2 == newEstimatedCost1) {
 		println('Estimated cost is and should be same')
 	} else {
 		throw new Exception('Estimated cost should be same but it is updated')
@@ -247,5 +252,19 @@ if(updatedRepairImpactAutoUpdate2 == []) {
 	WebUI.verifyMatch(estimatedCost2.toString(), finalEstimatedCost2.toString(), false)
 	println('Estimated Cost is auto updated')
 }
+
+//println(initialPCI)
+//println(initialMaintenanceSuggestion)
+//println(initialEstimatedCost)
+//println(newPCI1)
+//println(newMaintenanceSuggestion1)
+//println(newEstimatedCost1)
+//println(newPCI2)
+//println(newMaintenanceSuggestion2)
+//println(newEstimatedCost2)
+//println(updatedRepairImpactAutoUpdate1)
+//println(updatedRepairImpactAutoUpdate2)
+//println(repairImpactAutoUpdate1)
+//println(repairImpactAutoUpdate)
 
 
