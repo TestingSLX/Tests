@@ -1,11 +1,17 @@
 package com.database_keywords.test
 
+import java.awt.Robot
+import java.awt.Toolkit
+import java.awt.datatransfer.StringSelection
+import java.awt.event.KeyEvent
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
 import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import groovy.json.JsonSlurper
 
@@ -459,7 +465,7 @@ public class Database_Keywords {
 		return array
 		closeConnection()
 	}
-	
+
 	@Keyword
 	def getGroups() {
 		openConnection()
@@ -469,12 +475,12 @@ public class Database_Keywords {
 		ResultSet result = stm.executeQuery(queryString)
 		def forms = []
 		while(result.next()) {
-				forms.add(result.getString('group_name'))
+			forms.add(result.getString('group_name'))
 		}
 		return forms
 		closeConnection()
 	}
-	
+
 	@Keyword
 	def getForms(def formName) {
 		openConnection()
@@ -484,30 +490,65 @@ public class Database_Keywords {
 		ResultSet result2 = stm2.executeQuery(queryString2)
 		def groupid = 0
 		while(result2.next()) {
-				groupid = result2.getString('id')
+			groupid = result2.getString('id')
 		}
-		
+
 		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
 		def queryString = "SELECT * FROM sde.group_forms WHERE group_id =" + groupid
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
 		def formid = []
 		while(result.next()) {
-				formid.add(result.getString('form_id'))
+			formid.add(result.getString('form_id'))
 		}
-		
+
 		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
 		def formname = []
 		for(int i = 0; i < formid.size(); i++) {
 			def queryString1 = ("SELECT * FROM sde.work_order_form_library WHERE id =" + formid[i])
 			Statement stm1 = c.createStatement()
 			ResultSet result1 = stm1.executeQuery(queryString1)
-		
+
 			while(result1.next()) {
-					formname.add(result1.getString('form_name'))
+				formname.add(result1.getString('form_name'))
 			}
 		}
 		return formname
 		closeConnection()
+	}
+
+	@Keyword
+	def getAllForms() {
+		openConnection()
+		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
+		def queryString = "SELECT * FROM sde.work_order_form_library WHERE url_id = 96"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		def forms = []
+		while(result.next()) {
+			forms.add(result.getString('form_name'))
+		}
+		return forms
+		closeConnection()
+	}
+
+	@Keyword
+	def uploadFile (TestObject to, String filePath) {
+		WebUI.click(to)
+		StringSelection ss = new StringSelection(filePath);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+	}
+
+	@Keyword
+	def verifyImageUploaded() {
 	}
 }

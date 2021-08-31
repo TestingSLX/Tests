@@ -31,6 +31,23 @@ WebUI.click(findTestObject('Work_Orders/Verify_Forms_In_Groups/Page_Streetlogix/
 
 WebUI.click(findTestObject('Object Repository/Work_Orders/Verify_Forms_In_Groups/Page_Streetlogix/li_All Groups'))
 
+List<WebElement> list = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Work_Orders/Verify_Forms_In_Groups/Page_Streetlogix/ul_asphalt costAtestATest1Bridge Maintenanc_41699c'),
+	30)
+
+List<WebElement> allFormsList_1 = new ArrayList()
+
+for (WebElement el : list) {
+	allFormsList_1.add(el.getText())
+}
+
+def allFormsList_2 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAllForms'()
+
+if (allFormsList_1.containsAll(allFormsList_2)) {
+	println('All Forms are displayed')
+} else {
+	throw new Exception('Wrong forms displayed')
+}
+
 WebUI.click(findTestObject('Object Repository/Work_Orders/Verify_Forms_In_Groups/Page_Streetlogix/p_Filter by group'))
 
 WebUI.click(findTestObject('Object Repository/Work_Orders/Verify_Forms_In_Groups/Page_Streetlogix/p_Filter by name'))
@@ -228,4 +245,19 @@ WebUI.click(findTestObject('Work_Orders/Verify_Forms_In_Groups/Page_Streetlogix/
 
 WebUI.click(findTestObject('Object Repository/Work_Orders/Verify_Forms_In_Groups/Page_Streetlogix/li_All Groups'))
 
+List<WebElement> list9 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Work_Orders/Verify_Forms_In_Groups/Page_Streetlogix/ul_asphalt costAtestATest1Bridge Maintenanc_41699c'),
+	30)
 
+List<WebElement> allForms9List1 = new ArrayList()
+
+for (WebElement el9 : list9) {
+	allForms9List1.add(el9.getText())
+}
+
+def allForms9List2 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAllForms'()
+
+if (allForms9List1.containsAll(allForms9List2)) {
+	println('All Forms are displayed')
+} else {
+	throw new Exception('Wrong forms displayed')
+}

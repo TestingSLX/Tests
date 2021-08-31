@@ -3,18 +3,23 @@ import java.sql.DriverManager
 import java.sql.ResultSet
 import java.sql.Statement
 
-import groovy.json.JsonSlurper
-
+import org.openqa.selenium.WebElement
 
 Connection c = null;
 Statement stmt = null;
 
 c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
-def queryString = "SELECT * FROM sde.work_order_groups WHERE url_id = 96"
+def queryString = "SELECT * FROM sde.work_order_loc ORDER BY objectid DESC LIMIT 1"
 Statement stm = c.createStatement()
 ResultSet result = stm.executeQuery(queryString)
-def forms = []
+def items = []
 while(result.next()) {
-		forms.add(result.getString('group_name'))
+		items.add(result.getString('videos'))
 }
-println(forms)
+def val = items[0]
+println(val)
+if(val == []) {
+	println("Not uploaded")
+} else if(!items.isEmpty()) {
+	println("Uploaded")
+}
