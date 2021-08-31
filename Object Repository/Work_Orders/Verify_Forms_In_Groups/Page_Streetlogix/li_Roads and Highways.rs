@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_Asphalt</name>
+   <name>li_Roads and Highways</name>
    <tag></tag>
-   <elementGuidId>d1c5912a-85ab-45ab-9d08-cab97f398ead</elementGuidId>
+   <elementGuidId>3d22060d-29dc-4dc1-8d38-f09068a106e7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='menu-']/div[3]/ul/li</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//li[(text() = 'Asphalt' or . = 'Asphalt')]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
-         <value>li.MuiButtonBase-root-460.MuiListItem-root-602.MuiMenuItem-root-599.Mui-selected.MuiMenuItem-gutters-600.MuiListItem-gutters-607.MuiListItem-button-608.Mui-selected.Mui-focusVisible.Mui-focusVisible</value>
+         <value>li.MuiButtonBase-root-519.MuiListItem-root-511.MuiMenuItem-root-662.MuiMenuItem-gutters-663.MuiListItem-gutters-516.MuiListItem-button-517</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -32,14 +28,14 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root-460 MuiListItem-root-602 MuiMenuItem-root-599 Mui-selected MuiMenuItem-gutters-600 MuiListItem-gutters-607 MuiListItem-button-608 Mui-selected Mui-focusVisible Mui-focusVisible</value>
+      <value>MuiButtonBase-root-519 MuiListItem-root-511 MuiMenuItem-root-662 MuiMenuItem-gutters-663 MuiListItem-gutters-516 MuiListItem-button-517</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tabindex</name>
       <type>Main</type>
-      <value>0</value>
+      <value>-1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -58,30 +54,23 @@
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>aria-selected</name>
-      <type>Main</type>
-      <value>true</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>data-value</name>
       <type>Main</type>
-      <value>Asphalt</value>
+      <value>33</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Asphalt</value>
+      <value>Roads and Highways</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-567 MuiMenu-paper-505 MuiPopover-paper-508 MuiPaper-elevation8-578 MuiPaper-rounded-568&quot;]/ul[@class=&quot;MuiList-root-595 MuiMenu-list-506 MuiList-padding-596&quot;]/li[@class=&quot;MuiButtonBase-root-460 MuiListItem-root-602 MuiMenuItem-root-599 Mui-selected MuiMenuItem-gutters-600 MuiListItem-gutters-607 MuiListItem-button-608 Mui-selected Mui-focusVisible Mui-focusVisible&quot;]</value>
+      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-634 MuiMenu-paper-585 MuiPopover-paper-588 MuiPaper-elevation8-645 MuiPaper-rounded-635&quot;]/ul[@class=&quot;MuiList-root-490 MuiMenu-list-586 MuiList-padding-491&quot;]/li[@class=&quot;MuiButtonBase-root-519 MuiListItem-root-511 MuiMenuItem-root-662 MuiMenuItem-gutters-663 MuiListItem-gutters-516 MuiListItem-button-517&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -95,7 +84,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[2]/following::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,6 +92,20 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[2]/following::li[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Freshcode'])[1]/preceding::li[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='One more group'])[1]/preceding::li[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
