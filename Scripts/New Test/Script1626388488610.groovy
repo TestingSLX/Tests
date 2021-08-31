@@ -16,10 +16,10 @@ def items = []
 while(result.next()) {
 		items.add(result.getString('videos'))
 }
-def val = items[0]
-println(val)
-if(val == []) {
+
+println(items[0].toString())
+if(items[0].toString() == "[]") {
 	println("Not uploaded")
-} else if(!items.isEmpty()) {
+} else if(items[0].toString() != "[]") {
 	println("Uploaded")
 }
