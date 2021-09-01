@@ -78,9 +78,9 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_
 
 WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/td_1_estimator'))
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/td_21,082,298'))
+String budgetEstimated = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/td_21,082,298'))
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/td_67'))
+String budgetTCI = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/td_67'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/span_Apply'))
 
@@ -173,4 +173,22 @@ WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget Estim
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/span_Chart'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/span_Discard'))
+
+int budgetDifference = 100000
+
+if(Math.abs(budgetEstimated.replaceAll(",", "").toInteger() - cost.replaceAll(",", "").toInteger()) < budgetDifference) {
+	println('Results from Budget Planner and Budgte Estimator are nearly same')
+} else {
+	throw new Exception('Budget Planner and Budget Estimator results have a huge difference')
+}
+
+println(Math.abs(budgetTCI.toDouble() - averageConditionIndex.toDouble()))
+
+if(Math.abs(budgetTCI.toDouble() - averageConditionIndex.toDouble()) < conditionIndexChange.toDouble()) {
+	println('TCI is same for Budget Planner and Estimator')
+} else {
+	throw new Exception('TCI is not same for Budget Planner and Estimator')
+}
+
+
 
