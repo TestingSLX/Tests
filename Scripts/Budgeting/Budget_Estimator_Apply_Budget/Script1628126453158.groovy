@@ -176,15 +176,13 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_
 
 int budgetDifference = 100000
 
-if(Math.abs(budgetEstimated.replaceAll(",", "").toInteger() - cost.replaceAll(",", "").toInteger()) < budgetDifference) {
+if(Math.abs(budgetEstimated.replaceAll(",", "").toInteger() - cost.replaceAll(",", "").toInteger()) <= budgetDifference) {
 	println('Results from Budget Planner and Budgte Estimator are nearly same')
 } else {
 	throw new Exception('Budget Planner and Budget Estimator results have a huge difference')
 }
 
-println(Math.abs(budgetTCI.toDouble() - averageConditionIndex.toDouble()))
-
-if(Math.abs(budgetTCI.toDouble() - averageConditionIndex.toDouble()) < conditionIndexChange.toDouble()) {
+if(doubleCI.toDouble() - averageConditionIndex.toDouble() <= Math.abs(conditionIndexChange.toDouble())) {
 	println('TCI is same for Budget Planner and Estimator')
 } else {
 	throw new Exception('TCI is not same for Budget Planner and Estimator')

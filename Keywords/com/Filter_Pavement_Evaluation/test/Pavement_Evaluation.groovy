@@ -633,7 +633,7 @@ public class Pavement_Evaluation {
 
 		WebUI.sendKeys(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
 
-		WebUI.setText(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), "75")
+		WebUI.setText(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), "55")
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
 
@@ -647,7 +647,7 @@ public class Pavement_Evaluation {
 
 		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-sorter_PCI'), "PCI")
 
-		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-cell-content_PCI'), "75")
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-cell-content_PCI'), "55")
 
 		WebUI.click(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_Select_Filter'))
 
@@ -1042,26 +1042,26 @@ public class Pavement_Evaluation {
 		}
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/li_is'))
-
-		WebUI.sendKeys(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
-
-		WebUI.sendKeys(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
-
-		WebUI.setText(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), "74.5177305")
-
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
-
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/label_Refresh data'))
-
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
-
-		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement_Maintenance1'))
-
-		WebUI.delay(5)
-
-		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-sorter_Repair Priority'), "Repair Priority")
-
-		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-cell-content_Repair Priority'), "74.5177305")
+//
+//		WebUI.sendKeys(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), Keys.chord(Keys.CONTROL, 'a'))
+//
+//		WebUI.sendKeys(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
+//
+//		WebUI.setText(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), "74.5177305")
+//
+//		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+//
+//		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/label_Refresh data'))
+//
+//		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+//
+//		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement_Maintenance1'))
+//
+//		WebUI.delay(5)
+//
+//		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-sorter_Repair Priority'), "Repair Priority")
+//
+//		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-cell-content_Repair Priority'), "74.5177305")
 
 		WebUI.click(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_Select_Filter'))
 
@@ -1115,7 +1115,7 @@ public class Pavement_Evaluation {
 
 		WebUI.sendKeys(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
 
-		WebUI.setText(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), "1630")
+		WebUI.setText(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), "1177")
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
 
@@ -1129,7 +1129,7 @@ public class Pavement_Evaluation {
 
 		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-sorter_Area SY'), "Area SY")
 
-		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-cell-content_Area'), "1630")
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-cell-content_Area'), "1177")
 
 		WebUI.click(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_Select_Filter'))
 
@@ -1387,7 +1387,7 @@ public class Pavement_Evaluation {
 
 		WebUI.sendKeys(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
 
-		WebUI.setText(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), "Demo Admin")
+		WebUI.setText(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), "Shrutika Sawant")
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
 
@@ -1401,7 +1401,7 @@ public class Pavement_Evaluation {
 
 		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-sorter_Editor Name'), "Editor Name")
 
-		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-cell-content_Editor Name'), "Demo Admin")
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-cell-content_Editor Name'), "Shrutika Sawant")
 
 		WebUI.click(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_Select_Field_Name'))
 
@@ -1435,7 +1435,7 @@ public class Pavement_Evaluation {
 
 		WebUI.sendKeys(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), Keys.chord(Keys.BACK_SPACE))
 
-		WebUI.setText(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), "971")
+		WebUI.setText(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input__input_value'), "1026")
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
 
@@ -1449,7 +1449,7 @@ public class Pavement_Evaluation {
 
 		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-sorter_Editor Id'), "Editor Id")
 
-		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-cell-content_Editor Id'), "971")
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-cell-content_Editor Id'), "1026")
 
 		WebUI.click(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_Select_Filter'))
 
@@ -1499,8 +1499,38 @@ public class Pavement_Evaluation {
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/li_is'))
 
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_for is on'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/li_the date_for_ison'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input_is on_date1'))
+		
+		WebUI.sendKeys(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input_is on_date1'), Keys.chord(Keys.CONTROL, 'a'))
+		
+		WebUI.sendKeys(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input_is on_date1'), Keys.chord(Keys.BACK_SPACE))
+			
+		WebUI.setText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/input_is on_date1'), '08/29/2021')
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Calendar'))
+		
+		WebUI.clickOffset(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/dev_Offset'), 1, 1)
+				
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/label_Refresh data'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement Maintenance (Features 1,462, Selected 0)_17ac62ce544-widget-176-button'))
+		
+		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/button_Pavement_Maintenance1'))
+		
+		WebUI.delay(5)
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-sorter_Last Edit'), "Last Edit")
+		
+		WebUI.verifyElementText(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/vaadin-grid-cell-content_Last Edit'), "8/29/2021, 2:02 AM")
+		
 		WebUI.click(findTestObject('Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_Select_Filter'))
-
+		
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/li_is between_date'))
 
 		WebUI.click(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_Date1'))
