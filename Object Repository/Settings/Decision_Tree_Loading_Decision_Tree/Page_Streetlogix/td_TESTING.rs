@@ -7,17 +7,20 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Shrutika Sawant'])[51]/following::td[5]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Shrutika Sawant'])[51]/following::td[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//td[@scope = 'row' and (text() = 'TESTING' or . = 'TESTING')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -31,7 +34,7 @@
       <value>MuiTableCell-root-1792 MuiTableCell-sizeSmall-1796</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>scope</name>
       <type>Main</type>

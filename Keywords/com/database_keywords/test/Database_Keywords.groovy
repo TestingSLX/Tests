@@ -539,16 +539,57 @@ public class Database_Keywords {
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.delay(2000)
 		robot.keyRelease(KeyEvent.VK_ENTER);
+		robot.delay(2000)
 		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.delay(2000)
 		robot.keyPress(KeyEvent.VK_V);
+		robot.delay(2000)
 		robot.keyRelease(KeyEvent.VK_V);
+		robot.delay(2000)
 		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.delay(2000)
 		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.delay(2000)
 		robot.keyRelease(KeyEvent.VK_ENTER);
+		robot.delay(2000)
 	}
 
 	@Keyword
-	def verifyImageUploaded() {
+	def getWorkOrdersCount() {
+		openConnection()
+		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
+		def queryString = "SELECT * FROM sde.work_order_loc"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		
+		def count = 0
+		while(result.next()) {
+			count += 1
+		}
+		return count
+		closeConnection()
+	}
+	
+	@Keyword
+	def verifyAttachmentsUploaded() {
+		openConnection()
+		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
+		def queryString = "SELECT * FROM sde.work_order_loc ORDER BY objectid DESC LIMIT 1"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		def items = []
+		while(result.next()) {
+				items.add(result.getString('image'))
+		}
+		def status = ""
+		if(items[0].toString() == "[]" || items[0].toString() == "null") {
+			status = 'Not Uploaded'
+		} else if(items[0].toString() != "[]" || items[0].toString() != "null") {
+			status = 'Uploaded'
+		}
+		return status
+		closeConnection()
 	}
 }

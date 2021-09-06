@@ -19,6 +19,8 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'com.gis_url.test.URL.redirectURL'()
 
+def countBefore = CustomKeywords.'com.database_keywords.test.Database_Keywords.getWorkOrdersCount'()
+
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Work Orders'))
 
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Roads and Highways'))
@@ -85,11 +87,13 @@ WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/div_
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/li_In Progress'))
 
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/p_Attachments'))
-//
-CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'), 'C:\\Users\\shrut\\Downloads\\Streetlogix_Upload_Docs\\Charts.png')
-//
-//CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'), 'C:\\Users\\shrut\\Downloads\\Streetlogix_Upload_Docs\\Charts.jpeg')
 
+//
+CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'), 
+    'Charts.jpeg')
+
+//C:\\Users\\shrut\\AppData\\Local\\Postman\\Postman.exe\\Charts.png
+//CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'), 'C:\\Users\\shrut\\Downloads\\Streetlogix_Upload_Docs\\Charts.jpeg')
 //CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'), 'C:\\Users\\shrut\\Downloads\\Streetlogix_Upload_Docs\\BudgetPlannerResult.docx')
 //
 //CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'), 'C:\\Users\\shrut\\Downloads\\Streetlogix_Upload_Docs\\BudgetPlannerReport.pdf')
@@ -99,12 +103,14 @@ CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTes
 //CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'), 'C:\\Users\\shrut\\Downloads\\Streetlogix_Upload_Docs\\screencapture.webm')
 //
 //CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'), 'C:\\Users\\shrut\\Downloads\\Streetlogix_Upload_Docs\\WorkorderData.xlsx')
-
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/p_Repeating'))
 
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/p_Asset'))
 
-WebUI.verifyElementHasAttribute(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/input_Upload_asset'), 'disabled', 0) 
+WebUI.verifyElementHasAttribute(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/input_Upload_asset'), 'disabled', 
+    0)
+
+WebUI.verifyElementText(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/button_Save'), 'SAVE')
 
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/button_Save'))
 
@@ -115,4 +121,19 @@ WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/butt
 WebUI.verifyElementText(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/h1_Work Orders'), 'Work Orders')
 
 WebUI.verifyElementText(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/h6_Select Form'), 'Select Form')
+
+def countAfter = CustomKeywords.'com.database_keywords.test.Database_Keywords.getWorkOrdersCount'()
+
+if(countAfter == countBefore + 1) {
+	println('Work Order Created')
+} else {
+	throw new Exception('Work Order is not Created')
+}
+
+def status = CustomKeywords.'com.database_keywords.test.Database_Keywords.verifyAttachmentsUploaded'()
+
+WebUI.verifyMatch(status, 'Uploaded', false)
+
+
+
 

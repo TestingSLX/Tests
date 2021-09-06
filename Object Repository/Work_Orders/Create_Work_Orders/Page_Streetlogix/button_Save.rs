@@ -10,14 +10,18 @@
          <value>(//button[@type='button'])[16]</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//button[@type = 'button' and (text() = 'Save' or . = 'Save')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>button.MuiButtonBase-root-911.MuiButton-root-1009.MuiButton-text-1011.MuiButton-textPrimary-1012.MuiButton-textSizeLarge-1023.MuiButton-sizeLarge-1029</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
