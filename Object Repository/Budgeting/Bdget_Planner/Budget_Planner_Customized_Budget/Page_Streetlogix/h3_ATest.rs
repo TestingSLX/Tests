@@ -6,18 +6,22 @@
    <elementGuidId>eba8b0a3-10e1-4749-96e1-0468f993f472</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[2]/div[1]/div/div[1]/div[3]/div[1]/div[2]/div[1]/div[2]/div[2]/div/div/div/h3</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>h3.esri-widget__heading.esri-legend__service-label</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[2]/div[1]/div/div[1]/div[3]/div[1]/div[2]/div[1]/div[2]/div[2]/div/div/div/h3</value>
+         <key>BASIC</key>
+         <value>//h3[(text() = 'ATest' or . = 'ATest')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

@@ -17,7 +17,7 @@
          <value>//td[@scope = 'row' and (text() = 'TESTING' or . = 'TESTING')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

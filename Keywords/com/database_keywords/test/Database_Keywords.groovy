@@ -563,7 +563,7 @@ public class Database_Keywords {
 		def queryString = "SELECT * FROM sde.work_order_loc"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
-		
+
 		def count = 0
 		while(result.next()) {
 			count += 1
@@ -571,7 +571,7 @@ public class Database_Keywords {
 		return count
 		closeConnection()
 	}
-	
+
 	@Keyword
 	def verifyAttachmentsUploaded() {
 		openConnection()
@@ -581,7 +581,7 @@ public class Database_Keywords {
 		ResultSet result = stm.executeQuery(queryString)
 		def items = []
 		while(result.next()) {
-				items.add(result.getString('image'))
+			items.add(result.getString('image'))
 		}
 		def status = ""
 		if(items[0].toString() == "[]" || items[0].toString() == "null") {

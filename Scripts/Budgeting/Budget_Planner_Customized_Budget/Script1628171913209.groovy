@@ -104,14 +104,14 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Pla
 WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/button_ATest'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/h3_ATest'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_Year'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_1'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_others'))
+//
+//WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/h3_ATest'))
+//
+//WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_Year'))
+//
+//WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_1'))
+//
+//WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_others'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/span_Discard'))
 
@@ -168,16 +168,16 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Pla
 WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/button_ATest'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/h3_ATest'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_Year'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_1'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_2'))
-
-WebUI.click(findTestObject('Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_others1'))
+//
+//WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/h3_ATest'))
+//
+//WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_Year'))
+//
+//WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_1'))
+//
+//WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_2'))
+//
+//WebUI.click(findTestObject('Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/div_others1'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/span_Discard'))
 

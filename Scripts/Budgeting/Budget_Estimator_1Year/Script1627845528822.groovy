@@ -90,7 +90,7 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Estimator/Page_St
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Estimator/Page_Streetlogix/span_Cancel'))
 
-String targetCI2 = avgPCI.toInteger() - 1
+String targetCI2 = avgPCI.toInteger() - 10
 
 WebUI.setText(findTestObject('Object Repository/Budgeting/Budget_Estimator/Page_Streetlogix/input_Target condition index_MuiInputBase-i_93bbd1'), 
     targetCI2)
