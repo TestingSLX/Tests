@@ -6,12 +6,12 @@
    <elementGuidId>5cbddefb-01fe-44ad-a80d-93a222f8bc06</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='Pavement_Maintenance_6816bh-content']/div/div/nav/div/div/p</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>p.MuiTypography-root-424.MuiListItemText-secondary-506.MuiTypography-body2-425.MuiTypography-colorTextSecondary-450.MuiTypography-displayBlock-453</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Pavement'])[1]/following::p[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

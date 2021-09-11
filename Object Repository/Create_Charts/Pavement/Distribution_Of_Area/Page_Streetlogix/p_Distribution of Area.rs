@@ -6,12 +6,11 @@
    <elementGuidId>081136a4-27fe-401a-91a3-7d0efe509fec</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='Pavement_Maintenance_6816bh-content']/div/div/nav/div[5]/div/p</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Pavement'])[1]/following::p[7]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,16 +6,16 @@
    <elementGuidId>511d2ef6-2134-49c7-bdb2-f7aa351f2407</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>li.MuiButtonBase-root-463.MuiListItem-root-628.MuiMenuItem-root-625.Mui-selected.MuiMenuItem-gutters-626.MuiListItem-gutters-633.MuiListItem-button-634.Mui-selected.Mui-focusVisible.Mui-focusVisible</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>//*[(text() = 'Pavement Maintenance' or . = 'Pavement Maintenance')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='menu-']/div[3]/ul/li</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>li.MuiButtonBase-root-463.MuiListItem-root-628.MuiMenuItem-root-625.Mui-selected.MuiMenuItem-gutters-626.MuiListItem-gutters-633.MuiListItem-button-634.Mui-selected.Mui-focusVisible.Mui-focusVisible</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

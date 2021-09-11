@@ -6,12 +6,12 @@
    <elementGuidId>42cc1340-6a4d-4984-ba61-8487da5cc6a7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Sign'])[1]/following::*[name()='svg'][1]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#Sign_Maintenance_1913bh-header > div.MuiButtonBase-root-452.MuiIconButton-root-483.MuiAccordionSummary-expandIcon-451.MuiIconButton-edgeEnd-485 > span.MuiIconButton-label-490 > svg.MuiSvgIcon-root-491</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Data'])[1]/preceding::*[name()='svg'][1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

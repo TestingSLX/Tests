@@ -8,8 +8,3 @@ import org.openqa.selenium.WebElement
 Connection c = null;
 Statement stmt = null;
 
-
-
-
-
-

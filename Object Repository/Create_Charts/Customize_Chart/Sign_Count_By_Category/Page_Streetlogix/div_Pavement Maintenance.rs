@@ -6,12 +6,12 @@
    <elementGuidId>fc4d58fc-3cdb-42e5-8761-d84c097bf88a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div/div[5]/div[2]/div/div/div/div/div/div/div/div/div</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.MuiSelect-root-560.MuiSelect-select-561.MuiSelect-selectMenu-564.MuiInputBase-input-589.MuiInput-input-577</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Customize Charts'])[1]/following::div[11]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

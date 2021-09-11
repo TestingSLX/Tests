@@ -12,21 +12,21 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>21570157-464f-43bd-908e-eac16fdec8dd</testSuiteGuid>
    <testCaseLink>
-      <guid>bd639fff-26c3-45a0-be0d-8a68a852ed45</guid>
+      <guid>f635a4c3-1dd7-4445-affd-96700b20feb2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Work Orders/Verify_Groups_Forms</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bf25272e-a0f8-43c6-ad8b-c88547e38311</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Work Orders/Create_Work_Orders</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8de7cb25-e0ef-4a09-bf43-d4b030cfecf0</guid>
+      <guid>a0e8f2fe-d75e-43d8-afef-d304912a583c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Work Orders/Repeating_Workorders</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f635a4c3-1dd7-4445-affd-96700b20feb2</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Work Orders/Verify_Groups_Forms</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

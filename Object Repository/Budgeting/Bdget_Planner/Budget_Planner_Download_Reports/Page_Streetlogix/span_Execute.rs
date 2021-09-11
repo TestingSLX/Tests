@@ -6,12 +6,12 @@
    <elementGuidId>5878d097-0165-4fd4-b3dd-34f8d8a5c192</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div[6]/button/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>span.MuiButton-label-550</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Scenario Name'])[1]/following::span[8]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

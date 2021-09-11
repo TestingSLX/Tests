@@ -6,12 +6,12 @@
    <elementGuidId>1c20f5aa-f3bf-456d-acad-544eb2424a20</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div/div[5]/div[2]/div/div/div/div/div/div[5]/button/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.MuiBox-root-384.MuiBox-root-574 > button.MuiButtonBase-root-423.MuiButton-root-575.MuiButton-text-577.MuiButton-textPrimary-578 > span.MuiButton-label-576</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Column'])[1]/following::span[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

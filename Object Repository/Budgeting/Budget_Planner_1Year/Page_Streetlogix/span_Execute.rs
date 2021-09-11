@@ -10,14 +10,18 @@
          <value>span.MuiButton-label-540</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//span[(text() = 'Execute' or . = 'Execute')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div[6]/button/span</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

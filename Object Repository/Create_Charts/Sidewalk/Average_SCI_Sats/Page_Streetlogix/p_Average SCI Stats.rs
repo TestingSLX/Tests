@@ -6,12 +6,12 @@
    <elementGuidId>3f6415e4-1725-4b82-a356-727543e0e0c8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='Sidewalk_Maintenance_3252bh-content']/div/div/nav/div/div/p</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#Sidewalk_Maintenance_3252bh-content > div.MuiAccordionDetails-root-476.makeStyles-accordionDetail-375 > div > nav.MuiList-root-489.MuiList-dense-491.MuiList-padding-490 > div.MuiButtonBase-root-423.MuiListItem-root-493.MuiListItem-dense-495.MuiListItem-gutters-498.MuiListItem-button-499 > div.MuiListItemText-root-501.MuiListItemText-dense-503 > p.MuiTypography-root-424.MuiListItemText-secondary-506.MuiTypography-body2-425.MuiTypography-colorTextSecondary-450.MuiTypography-displayBlock-453</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Sidewalk'])[1]/following::p[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

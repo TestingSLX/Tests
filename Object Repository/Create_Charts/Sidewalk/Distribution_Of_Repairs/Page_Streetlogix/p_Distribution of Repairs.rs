@@ -6,12 +6,11 @@
    <elementGuidId>6556c8d4-40ad-4ce3-8725-c87f42d0d645</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='Sidewalk_Maintenance_3252bh-content']/div/div/nav/div[3]/div/p</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Sidewalk'])[1]/following::p[5]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

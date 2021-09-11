@@ -6,15 +6,19 @@
    <elementGuidId>14e0529d-e66c-4f0b-a258-46586e9c8d43</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div/div[5]/div[2]/div/div/div/div/div/div[4]/div/div/div</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.MuiBox-root-384.MuiBox-root-573 > div.MuiInputBase-root-552.MuiInput-root-541.MuiInput-underline-544 > div.MuiSelect-root-531.MuiSelect-select-532.MuiSelect-selectMenu-535.MuiInputBase-input-560.MuiInput-input-548</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Column' or . = 'Column')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div/div[5]/div[2]/div/div/div/div/div/div[4]/div/div/div</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

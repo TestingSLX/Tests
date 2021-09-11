@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Budget_Planning_1Year</name>
+   <name>Budget_Planning_1Year_5Year_Low_Budget</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>8cfb41f0-905d-4672-abf7-f1dd13cdf933</testCaseGuid>
+   <testCaseGuid>6c3835c4-2375-4eb5-95ec-933e9de4d126</testCaseGuid>
 </TestCaseEntity>

@@ -6,12 +6,11 @@
    <elementGuidId>6f620722-57b1-4ecc-96cd-dc48888ec555</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='Sign_Maintenance_1913bh-content']/div/div/nav/div[2]/div/p</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Sample Tooltip'])[1]/following::p[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

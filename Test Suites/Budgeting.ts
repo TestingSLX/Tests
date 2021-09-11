@@ -75,6 +75,6 @@
       <guid>c9755f16-f0d3-4a45-8c54-1ed67bcab441</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Budgeting/Budget_Planning_1Year</testCaseId>
+      <testCaseId>Test Cases/Budgeting/Budget_Planning_1Year_5Year_Medium_Budget</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

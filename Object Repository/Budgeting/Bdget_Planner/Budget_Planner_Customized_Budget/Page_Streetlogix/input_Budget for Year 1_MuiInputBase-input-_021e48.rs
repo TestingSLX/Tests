@@ -6,12 +6,12 @@
    <elementGuidId>c2b3365b-d61c-44e8-a050-072bceea4751</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@value=''])[7]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.MuiInputBase-root-432.MuiInput-root-421.MuiInput-underline-424.Mui-focused.Mui-focused.MuiInputBase-formControl-433.MuiInput-formControl-422 > input.MuiInputBase-input-440.MuiInput-input-428</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[3]/div/div[2]/div/div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

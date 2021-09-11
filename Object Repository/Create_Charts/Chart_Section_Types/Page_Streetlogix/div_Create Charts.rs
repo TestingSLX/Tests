@@ -7,18 +7,17 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[1]/div[3]/div/div[3]/div[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>//*[(text() = 'Create Charts' or . = 'Create Charts')]</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div[3]/div/div[2]/div/div[3]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

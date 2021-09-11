@@ -6,12 +6,11 @@
    <elementGuidId>d84f7359-e32a-453e-8997-cc850bec8954</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='canvasjs-react-chart-container-2']/div/canvas[2]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[2]/div/div/div/canvas[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

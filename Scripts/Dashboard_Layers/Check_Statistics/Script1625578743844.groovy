@@ -28,7 +28,7 @@ String pci = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/St
 String pciAvg = pci.replaceAll("[^0-9]", "")
 
 String avgPCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCI'()
-
+println(avgPCI)
 WebUI.verifyMatch(pciAvg, avgPCI, false)
 
 String milesPCI = WebUI.getText(findTestObject('Object Repository/DashBoard_Layers/Statistics/Page_Streetlogix/p_Total Length 342 miles'))

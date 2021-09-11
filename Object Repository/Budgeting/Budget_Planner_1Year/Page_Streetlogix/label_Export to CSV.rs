@@ -6,16 +6,16 @@
    <elementGuidId>c98f3397-cff5-49ab-8d12-c92724ab02e3</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>#17af9ce49e8-widget-92-menu-item-3-label</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>//*[(text() = 'Export to CSV' or . = 'Export to CSV')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//label[@id='17af9ce49e8-widget-92-menu-item-3-label']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>#17af9ce49e8-widget-92-menu-item-3-label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

@@ -67,9 +67,9 @@ WebUI.setText(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_P
 WebUI.setText(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/input_Scenario Name_MuiInputBase-input-440 _00d119_1_2_3_4_5'), 
     'ATest')
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/span_Apply Management Section'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/span_Apply Management Section'))
+//WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/span_Apply Management Section'))
+//
+//WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/span_Apply Management Section'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Bdget_Planner/Budget_Planner_Customized_Budget/Page_Streetlogix/span_Execute'))
 

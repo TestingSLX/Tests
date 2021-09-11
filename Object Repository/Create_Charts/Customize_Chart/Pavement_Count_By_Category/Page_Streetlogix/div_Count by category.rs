@@ -6,12 +6,12 @@
    <elementGuidId>35b6561c-091e-4ed6-bf1f-ed062bcb794c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div/div[5]/div[2]/div/div/div/div/div/div[2]/div/div/div</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.MuiBox-root-94.MuiBox-root-281 > div.MuiInputBase-root-262.MuiInput-root-251.MuiInput-underline-254 > div.MuiSelect-root-241.MuiSelect-select-242.MuiSelect-selectMenu-245.MuiInputBase-input-270.MuiInput-input-258</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Pavement Maintenance'])[2]/following::div[5]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

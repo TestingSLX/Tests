@@ -6,12 +6,12 @@
    <elementGuidId>7fd5d0ae-492b-40ee-85fb-a4c711e27b6a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div/div[5]/div[2]/div/div/div/div/div/div[3]/div/div/div</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.MuiBox-root-413.MuiBox-root-601 > div.MuiInputBase-root-581.MuiInput-root-570.MuiInput-underline-573 > div.MuiSelect-root-560.MuiSelect-select-561.MuiSelect-selectMenu-564.MuiInputBase-input-589.MuiInput-input-577</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Count by category'])[1]/following::div[5]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
