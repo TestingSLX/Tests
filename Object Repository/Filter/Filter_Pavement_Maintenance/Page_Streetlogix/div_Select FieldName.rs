@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Select FieldName Select Filter  AND Select FieldName Select Value Select Date Option  AND Select Date Option Select Date Option</name>
+   <name>div_Select FieldName</name>
    <tag></tag>
    <elementGuidId>b6e9785a-576e-40a4-8af8-730e5d7be4d7</elementGuidId>
    <selectorCollection>
