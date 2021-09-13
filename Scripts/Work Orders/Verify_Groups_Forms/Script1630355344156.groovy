@@ -72,7 +72,7 @@ for (WebElement el1 : list1) {
 }
 
 def allFormsList2 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getForms'(form1)
-//
+
 if (allFormsList1.containsAll(allFormsList2)) {
 	println('All Forms are displayed')
 } else {
