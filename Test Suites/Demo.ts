@@ -516,12 +516,6 @@
       <testCaseId>Test Cases/Work Orders/Create_Work_Orders</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>66fe8855-3fef-4377-9539-d5fda7780b8d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Work Orders/Repeating_Workorders</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>f6eb8d27-5f77-4ed2-aa32-be98a8de9b73</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

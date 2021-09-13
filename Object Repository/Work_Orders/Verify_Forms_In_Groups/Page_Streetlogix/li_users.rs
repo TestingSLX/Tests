@@ -6,18 +6,21 @@
    <elementGuidId>e9a3a9a6-a1be-435f-9a02-f98db4008c6a</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//li[(text() = 'users' or . = 'users')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='menu-']/div[3]/ul/li[7]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

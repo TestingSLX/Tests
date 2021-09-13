@@ -23,10 +23,4 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Work Orders/Create_Work_Orders</testCaseId>
    </testCaseLink>
-   <testCaseLink>
-      <guid>a0e8f2fe-d75e-43d8-afef-d304912a583c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Work Orders/Repeating_Workorders</testCaseId>
-   </testCaseLink>
 </TestSuiteEntity>

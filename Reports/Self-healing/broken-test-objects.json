@@ -1,3 +1,24 @@
 {
-  "brokenTestObjects" : [ ]
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Work_Orders/Verify_Forms_In_Groups/Page_Streetlogix/div_Work Orders",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div[3]/div/div[2]/div/div[4]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Charts\u0027])[1]/following::div[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Work_Orders/Verify_Forms_In_Groups/Page_Streetlogix/div_Work Orders_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Work Orders",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div[3]/div/div[2]/div/div[4]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Charts\u0027])[1]/following::div[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Work Orders_neighbor.png"
+    }
+  ]
 }

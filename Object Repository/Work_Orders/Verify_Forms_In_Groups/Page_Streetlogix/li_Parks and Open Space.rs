@@ -6,18 +6,21 @@
    <elementGuidId>24ab9fcb-dc63-46a3-becb-67bab8433b73</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//li[(text() = 'Parks and Open Space' or . = 'Parks and Open Space')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='menu-']/div[3]/ul/li[5]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
