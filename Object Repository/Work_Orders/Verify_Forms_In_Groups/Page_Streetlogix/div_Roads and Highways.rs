@@ -6,6 +6,10 @@
    <elementGuidId>7b23c304-b4c5-4b86-b952-4a421ebea014</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//div[(text() = 'Roads and Highways' or . = 'Roads and Highways')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div/div/div/div</value>
       </entry>
@@ -14,10 +18,10 @@
          <value>div.MuiSelect-root-534.MuiSelect-select-535.MuiSelect-selectMenu-538.MuiInputBase-input-450.MuiInput-input-551</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
