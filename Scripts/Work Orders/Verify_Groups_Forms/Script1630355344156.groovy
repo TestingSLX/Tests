@@ -18,7 +18,7 @@ WebUI.click(findTestObject('Work_Orders/Verify_Forms_In_Groups/Page_Streetlogix/
 //for (WebElement elG : groups) {
 //	allGroupsList1.add(elG.getText())
 //}
-//
+
 //def allGroupsList2 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getGroups'()
 ////allGroupsList2.add('All Groups')
 //println(allGroupsList2)
