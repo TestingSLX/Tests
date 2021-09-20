@@ -59,7 +59,7 @@ String stringCI = TCI.substring(0,4)
 
 double doubleCI = stringCI.toDouble()
 
-String targetCI = doubleCI.round() + 1
+String targetCI = doubleCI.round() + 2
 
 WebUI.setText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/input_Target condition index_MuiInputBase-i_43b0a5'), 
     targetCI)
@@ -129,10 +129,10 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/button_Year'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_Edit Scenario'))
-
-WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_Edit_Scenario'))
-
-WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/li_one'))
+//
+//WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_Edit_Scenario'))
+//
+//WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/li_one'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/button_Save'))
 

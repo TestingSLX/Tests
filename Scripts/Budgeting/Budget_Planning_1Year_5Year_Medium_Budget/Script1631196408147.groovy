@@ -85,7 +85,7 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Pag
 String Table1td1 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/td_1,515,630'))
 
 String Table1td2 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/td_123,406,682'))
-
+println(Math.abs(budget - Table1td2.replaceAll(",", "").toInteger()))
 if(Math.abs(budget - Table1td2.replaceAll(",", "").toInteger()) <= budgetDifference) {
 	println('Results from Budget Planner and Budgte Estimator are nearly same')
 } else {
@@ -292,7 +292,7 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Pag
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/td_5'))
 
 String budget1 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/td_123,401,473'))
-
+println(Math.abs(budget - budget1.replaceAll(",", "").toInteger()))
 if(Math.abs(budget - budget1.replaceAll(",", "").toInteger()) <= budgetDifference) {
 	println('Results from Budget Planner and Budgte Estimator are nearly same')
 } else {

@@ -4,23 +4,21 @@
    <name>div_offset</name>
    <tag></tag>
    <elementGuidId>db9b620e-1934-4564-8e53-8e8bdace136a</elementGuidId>
-   <imagePath></imagePath>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[177]</value>
+         <key>IMAGE</key>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>id(&quot;menu-surface_type&quot;)/div[1]</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>body > div.MuiDialog-root-454</value>
+         <key>XPATH</key>
+         <value>/html/body/div[159]/div[1]</value>
       </entry>
       <entry>
-         <key>IMAGE</key>
-         <value></value>
+         <key>CSS</key>
+         <value>body > div.MuiDialog-root-454</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

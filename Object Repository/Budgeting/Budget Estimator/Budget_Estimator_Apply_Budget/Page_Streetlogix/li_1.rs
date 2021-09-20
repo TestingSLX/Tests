@@ -6,12 +6,16 @@
    <elementGuidId>911f29cd-952e-426c-9d69-3dc538d66a19</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//div[@id='menu-']/div[3]/ul/li</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>li.MuiButtonBase-root-468.MuiListItem-root-656.MuiMenuItem-root-653.Mui-selected.MuiMenuItem-gutters-654.MuiListItem-gutters-661.MuiListItem-button-662.Mui-selected.Mui-focusVisible.Mui-focusVisible</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='menu-']/div[3]/ul/li</value>
+         <key>BASIC</key>
+         <value>//*[(text() = '1' or . = '1')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

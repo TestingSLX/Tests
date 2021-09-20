@@ -1,10 +1,14 @@
-import java.sql.Connection
-import java.sql.DriverManager
-import java.sql.ResultSet
-import java.sql.Statement
+import groovy.time.TimeCategory
 
-import org.openqa.selenium.WebElement
 
-Connection c = null;
-Statement stmt = null;
+def acceptedFormat = "MM/dd/yyyy"
+def today = new Date()
+def currentdate = today.format(acceptedFormat)
+println(currentdate)
+def repeatUntil = ''
+use(TimeCategory) {
+	def sevenDays = today + 4.weeks
+	repeatUntil = sevenDays.format(acceptedFormat)
+	println(repeatUntil)
+}
 

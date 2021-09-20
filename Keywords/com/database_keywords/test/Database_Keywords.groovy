@@ -144,7 +144,7 @@ public class Database_Keywords {
 		def woww = []
 
 		while(result.next()) {
-			for(int i=1; i <= 48 ; i++) {
+			for(int i=1; i <= 40 ; i++) {
 				woww.add(result.getString(i))
 			}
 		}

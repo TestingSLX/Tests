@@ -4,29 +4,27 @@
    <name>text_2</name>
    <tag></tag>
    <elementGuidId>5946600c-4956-4393-b3e9-d53f3e9f40df</elementGuidId>
-   <imagePath></imagePath>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[1]/div[2]/div[2]/div/div[1]/div[3]/svg/g/g[3]</value>
+         <key>IMAGE</key>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd cbDJXF visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-393 MuiBox-root-394&quot;]/div[@class=&quot;MuiBox-root-393 MuiBox-root-409&quot;]/div[@class=&quot;sc-efHYUO dxPMFL&quot;]/svg[@class=&quot;dtChartSVG&quot;]/g[@class=&quot;rootg&quot;]/g[@class=&quot;node node--leaf&quot;]/g[@class=&quot;node-button-g&quot;]/text[1]</value>
+         <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd cbDJXF visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-393 MuiBox-root-394&quot;]/div[@class=&quot;MuiBox-root-393 MuiBox-root-409&quot;]/div[@class=&quot;sc-efHYUO dxPMFL&quot;]/svg[@class=&quot;dtChartSVG&quot;]/g[@class=&quot;rootg&quot;]/g[@class=&quot;node node--leaf&quot;]/g[@class=&quot;node-button-g&quot;]/text[1][count(. | //text[(text() = '+' or . = '+')]) = count(//text[(text() = '+' or . = '+')])]</value>
       </entry>
       <entry>
-         <key>IMAGE</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[1]/div[2]/div[2]/div/div[1]/div[3]/svg/g/g[3]/g/circle</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>g.node.node--leaf > g.node-button-g > text</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -40,7 +38,7 @@
       <value>1</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>

@@ -1,21 +1,9 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import java.awt.datatransfer.StringSelection as StringSelection
+
+import org.openqa.selenium.Keys
+import groovy.time.TimeCategory
+
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.thoughtworks.selenium.webdriven.commands.KeyEvent as KeyEvent
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'com.gis_url.test.URL.redirectURL'()
 
@@ -61,8 +49,23 @@ WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/p_As
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/p_Due Date'))
 
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Due Date'))
+	
+WebUI.sendKeys(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/input__due_date'), Keys.chord(Keys.CONTROL,'a'))
 
-WebUI.setText(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/input__due_date'), '09/26/2021')
+WebUI.sendKeys(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/input__due_date'), Keys.chord(Keys.DELETE))
+
+def acceptedFormat = "MM/dd/yyyy"
+def today = new Date()
+def currentdate = today.format(acceptedFormat)
+println(currentdate)
+def newDueDate = ''
+use(TimeCategory) {
+	def sevenDays = today + 7.days
+	newDueDate = sevenDays.format(acceptedFormat)
+    println(newDueDate)
+}
+
+WebUI.setText(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/input__due_date'), newDueDate)
 
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/p_Address'))
 
@@ -127,7 +130,7 @@ def countAfter = CustomKeywords.'com.database_keywords.test.Database_Keywords.ge
 if(countAfter == countBefore + 1) {
 	println('Work Order Created')
 } else {
-	throw new Exception('Work Order is not Created')
+	throw new Exception('All Work Orders are not Created')
 }
 
 def status = CustomKeywords.'com.database_keywords.test.Database_Keywords.verifyAttachmentsUploaded'()

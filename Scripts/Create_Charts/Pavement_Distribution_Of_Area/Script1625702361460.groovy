@@ -177,9 +177,9 @@ String Sth2 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pave
 
 WebUI.verifyMatch(Sth2, "Asphalt", false)
 
-String Sth3 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Distribution_Of_Area/Page_Streetlogix/th_Concrete'))
-
-WebUI.verifyMatch(Sth3, "Concrete", false)
+//String Sth3 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Distribution_Of_Area/Page_Streetlogix/th_Concrete'))
+//
+//WebUI.verifyMatch(Sth3, "Concrete", false)
 
 String Std1 = WebUI.getText(findTestObject('Create_Charts/Pavement/Distribution_Of_Area/Page_Streetlogix/td_area_sy2'))
 
@@ -189,9 +189,9 @@ String Std2 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pave
 
 WebUI.verifyGreaterThan(Std2, 0)
 
-String Std3 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Distribution_Of_Area/Page_Streetlogix/td_4437'))
-
-WebUI.verifyGreaterThan(Std3, 0)
+//String Std3 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Distribution_Of_Area/Page_Streetlogix/td_4437'))
+//
+//WebUI.verifyGreaterThan(Std3, 0)
 
 WebUI.click(findTestObject('Create_Charts/Pavement/Distribution_Of_Area/Page_Streetlogix/span_Chart2'))
 
@@ -239,31 +239,31 @@ WebUI.verifyMatch(Ctd1, "area_sy", false)
 
 String Ctd2 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Distribution_Of_Area/Page_Streetlogix/td_3386'))
 
-WebUI.verifyGreaterThan(Ctd2, 0)
+WebUI.verifyGreaterThanOrEqual(Ctd2, 0)
 
 String Ctd3 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Distribution_Of_Area/Page_Streetlogix/td_19989'))
 
-WebUI.verifyGreaterThan(Ctd3, 0)
+WebUI.verifyGreaterThanOrEqual(Ctd3, 0)
 
 String Ctd4 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Distribution_Of_Area/Page_Streetlogix/td_194276'))
 
-WebUI.verifyGreaterThan(Ctd4, 0)
+WebUI.verifyGreaterThanOrEqual(Ctd4, 0)
 
 String Ctd5 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Distribution_Of_Area/Page_Streetlogix/td_638951'))
 
-WebUI.verifyGreaterThan(Ctd5, 0)
+WebUI.verifyGreaterThanOrEqual(Ctd5, 0)
 
 String Ctd6 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Distribution_Of_Area/Page_Streetlogix/td_3047376'))
 
-WebUI.verifyGreaterThan(Ctd6, 0)
+WebUI.verifyGreaterThanOrEqual(Ctd6, 0)
 
 String Ctd7 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Distribution_Of_Area/Page_Streetlogix/td_3342236'))
 
-WebUI.verifyGreaterThan(Ctd7, 0)
+WebUI.verifyGreaterThanOrEqual(Ctd7, 0)
 
 String Ctd8 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Distribution_Of_Area/Page_Streetlogix/td_397424'))
 
-WebUI.verifyGreaterThan(Ctd8, 0)
+WebUI.verifyGreaterThanOrEqual(Ctd8, 0)
 
 WebUI.click(findTestObject('Create_Charts/Pavement/Distribution_Of_Area/Page_Streetlogix/span_Chart3'))
 

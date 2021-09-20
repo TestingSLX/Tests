@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Upload_PrivateSwitchBase-input-974 Mu_a9da63</name>
+   <tag></tag>
+   <elementGuidId>e277c7cb-c612-48d9-bff5-10e4cb4a62c7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//input[@value=''])[6]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.value > div.sc-lmgQwP.cnHywr > span.MuiSwitch-root-961 > span.MuiButtonBase-root-911.MuiIconButton-root-939.PrivateSwitchBase-root-971.MuiSwitch-switchBase-964.MuiSwitch-colorPrimary-965 > span.MuiIconButton-label-946 > input.PrivateSwitchBase-input-974.MuiSwitch-input-968</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>PrivateSwitchBase-input-974 MuiSwitch-input-968</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>checkbox</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-cBoqAE gLDehl&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd cbDJXF visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-793 MuiBox-root-948 makeStyles-subPanel-789 makeStyles-subPanel-947&quot;]/div[@class=&quot;MuiBox-root-793 MuiBox-root-953&quot;]/div[@class=&quot;MuiBox-root-793 MuiBox-root-954&quot;]/div[@class=&quot;value&quot;]/div[@class=&quot;sc-lmgQwP cnHywr&quot;]/span[@class=&quot;MuiSwitch-root-961&quot;]/span[@class=&quot;MuiButtonBase-root-911 MuiIconButton-root-939 PrivateSwitchBase-root-971 MuiSwitch-switchBase-964 MuiSwitch-colorPrimary-965&quot;]/span[@class=&quot;MuiIconButton-label-946&quot;]/input[@class=&quot;PrivateSwitchBase-input-974 MuiSwitch-input-968&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//input[@value=''])[6]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div[2]/div/div/div[11]/div/span/span/span/input</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[11]/div/span/span/span/input</value>
+   </webElementXpaths>
+</WebElementEntity>

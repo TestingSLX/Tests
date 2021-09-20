@@ -70,7 +70,13 @@ double cost = Integer.parseInt(length)*Integer.parseInt(width)*0.111
 
 int estimate = cost.round()
 
-double finalEstimatedCost = estimate * Double.parseDouble(maintenanceSuggestionDecisionTree[1])
+double finalEstimatedCost = 00.00
+
+if(maintenanceSuggestionDecisionTree[1] == 0) {	
+	finalEstimatedCost = estimate * maintenanceSuggestionDecisionTree[1]
+} else {
+    finalEstimatedCost = estimate * Double.parseDouble(maintenanceSuggestionDecisionTree[1])
+}
 
 double newEstimatedCost = estimatedCost.toDouble()
 
