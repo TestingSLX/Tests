@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_offset</name>
+   <name>div_Offset1</name>
    <tag></tag>
-   <elementGuidId>eda1892f-e58b-4c55-adbd-c2f6cf22d099</elementGuidId>
+   <elementGuidId>1d9b865d-92ec-4eb2-9b4b-7800653cdcae</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]</value>
+         <value>/html/body/div[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

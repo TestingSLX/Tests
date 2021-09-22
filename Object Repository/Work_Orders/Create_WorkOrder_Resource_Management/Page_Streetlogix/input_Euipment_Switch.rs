@@ -13,8 +13,12 @@
          <key>CSS</key>
          <value>div.value > div.sc-lmgQwP.hpRDUw > span.MuiSwitch-root-961 > span.MuiButtonBase-root-911.MuiIconButton-root-939.jss971.MuiSwitch-switchBase-964.MuiSwitch-colorPrimary-965 > span.MuiIconButton-label-946 > input.jss974.MuiSwitch-input-968</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'Equipment']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +35,7 @@
       <value>jss974 MuiSwitch-input-968</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
@@ -43,6 +47,13 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;sc-cBoqAE lRfdj&quot;]/div[@class=&quot;sc-dIsUp jEEywD&quot;]/div[@class=&quot;sc-iCoGMd dLtoTP visible&quot;]/div[@class=&quot;sc-pNWdM XJxhY&quot;]/div[@class=&quot;MuiBox-root-793 jss948 jss789 jss947&quot;]/div[@class=&quot;MuiBox-root-793 jss953&quot;]/div[@class=&quot;MuiBox-root-793 jss954&quot;]/div[@class=&quot;value&quot;]/div[@class=&quot;sc-lmgQwP hpRDUw&quot;]/span[@class=&quot;MuiSwitch-root-961&quot;]/span[@class=&quot;MuiButtonBase-root-911 MuiIconButton-root-939 jss971 MuiSwitch-switchBase-964 MuiSwitch-colorPrimary-965&quot;]/span[@class=&quot;MuiIconButton-label-946&quot;]/input[@class=&quot;jss974 MuiSwitch-input-968&quot;]</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>Equipment</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

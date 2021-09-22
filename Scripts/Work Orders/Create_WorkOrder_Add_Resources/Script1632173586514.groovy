@@ -17,9 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('http://localhost:8081/?config=6477e9530cb64cafb07cc153da28ac98&url=https://streetlogix-dev-server.herokuapp.com&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAyNiwibmFtZSI6IlNocnV0aWthIFNhd2FudCIsImV4cCI6MTYzMjk0MzI4NCwiaWF0IjoxNjMwMzUxMjg0fQ.yJvnYvVKQSVJHgQu0nPHmggvb1PFXMjkQyxNBJEaBew')
+CustomKeywords.'com.gis_url.test.URL.redirectURL'()
 
 WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/div_Work Orders'))
 
@@ -112,13 +110,16 @@ WebUI.switchToWindowTitle('Steetlogix | Dashboard')
 
 WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/div_Work Orders2'))
 
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/div_Group FilterSelect Group'))
+WebUI.clickOffset(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/Page_Steetlogix  Dashboard/div_Offset1'), 
+    50, 50)
 
-WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/div_Roads and Highways2'))
+WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/Page_Steetlogix  Dashboard/div_Group FilterSelect GroupRoads and Highways'))
 
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/li_All'))
+WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/Page_Steetlogix  Dashboard/div_Roads and Highways'))
 
-WebUI.clickOffset(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/div_offset'), 50, 50)
+WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/Page_Steetlogix  Dashboard/li_All'))
+
+WebUI.clickOffset(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/div_offset'), 99, 99)
 
 WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/div_Creation Date'))
 
@@ -128,21 +129,21 @@ WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resou
 
 WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/span_Equipment1'))
 
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/input_Equipment_combo-box-demo'))
+WebUI.verifyElementAttributeValue(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Equipment1_Dashboard'), 'value', 'Axe', 0)
 
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/input_Equipment_combo-box-demo'))
+WebUI.verifyElementAttributeValue(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Equipment2_Dashboard'), 'value', 'Snow Plow', 0)
 
 WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/span_Material1'))
 
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/input_Material_combo-box-demo'))
+WebUI.verifyElementAttributeValue(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Material1_Dashboard'), 'value', 'Concrete', 0)
 
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/input_Material_combo-box-demo'))
+WebUI.verifyElementAttributeValue(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Material2_Dashboard'), 'value', 'Asphalt', 0)
 
 WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/span_Labor1'))
 
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/input_Labor_combo-box-demo'))
+WebUI.verifyElementAttributeValue(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Labor1_Dashboard'), 'value', 'Manager', 0)
 
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/input_Labor_combo-box-demo'))
+WebUI.verifyElementAttributeValue(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Labor2_Dashboard'), 'value', 'Supervisor', 0)
 
 WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/span_Cost'))
 

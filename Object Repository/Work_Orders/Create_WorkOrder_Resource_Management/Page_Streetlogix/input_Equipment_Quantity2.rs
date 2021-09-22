@@ -7,17 +7,20 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@value=''])[10]</value>
+         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div[2]/div/div/div[11]/div[3]/div[3]/div/input</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@placeholder = 'Qty' and @type = 'number']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

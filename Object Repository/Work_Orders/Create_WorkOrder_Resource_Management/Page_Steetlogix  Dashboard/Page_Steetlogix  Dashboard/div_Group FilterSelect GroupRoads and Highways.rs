@@ -1,78 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Material_Switch</name>
+   <name>div_Group FilterSelect GroupRoads and Highways</name>
    <tag></tag>
-   <elementGuidId>ea558c60-afbb-4930-857c-d9fe843de2c9</elementGuidId>
+   <elementGuidId>13eb0930-a350-4deb-b5b7-fd37d6012782</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;root&quot;]/div[3]/div[1]/div[2]/div[2]/div[2]/div/div[1]/div[14]/div/span/span[1]/span[2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'Material']</value>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[3]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
+      <value>div</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>jss974 MuiSwitch-input-968</value>
+      <value>MuiDialog-container MuiDialog-scrollPaper</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>type</name>
+      <name>role</name>
       <type>Main</type>
-      <value>checkbox</value>
+      <value>none presentation</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Group FilterSelect GroupRoads and Highways</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;sc-cBoqAE lRfdj&quot;]/div[@class=&quot;sc-dIsUp jEEywD&quot;]/div[@class=&quot;sc-iCoGMd dLtoTP visible&quot;]/div[@class=&quot;sc-pNWdM XJxhY&quot;]/div[@class=&quot;MuiBox-root-793 jss948 jss789 jss947&quot;]/div[@class=&quot;MuiBox-root-793 jss953&quot;]/div[@class=&quot;MuiBox-root-793 jss954&quot;]/div[@class=&quot;value&quot;]/div[@class=&quot;sc-lmgQwP hpRDUw&quot;]/span[@class=&quot;MuiSwitch-root-961&quot;]/span[@class=&quot;MuiButtonBase-root-911 MuiIconButton-root-939 jss971 MuiSwitch-switchBase-964 MuiSwitch-colorPrimary-965&quot;]/span[@class=&quot;MuiIconButton-label-946&quot;]/input[@class=&quot;jss974 MuiSwitch-input-968&quot;]</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>Material</value>
+      <value>/html[1]/body[1]/div[@class=&quot;MuiDialog-root&quot;]/div[@class=&quot;MuiDialog-container MuiDialog-scrollPaper&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(//input[@value=''])[11]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Send'])[1]/following::div[5]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div[2]/div/div/div[12]/div/span/span/span/input</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::div[5]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[12]/div/span/span/span/input</value>
+      <value>//div[3]/div[3]</value>
    </webElementXpaths>
 </WebElementEntity>
