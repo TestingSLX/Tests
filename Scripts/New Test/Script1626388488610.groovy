@@ -7,7 +7,7 @@ def currentdate = today.format(acceptedFormat)
 println(currentdate)
 def repeatUntil = ''
 use(TimeCategory) {
-	def sevenDays = today + 4.weeks
+	def sevenDays = today + 5.weeks
 	repeatUntil = sevenDays.format(acceptedFormat)
 	println(repeatUntil)
 }
