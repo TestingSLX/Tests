@@ -13,11 +13,15 @@
          <key>CSS</key>
          <value>button.MuiButtonBase-root-911.MuiButton-root-1009.MuiButton-contained-1017.jss1170 > span.MuiButton-label-1010</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//span[(text() = 'Add Item' or . = 'Add Item')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'com.gis_url.test.URL.redirectURL'()
 
+def countBefore = CustomKeywords.'com.database_keywords.test.Database_Keywords.getWorkOrdersCount'()
+
 WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/div_Work Orders'))
 
 WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/div_Roads and Highways'))
@@ -104,6 +106,14 @@ WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resou
 
 WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/button_OK'))
 
+def countAfter = CustomKeywords.'com.database_keywords.test.Database_Keywords.getWorkOrdersCount'()
+
+if (countAfter == (countBefore + 1)) {
+	println('Work Order Created')
+} else {
+	throw new Exception('Work Orders are not Created')
+}
+
 WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/div_Dashboard'))
 
 WebUI.switchToWindowTitle('Steetlogix | Dashboard')
@@ -149,9 +159,20 @@ WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resou
 
 WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/div_cost2'))
 
+def resources = []
+resources = CustomKeywords.'com.database_keywords.test.Database_Keywords.workOrderResources'()
+
 WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/span_DELETE'))
 
 WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Steetlogix  Dashboard/span_Yes'))
+
+def demoResources = ['Axe', 'Snow Plow', 'Concrete', 'Asphalt', 'Manager', 'Supervisor']
+
+if(resources == demoResources) {
+	println('All resources are stored in database')
+} else {
+	throw new Exception('Resources not stored in database')
+}
 
 WebUI.closeBrowser()
 

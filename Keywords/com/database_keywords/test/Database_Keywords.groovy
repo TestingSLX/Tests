@@ -592,4 +592,138 @@ public class Database_Keywords {
 		return status
 		closeConnection()
 	}
+
+	@Keyword
+	def workOrderResources() {
+		openConnection()
+		Connection c = null;
+		Statement stmt = null;
+		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
+		def queryString = "SELECT * FROM sde.work_order_loc ORDER BY objectid DESC LIMIT 1"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		def objectid = ''
+		while(result.next()) {
+			objectid = result.getString('objectid')
+		}
+
+		Connection c1 = null;
+		Statement stmt1 = null;
+		c1 = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
+		def queryString1 = "SELECT * FROM sde.work_order_costs WHERE work_order_loc_id = " + objectid
+		Statement stm1 = c1.createStatement()
+		ResultSet result1 = stm1.executeQuery(queryString1)
+		def item_id = []
+		def quantity = []
+		while(result1.next()) {
+			item_id.add(result1.getString('item_id'))
+			quantity.add(result1.getString('quantity'))
+		}
+
+		Connection c2 = null;
+		Statement stmt2 = null;
+		c2 = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
+		def item_name = []
+		def rate = []
+		for(int i = 0; i < item_id.size(); i++) {
+			def queryString2 = "SELECT * FROM sde.wo_cost_items WHERE id = " + item_id[i]
+			Statement stm2 = c2.createStatement()
+			ResultSet result2 = stm2.executeQuery(queryString2)
+			while(result2.next()) {
+				item_name.add(result2.getString('name'))
+				rate.add(result2.getString('rate'))
+			}
+		}
+		return item_name
+		closeConnection()
+		//		def total_cost = ''
+		//		def individual_costs = []
+		//		def product_value = ''
+		//		for(int i=0; i < rate.size(); i++) {
+		//			product_value = quantity[i] * rate[i]
+		//			individual_costs.add(product_value)
+		//			total_cost = total_cost + product_value
+		//		}
+	}
+	
+	@Keyword
+	def verifyResourcesInRepeatingWorkOrders(){
+		openConnection()
+		Connection c = null;
+		Statement stmt = null;
+		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
+		def queryString = "SELECT * FROM sde.work_order_loc ORDER BY objectid DESC LIMIT 4"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		def objectid = []
+		while(result.next()) {
+			objectid.add(result.getString('objectid'))
+		}
+		
+		Connection c1 = null;
+		Statement stmt1 = null;
+		c1 = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
+		def item_id = []
+		def all_item_ids = []
+		for(int i=0; i< objectid.size(); i++) {
+			def queryString1 = "SELECT * FROM sde.work_order_costs WHERE work_order_loc_id = " + objectid[i]
+			Statement stm1 = c1.createStatement()
+			ResultSet result1 = stm1.executeQuery(queryString1)
+			
+			while(result1.next()) {
+				item_id.add(result1.getString('item_id'))
+			}
+			all_item_ids.add(item_id)
+			item_id = []
+		}
+		def status = ''
+		for(int i=0; i< all_item_ids.size(); i++) {
+			if(all_item_ids[i] == ['34','2','5','1','32','4']) {
+				status = "True"
+			} else {
+				status = "False"
+			}
+		}
+		return status
+		closeConnection()
+	}
+	
+	@Keyword
+	def verifyAttachmentForRepeatingWorkorders() {
+		openConnection()
+		Connection c = null;
+		Statement stmt = null;
+		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
+		def queryString = "SELECT * FROM sde.work_order_loc ORDER BY objectid DESC LIMIT 4"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		def objectid = []
+		while(result.next()) {
+			objectid.add(result.getString('objectid'))
+		}
+		
+		Connection c1 = null;
+		Statement stmt1 = null;
+		c1 = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
+		def images = []
+		for(int i=0; i< objectid.size(); i++) {
+			def queryString1 = "SELECT * FROM sde.work_order_loc WHERE objectid = " + objectid[i]
+			Statement stm1 = c1.createStatement()
+			ResultSet result1 = stm1.executeQuery(queryString1)
+			
+			while(result1.next()) {
+				images.add(result1.getString('image'))
+			}
+		}
+		def status = ""
+		for(int i=0; i< images.size(); i++) {
+			if(images[i].toString() == "[]" || images[i].toString() == "null") {
+				status = "Not Uploaded"
+			} else if(images[i].toString() != "[]" || images[i].toString() != "null") {
+				status = "Uploaded"
+			}
+		}
+		return status
+		closeConnection()
+	}
 }

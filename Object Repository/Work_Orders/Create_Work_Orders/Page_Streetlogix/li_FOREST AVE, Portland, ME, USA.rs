@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = 'FOREST AVE, Portland, ME, USAfromstreet: FESSENDEN ST, tostreet: BEDFORD ST' or . = 'FOREST AVE, Portland, ME, USAfromstreet: FESSENDEN ST, tostreet: BEDFORD ST')]</value>
+         <value>//li[(text() = 'FOREST AVE, Portland, ME, USAfromstreet: FESSENDEN ST, tostreet: BEDFORD ST' or . = 'FOREST AVE, Portland, ME, USAfromstreet: FESSENDEN ST, tostreet: BEDFORD ST')]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -21,7 +21,7 @@
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -88,7 +88,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>FOREST AVE, Portland, ME, USAfromstreet: FESSENDEN ST, tostreet: BEDFORD ST</value>
+      <value>Forest Ave, Portland, ME, 04103, USA</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
