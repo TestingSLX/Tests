@@ -13,11 +13,15 @@
          <key>CSS</key>
          <value>li.MuiButtonBase-root-462.MuiListItem-root-620.MuiMenuItem-root-617.Mui-selected.MuiMenuItem-gutters-618.MuiListItem-gutters-625.MuiListItem-button-626.Mui-selected.Mui-focusVisible.Mui-focusVisible</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//li[(text() = 'Pavement Maintenance' or . = 'Pavement Maintenance')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

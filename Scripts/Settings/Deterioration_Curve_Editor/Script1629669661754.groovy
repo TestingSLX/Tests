@@ -43,16 +43,6 @@ WebUI.click(findTestObject('Settings/Deterioration_Curve_Editor/Page_Streetlogix
 
 WebUI.click(findTestObject('Object Repository/Settings/Deterioration_Curve_Editor/Page_Streetlogix/canvas_Asphalt_canvasjs-chart-canvas'))
 
-WebUI.click(findTestObject('Settings/Deterioration_Curve_Editor/Page_Streetlogix/div_Asphalt'))
-
-WebUI.click(findTestObject('Settings/Deterioration_Curve_Editor/Page_Streetlogix/li_Concrete_Pavement'))
-
-WebUI.click(findTestObject('Object Repository/Settings/Deterioration_Curve_Editor/Page_Streetlogix/canvas_Asphalt_canvasjs-chart-canvas'))
-
-WebUI.click(findTestObject('Settings/Deterioration_Curve_Editor/Page_Streetlogix/button_Add Point_Pavement_Concrete'))
-
-WebUI.click(findTestObject('Settings/Deterioration_Curve_Editor/Page_Streetlogix/button_Delete Point_Pavement_Concrete'))
-
 WebUI.click(findTestObject('Settings/Deterioration_Curve_Editor/Page_Streetlogix/div_Pavement Maintenance'))
 
 WebUI.click(findTestObject('Object Repository/Settings/Deterioration_Curve_Editor/Page_Streetlogix/li_Sidewalk Maintenance'))

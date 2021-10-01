@@ -85,8 +85,9 @@ WebUI.click(findTestObject('Object Repository/Work_Orders/Create_Recurring_Work_
 WebUI.click(findTestObject('Object Repository/Work_Orders/Create_Recurring_Work_Orders/Page_Streetlogix/h6_Select Form'))
 
 def countAfter = CustomKeywords.'com.database_keywords.test.Database_Keywords.getWorkOrdersCount'()
-
-if (countAfter == (countBefore + 12)) {
+println(countAfter)
+println(countBefore)
+if (countAfter == (countBefore + 14) || countAfter == (countBefore + 12)) {
     println('Work Order Created')
 } else {
     throw new Exception('Work Orders are not Created')

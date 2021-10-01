@@ -27,13 +27,7 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Compare_Scenario_1Year/C
 
 WebUI.click(findTestObject('Budgeting/Compare_Scenario_1Year/Compare_Scenario_Functional_Class/Page_Streetlogix/div_No Filter'))
 
-List<WebElement> listLayers = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Budgeting/Compare_Scenario_1Year/Compare_Scenario_Functional_Class/Page_Streetlogix/ul_filtercategory'), 30)
-
-for(filter in listLayers) {
-	if(filter.getProperties()['text'] == "Functional Class") {
-		filter.click()
-	}
-}
+WebUI.click(findTestObject('Object Repository/Budgeting/Compare_Scenario_1Year/Compare_Scenario_Functional_Class/Page_Streetlogix/li_Functional CLass'))
 
 WebUI.click(findTestObject('Budgeting/Compare_Scenario_1Year/Compare_Scenario_Functional_Class/Page_Streetlogix/div_Other princ arterial'))
 

@@ -23,6 +23,10 @@ WebUI.click(findTestObject('Object Repository/Settings/Decision_Tree_Loading_Dec
 
 WebUI.click(findTestObject('Object Repository/Settings/Decision_Tree_Loading_Decision_Tree/Page_Streetlogix/div_Decision Tree Editor'))
 
+WebUI.click(findTestObject('Settings/Decision_Tree_Loading_Decision_Tree/Page_Streetlogix/div_Pavement Maintenance'))
+
+WebUI.click(findTestObject('Settings/Decision_Tree_Loading_Decision_Tree/Page_Streetlogix/li_Pavement Maintenance'))
+
 def PCI1 = []
 
 String pci1_1 = WebUI.getText(findTestObject('Object Repository/Settings/Decision_Tree_Loading_Decision_Tree/Page_Streetlogix/div_Min 0, Max 40'))
@@ -44,6 +48,10 @@ PCI1.add(pci4_1.findAll('\\d{1,3}(?:\\.\\d{1,2})?'))
 def pciDB1 = []
 
 pciDB1 = CustomKeywords.'com.database_keywords.test.Database_Keywords.decisionTreeMinMaxPCI'()
+
+println(pciDB1)
+
+println(PCI1)
 
 if (PCI1 == pciDB1) {
     println('Correct Decision Tree Loaded')
@@ -74,9 +82,9 @@ def msDB1 = []
 msDB1 = CustomKeywords.'com.database_keywords.test.Database_Keywords.decisionTreeMaintenanceSuggestion'()
 
 if (MS1 == msDB1) {
-	println('Correct Decision Tree Loaded')
+    println('Correct Decision Tree Loaded')
 } else {
-	throw new Exception('Decision Tree loaded is incorrect')
+    throw new Exception('Decision Tree loaded is incorrect')
 }
 
 def COST1 = []
@@ -100,12 +108,15 @@ COST1.add(cost4_1.find('\\d{1,3}(?:\\.\\d{1,2})?'))
 def costDB1 = []
 
 costDB1 = CustomKeywords.'com.database_keywords.test.Database_Keywords.decisionTreeCost'()
+
 println(COST1)
+
 println(costDB1)
+
 if (COST1 == costDB1) {
-	println('Correct Decision Tree Loaded')
+    println('Correct Decision Tree Loaded')
 } else {
-	throw new Exception('Decision Tree loaded is incorrect')
+    throw new Exception('Decision Tree loaded is incorrect')
 }
 
 WebUI.click(findTestObject('Object Repository/Settings/Decision_Tree_Loading_Decision_Tree/Page_Streetlogix/button_Load Decision Tree'))
@@ -130,9 +141,15 @@ WebUI.click(findTestObject('Object Repository/Settings/Decision_Tree_Loading_Dec
 
 WebUI.click(findTestObject('Object Repository/Settings/Decision_Tree_Loading_Decision_Tree/Page_Streetlogix/div_Decision Tree Editor'))
 
+WebUI.click(findTestObject('Settings/Decision_Tree_Loading_Decision_Tree/Page_Streetlogix/div_Pavement Maintenance'))
+
+WebUI.click(findTestObject('Settings/Decision_Tree_Loading_Decision_Tree/Page_Streetlogix/li_Pavement Maintenance'))
+
 def PCI2 = []
 
 String pci1_2 = WebUI.getText(findTestObject('Object Repository/Settings/Decision_Tree_Loading_Decision_Tree/Page_Streetlogix/div_Min 0, Max 40'))
+
+println(pci1_2)
 
 PCI2.add(pci1_2.findAll('\\d{1,3}(?:\\.\\d{1,2})?'))
 
@@ -151,8 +168,11 @@ PCI2.add(pci4_2.findAll('\\d{1,3}(?:\\.\\d{1,2})?'))
 def pciDB2 = []
 
 pciDB2 = CustomKeywords.'com.database_keywords.test.Database_Keywords.decisionTreeMinMaxPCILoadNew'()
+
 println(PCI2)
+
 println(pciDB2)
+
 if (PCI2 == pciDB2) {
     println('Correct Decision Tree Loaded')
 } else {
@@ -182,9 +202,9 @@ def msDB2 = []
 msDB2 = CustomKeywords.'com.database_keywords.test.Database_Keywords.decisionTreeMaintenanceSuggestionLoadNew'()
 
 if (MS2 == msDB2) {
-	println('Correct Decision Tree Loaded')
+    println('Correct Decision Tree Loaded')
 } else {
-	throw new Exception('Decision Tree loaded is incorrect')
+    throw new Exception('Decision Tree loaded is incorrect')
 }
 
 def COST2 = []
@@ -208,12 +228,15 @@ COST2.add(cost4_2.find('\\d{1,3}(?:\\.\\d{1,2})?'))
 def costDB2 = []
 
 costDB2 = CustomKeywords.'com.database_keywords.test.Database_Keywords.decisionTreeCostLoadNew'()
+
 println(COST2)
+
 println(costDB2)
+
 if (COST2 == costDB2) {
-	println('Correct Decision Tree Loaded')
+    println('Correct Decision Tree Loaded')
 } else {
-	throw new Exception('Decision Tree loaded is incorrect')
+    throw new Exception('Decision Tree loaded is incorrect')
 }
 
 WebUI.click(findTestObject('Object Repository/Settings/Decision_Tree_Loading_Decision_Tree/Page_Streetlogix/button_Load Decision Tree'))
@@ -231,6 +254,10 @@ WebUI.refresh(FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/Settings/Decision_Tree_Loading_Decision_Tree/Page_Streetlogix/div_Setting'))
 
 WebUI.click(findTestObject('Object Repository/Settings/Decision_Tree_Loading_Decision_Tree/Page_Streetlogix/div_Decision Tree Editor'))
+
+WebUI.click(findTestObject('Settings/Decision_Tree_Loading_Decision_Tree/Page_Streetlogix/div_Pavement Maintenance'))
+
+WebUI.click(findTestObject('Settings/Decision_Tree_Loading_Decision_Tree/Page_Streetlogix/li_Pavement Maintenance'))
 
 def PCI3 = []
 
@@ -283,9 +310,9 @@ def msDB3 = []
 msDB3 = CustomKeywords.'com.database_keywords.test.Database_Keywords.decisionTreeMaintenanceSuggestion'()
 
 if (MS3 == msDB3) {
-	println('Correct Decision Tree Loaded')
+    println('Correct Decision Tree Loaded')
 } else {
-	throw new Exception('Decision Tree loaded is incorrect')
+    throw new Exception('Decision Tree loaded is incorrect')
 }
 
 def COST3 = []
@@ -309,10 +336,14 @@ COST3.add(cost4_3.find('\\d{1,3}(?:\\.\\d{1,2})?'))
 def costDB3 = []
 
 costDB3 = CustomKeywords.'com.database_keywords.test.Database_Keywords.decisionTreeCost'()
+
 println(COST3)
+
 println(costDB3)
+
 if (COST3 == costDB3) {
-	println('Correct Decision Tree Loaded')
+    println('Correct Decision Tree Loaded')
 } else {
-	throw new Exception('Decision Tree loaded is incorrect')
+    throw new Exception('Decision Tree loaded is incorrect')
 }
+

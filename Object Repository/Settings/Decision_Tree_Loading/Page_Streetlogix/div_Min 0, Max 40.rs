@@ -35,7 +35,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd cbDJXF visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-393 MuiBox-root-394&quot;]/div[@class=&quot;MuiBox-root-393 MuiBox-root-409&quot;]/div[@class=&quot;sc-efHYUO dxPMFL&quot;]/svg[@class=&quot;dtChartSVG&quot;]/g[@class=&quot;rootg&quot;]/g[@class=&quot;node node--internal&quot;]/foreignobject[@class=&quot;nodeFO&quot;]/div[@class=&quot;nodeInfo&quot;]/div[2]</value>
+      <value>id(&quot;root&quot;)/div[@class=&quot;sc-cBoqAE lRfdj&quot;]/div[@class=&quot;sc-dIsUp jEEywD&quot;]/div[@class=&quot;sc-iCoGMd dLtoTP visible&quot;]/div[@class=&quot;sc-pNWdM XJxhY&quot;]/div[@class=&quot;MuiBox-root-393 jss394&quot;]/div[@class=&quot;MuiBox-root-393 jss409&quot;]/div[@class=&quot;sc-cTJkRt lmGFyU&quot;]/svg[@class=&quot;dtChartSVG&quot;]/g[@class=&quot;rootg&quot;]/g[@class=&quot;node node--internal&quot;]/foreignobject[@class=&quot;nodeFO&quot;]/div[@class=&quot;nodeInfo&quot;]/div[2]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

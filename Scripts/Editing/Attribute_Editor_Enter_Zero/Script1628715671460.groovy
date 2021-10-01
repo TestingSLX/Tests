@@ -26,6 +26,7 @@ WebUI.click(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlog
 def data = []
 
 data = CustomKeywords.'com.database_keywords.test.Database_Keywords.array'()
+println(data)
 
 WebUI.click(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/div_Pavement Maintenance'))
 
@@ -36,7 +37,7 @@ WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_E
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/label_Select feature by street name'))
 
 WebUI.setText(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_Select feature by street name'), 
-    'ABBY LN')
+    'ABBOTT ST')
 
 WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_Select feature by street name'), 
     Keys.chord(Keys.DOWN))
@@ -206,17 +207,6 @@ WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Future Event Date'))
 
-//WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_PCI_historic'))
-//
-//WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__pci_historic'), Keys.chord(
-//        Keys.CONTROL, 'a'))
-//
-//WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__pci_historic'), Keys.chord(
-//        Keys.BACK_SPACE))
-//
-//WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__pci_historic'), 
-//    '0')
-
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_notes'))
 
 WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__notes'), Keys.chord(Keys.CONTROL, 
@@ -224,7 +214,7 @@ WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Street
 
 WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__notes'), Keys.chord(Keys.BACK_SPACE))
 
-WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__notes'), ' Test')
+WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__notes'), 'Test')
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_UID'))
 
@@ -265,38 +255,16 @@ WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Street
 
 WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__editor_notes'), 
     'Test')
-
-//WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Width (ft)'))
 //
-//WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__width_ft_1'), Keys.chord(Keys.CONTROL, 
-//        'a'))
+//WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Ward'))
 //
-//WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__width_ft_1'), Keys.chord(Keys.BACK_SPACE))
+//WebUI.click(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_Ward'))
 //
-//WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__width_ft_1'), 
-//    '0')
+//WebUI.click(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/svg_Ward'))
 //
-//WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Length (ft)'))
+//WebUI.click(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_Ward'))
 //
-//WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__length_ft_1'), Keys.chord(Keys.CONTROL, 
-//        'a'))
-//
-//WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__length_ft_1'), Keys.chord(Keys.BACK_SPACE))
-//
-//WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__length_ft_1'), 
-//    '0')
-
-WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Ward'))
-
-WebUI.click(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_Ward'))
-
-WebUI.click(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/svg_Ward'))
-
-WebUI.setText(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_Ward'), '2')
-
-WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/li_2'))
-
-WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Surface Type ID'))
+//WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/li_2'))
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_city'))
 
@@ -318,69 +286,13 @@ WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_country'))
 
-WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__country'), Keys.chord(Keys.CONTROL, 
+WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_country'), Keys.chord(Keys.CONTROL, 
         'a'))
 
-WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__country'), Keys.chord(Keys.BACK_SPACE))
+WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_country'), Keys.chord(Keys.BACK_SPACE))
 
-WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__country'), 
+WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_country'), 
     'USA')
-
-WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Management Section'))
-
-WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Need Year'))
-
-WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__need_year'), Keys.chord(Keys.CONTROL, 
-        'a'))
-
-WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__need_year'), Keys.chord(Keys.BACK_SPACE))
-
-WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__need_year'), 
-    '0')
-
-WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_LT Crack Density'))
-
-WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__l_t_crack_density'), Keys.chord(
-        Keys.CONTROL, 'a'))
-
-WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__l_t_crack_density'), Keys.chord(
-        Keys.BACK_SPACE))
-
-WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__l_t_crack_density'), 
-    '0')
-
-WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Alligator Crack Density'))
-
-WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__alligator_crack_density'), 
-    Keys.chord(Keys.CONTROL, 'a'))
-
-WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__alligator_crack_density'), 
-    Keys.chord(Keys.BACK_SPACE))
-
-WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__alligator_crack_density'), 
-    '0')
-
-WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Bump Density'))
-
-WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__bump_density'), Keys.chord(
-        Keys.CONTROL, 'a'))
-
-WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__bump_density'), Keys.chord(
-        Keys.BACK_SPACE))
-
-WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__bump_density'), 
-    '0')
-
-WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Load Associated Deducts'))
-
-WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__load_associated_deducts'), 
-    Keys.chord(Keys.CONTROL, 'a'))
-
-WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__load_associated_deducts'), 
-    Keys.chord(Keys.BACK_SPACE))
-
-WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__load_associated_deducts'), 
-    '0')
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/span_Save'))
 
@@ -390,19 +302,16 @@ WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_E
 
 WebUI.delay(10)
 
-def array = ((['25', '0', 'Test', '0', '0', '385', 'ABBY LN', 'ADAMS ST', 'ACCESS RD', '0', 'Minor Arterial', '0', '0', '0'
-        , 'Reconstruction', '0', '0', '0', '<iframe src="http://pavemon.com/RAID/bulkmedia/ME_Portland_PMT_2019/customer_movies/599.mp4" width="500" height ="400" allowfullscreen></iframe>'
-        , 'Preventive Maintenance', '0', 'null', 'Test', 'Shrutika Sawant', '1026', '2021-08-03 20:00:56', 'Test', 'null'
-        , 'false', 'null', '0', '0', '2', 'Asphalt', 'null', 'http://pavemon.com/RAID/bulkmedia/ME_Portland_PMT_2019/customer_movies/384.mp4'
-        , 'null', '0102000020110F0000020000009CA22361FDD75DC1784F1E6A05A55441228E750118D85DC190A0F811FDA45441', '{55B47CA8-3BAF-4E45-A61D-7D7946AADBE5}'
-        , 'Portland', 'ME', 'USA', 'null', '0', '0', '0', '0', '0']) as String[])
+def array = ((['12', '13', 'ABBOTT ST', 'ADAMS ST', 'ACCESS RD', '0', 'Reconstruction', '0', '0.00000000', 'Minor Arterial', '0', '0', '0', '0'
+	, '<iframe src="http://pavemon.com/RAID/bulkmedia/ME_Portland_PMT_2019/customer_movies/851.mp4" width="500" height ="400" allowfullscreen></iframe>'
+	, 'Preventive Maintenance', '0', null, 'Test', 'Shrutika Sawant', '1026', '2021-09-29 18:51:12', 'Test', null, null, 'Asphalt', 'Portland'
+	, 'ME', 'USA', '27', '3', '10', '10', '10', '90', '0', 'Test', '0', null
+	, '0102000020110F00000200000046B6F3750AD95DC14013619BCDAB544128ED0DC222D95DC1C8073DCFF4AB5441']) as String[])
 
 def newData = ((CustomKeywords.'com.database_keywords.test.Database_Keywords.array'()) as String[])
 
-println(newData)
-
-if (newData) {
-    println('Attributes changed for selected feature')
+if (array == newData) {
+	println('Attributes changed for selected feature')
 } else {
     throw new Exception('Attributes are not changed for selected feature')
 }

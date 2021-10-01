@@ -35,23 +35,11 @@ WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget Estim
 
 WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/div_No Filter'))
 
-List<WebElement> listLayers = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/ul_filterby'), 30)
+WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/li_Functional Class'))
 
-for(filter in listLayers) {
-	if(filter.getProperties()['text'] == "Functional Class") {
-		filter.click()
-	} 
-}
+def CI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCI'()
 
-String CI = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/span_CI_text'))
-
-String TCI = CI.replaceAll("[^0-9/s.]+|/.(?!/d)", "")
-
-String stringCI = TCI.substring(0,4)
-
-double doubleCI = stringCI.toDouble()
-
-String targetCI = doubleCI.round() + 1
+String targetCI = CI + 3
 
 WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/label_Select category'), 'Select category')
 
@@ -92,15 +80,7 @@ WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Function
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/li_Principal Arterial'))
 
-String CI1 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/span_CI_text'))
-
-String TCI1 = CI1.replaceAll("[^0-9/s.]+|/.(?!/d)", "")
-
-String stringCI1 = TCI1.substring(0,4)
-
-double doubleCI1 = stringCI1.toDouble()
-
-String targetCI1 = doubleCI1.round() + 1
+String targetCI1 = CI + 3
 
 WebUI.setText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/input_Target condition index_MuiInputBase-i_93bbd1'), 
     targetCI1)
@@ -127,22 +107,12 @@ WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Function
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/li_Majorurb collector'))
 
-String CI2 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/span_CI_text'))
-
-String TCI2 = CI2.replaceAll("[^0-9/s.]+|/.(?!/d)", "")
-
-String stringCI2 = TCI2.substring(0,4)
-
-double doubleCI2 = stringCI2.toDouble()
-
-String targetCI2 = doubleCI2.round() + 1
+String targetCI2 = CI + 3
 
 WebUI.setText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/input_Target condition index_MuiInputBase-i_93bbd1'), 
     targetCI2)
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/span_Calculate'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/svg_020406080100'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/h6_Target condition index 73'))
 
@@ -164,22 +134,12 @@ WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Function
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/li_Minor Arterial'))
 
-String CI3 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/span_CI_text'))
-
-String TCI3 = CI3.replaceAll("[^0-9/s.]+|/.(?!/d)", "")
-
-String stringCI3 = TCI3.substring(0,4)
-
-double doubleCI3 = stringCI3.toDouble()
-
-String targetCI3 = doubleCI3.round() + 1
+String targetCI3 = CI + 3
 
 WebUI.setText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/input_Target condition index_MuiInputBase-i_93bbd1'), 
     targetCI3)
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/span_Calculate'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/div_020406080100'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/h6_Target condition index 71'))
 
@@ -201,22 +161,12 @@ WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Function
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/li_Local'))
 
-String CI4 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/span_CI_text'))
-
-String TCI4 = CI4.replaceAll("[^0-9/s.]+|/.(?!/d)", "")
-
-String stringCI4 = TCI4.substring(0,4)
-
-double doubleCI4 = stringCI4.toDouble()
-
-String targetCI4 = doubleCI4.round() + 1
+String targetCI4 = CI + 3
 
 WebUI.setText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/input_Target condition index_MuiInputBase-i_93bbd1'), 
     targetCI4)
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/span_Calculate'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/svg_020406080100'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/h6_Target condition index 63'))
 

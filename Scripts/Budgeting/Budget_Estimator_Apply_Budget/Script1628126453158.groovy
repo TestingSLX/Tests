@@ -33,13 +33,7 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_
 
 WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_No Filter'))
 
-List<WebElement> listLayers = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/ul_filterby'), 30)
-
-for(filter in listLayers) {
-	if(filter.getProperties()['text'] == "No Filter") {
-		filter.click()
-	}
-}
+WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/li_No Filter'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/label_Filter by'))
 
@@ -51,15 +45,9 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/label_Target condition index'))
 
-String CI = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/span_CI_text'))
+def CI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCI'()
 
-String TCI = CI.replaceAll("[^0-9/s.]+|/.(?!/d)", "")
-
-String stringCI = TCI.substring(0,4)
-
-double doubleCI = stringCI.toDouble()
-
-String targetCI = doubleCI.round() + 2
+String targetCI = CI + 1
 
 WebUI.setText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/input_Target condition index_MuiInputBase-i_43b0a5'), 
     targetCI)
@@ -111,14 +99,6 @@ String averageConditionIndex = WebUI.getText(findTestObject('Object Repository/B
 String conditionIndexChange = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/td_-0.01'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/span_Chart'))
-//
-//WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/h3_from budget estimator'))
-//
-//WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_Year'))
-//
-//WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_1'))
-//
-//WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_others'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
 
@@ -129,16 +109,8 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/button_Year'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_Edit Scenario'))
-//
-//WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/div_Edit_Scenario'))
-//
-//WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/li_one'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/button_Save'))
-
-//WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/h2_Success'))
-
-//WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/p_Scenario is saved'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Apply_Budget/Page_Streetlogix/span_OK'))
 
@@ -182,7 +154,7 @@ if(Math.abs(budgetEstimated.replaceAll(",", "").toInteger() - cost.replaceAll(",
 	throw new Exception('Budget Planner and Budget Estimator results have a huge difference')
 }
 
-if(doubleCI.toDouble() - averageConditionIndex.toDouble() <= Math.abs(conditionIndexChange.toDouble())) {
+if(targetCI.toDouble() - averageConditionIndex.toDouble() <= Math.abs(conditionIndexChange.toDouble())) {
 	println('TCI is same for Budget Planner and Estimator')
 } else {
 	throw new Exception('TCI is not same for Budget Planner and Estimator')

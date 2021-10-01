@@ -6,12 +6,12 @@
    <elementGuidId>b679f992-f2af-4318-be08-fbb8f0c42ee1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.MuiInputBase-root-431.MuiInput-root-420.MuiInput-underline-423.MuiInputBase-formControl-432.MuiInput-formControl-421 > input.MuiInputBase-input-439.MuiInput-input-427</value>
+         <key>XPATH</key>
+         <value>/html/body/div[81]/div[3]/div/div[2]/div[1]/div/input</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[91]/div[3]/div/div[2]/div[1]/div/input</value>
+         <key>CSS</key>
+         <value>div.MuiInputBase-root-431.MuiInput-root-420.MuiInput-underline-423.MuiInputBase-formControl-432.MuiInput-formControl-421 > input.MuiInputBase-input-439.MuiInput-input-427</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

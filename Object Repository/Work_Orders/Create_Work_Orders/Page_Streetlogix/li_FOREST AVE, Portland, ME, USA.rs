@@ -7,15 +7,15 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//li[@id='mui-3123-option-0']</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//li[(text() = 'FOREST AVE, Portland, ME, USAfromstreet: FESSENDEN ST, tostreet: BEDFORD ST' or . = 'FOREST AVE, Portland, ME, USAfromstreet: FESSENDEN ST, tostreet: BEDFORD ST')]</value>
+         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>#mui-3123-option-0</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//li[(text() = 'FOREST AVE, Portland, ME, USA' or . = 'FOREST AVE, Portland, ME, USA')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -88,7 +88,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Forest Ave, Portland, ME, 04103, USA</value>
+      <value>FOREST AVE, Portland, ME, USA fromstreet: STEVENS AVE, tostreet: WALTON ST</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

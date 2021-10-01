@@ -6,18 +6,22 @@
    <elementGuidId>561d3c72-ab07-4296-a7b6-daef965e3220</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//div[@id='menu-']/div[3]/ul/li</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>li.MuiButtonBase-root-468.MuiListItem-root-641.MuiMenuItem-root-638.Mui-selected.MuiMenuItem-gutters-639.MuiListItem-gutters-646.MuiListItem-button-647.Mui-selected.Mui-focusVisible.Mui-focusVisible</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='menu-']/div[3]/ul/li</value>
+         <key>BASIC</key>
+         <value>//li[(text() = 'No Filter' or . = 'No Filter')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

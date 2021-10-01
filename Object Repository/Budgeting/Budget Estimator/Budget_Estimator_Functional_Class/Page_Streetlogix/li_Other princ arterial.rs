@@ -13,11 +13,15 @@
          <key>CSS</key>
          <value>li.MuiButtonBase-root-462.MuiListItem-root-651.MuiMenuItem-root-648.Mui-selected.MuiMenuItem-gutters-649.MuiListItem-gutters-656.MuiListItem-button-657.Mui-selected</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//li[(text() = 'Other princ arterial' or . = 'Other princ arterial')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

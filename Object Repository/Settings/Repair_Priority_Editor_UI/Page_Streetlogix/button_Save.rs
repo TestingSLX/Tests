@@ -13,11 +13,15 @@
          <key>CSS</key>
          <value>button.MuiButtonBase-root-491.MuiButton-root-464.MuiButton-text-466.MuiButton-textPrimary-467.MuiButton-textSizeLarge-478.MuiButton-sizeLarge-484</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@type = 'button' and (text() = 'Save' or . = 'Save')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

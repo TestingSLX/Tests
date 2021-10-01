@@ -77,7 +77,5 @@ WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_
 
 WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Evaluation/Page_Streetlogix/span_Pavement Evaluation - Pavement Conditi_a56e5e'), 'PAVEMENT EVALUATION - PAVEMENT CONDITION INDEX')
 
-WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Evaluation/Page_Streetlogix/div_Pavement Evaluation - Pavement Conditio_e88f9a'))
-
 WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Evaluation/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
 

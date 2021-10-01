@@ -57,10 +57,10 @@ WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priori
 WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor_UI/Page_Streetlogix/td_Functional Class'), 
     'Functional Class')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor_UI/Page_Streetlogix/td_3'), '3')
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor_UI/Page_Streetlogix/td_3'), '4')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor_UI/Page_Streetlogix/td_DESC'), 
-    'DESC')
+    'ASC')
 
 WebUI.verifyElementPresent(findTestObject('Settings/Repair_Priority_Editor_UI/Page_Streetlogix/td_Edit1'), 0)
 
@@ -69,7 +69,7 @@ WebUI.verifyElementPresent(findTestObject('Settings/Repair_Priority_Editor_UI/Pa
 WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor_UI/Page_Streetlogix/td_PCI'), 
     'PCI')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor_UI/Page_Streetlogix/td_6'), '6')
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor_UI/Page_Streetlogix/td_6'), '2')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor_UI/Page_Streetlogix/td_ASC'), 
     'ASC')

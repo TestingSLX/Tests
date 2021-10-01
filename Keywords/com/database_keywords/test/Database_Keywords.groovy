@@ -44,16 +44,21 @@ public class Database_Keywords {
 	@Keyword
 	public int getAveragePCI() {
 		openConnection()
-		def queryString = "SELECT pci from sde.pavement_evaluation_loc"
+		def queryString = "SELECT * from sde.pavement_evaluation_loc"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
-		double rowCount = 0;
 		double PCI = 0;
+		double totalLength = 0;
+		double pciLength = 0;
+		double length = 0;
+		double product = 0;
 		while(result.next()) {
-			rowCount += 1
-			PCI = PCI + result.getInt('pci')
+			PCI = result.getInt('pci')
+			length = result.getInt('length_ft')
+			pciLength = pciLength + PCI * length
+			totalLength = totalLength + length
 		}
-		double avgPCI = PCI/rowCount
+		double avgPCI = pciLength / totalLength
 		return avgPCI.round()
 		closeConnection()
 	}
@@ -91,16 +96,21 @@ public class Database_Keywords {
 	@Keyword
 	public int getAverageSCI() {
 		openConnection()
-		def queryString = "SELECT sci from sde.sidewalk_evaluation_loc"
+		def queryString = "SELECT * from sde.sidewalk_evaluation_loc"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
-		double rowCount = 0;
 		double SCI = 0;
+		double totalLength = 0;
+		double sciLength = 0;
+		double length = 0;
+		double product = 0;
 		while(result.next()) {
-			rowCount += 1
-			SCI = SCI + result.getInt('sci')
+			SCI = result.getInt('sci')
+			length = result.getInt('length_ft')
+			sciLength = sciLength + SCI * length
+			totalLength = totalLength + length
 		}
-		double avgSCI = SCI/rowCount
+		double avgSCI = sciLength / totalLength
 		return avgSCI.round()
 		closeConnection()
 	}
@@ -138,7 +148,7 @@ public class Database_Keywords {
 	@Keyword
 	def array() {
 		openConnection()
-		def queryString = "SELECT * from sde.pavement_evaluation_loc WHERE objectid = 25"
+		def queryString = "SELECT * from sde.pavement_evaluation_loc WHERE objectid = 12"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
 		def woww = []
@@ -645,7 +655,7 @@ public class Database_Keywords {
 		//			total_cost = total_cost + product_value
 		//		}
 	}
-	
+
 	@Keyword
 	def verifyResourcesInRepeatingWorkOrders(){
 		openConnection()
@@ -659,7 +669,7 @@ public class Database_Keywords {
 		while(result.next()) {
 			objectid.add(result.getString('objectid'))
 		}
-		
+
 		Connection c1 = null;
 		Statement stmt1 = null;
 		c1 = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
@@ -669,7 +679,7 @@ public class Database_Keywords {
 			def queryString1 = "SELECT * FROM sde.work_order_costs WHERE work_order_loc_id = " + objectid[i]
 			Statement stm1 = c1.createStatement()
 			ResultSet result1 = stm1.executeQuery(queryString1)
-			
+
 			while(result1.next()) {
 				item_id.add(result1.getString('item_id'))
 			}
@@ -678,7 +688,7 @@ public class Database_Keywords {
 		}
 		def status = ''
 		for(int i=0; i< all_item_ids.size(); i++) {
-			if(all_item_ids[i] == ['34','2','5','1','32','4']) {
+			if(all_item_ids[i] == ['34', '2', '5', '1', '32', '4']) {
 				status = "True"
 			} else {
 				status = "False"
@@ -687,7 +697,7 @@ public class Database_Keywords {
 		return status
 		closeConnection()
 	}
-	
+
 	@Keyword
 	def verifyAttachmentForRepeatingWorkorders() {
 		openConnection()
@@ -701,7 +711,7 @@ public class Database_Keywords {
 		while(result.next()) {
 			objectid.add(result.getString('objectid'))
 		}
-		
+
 		Connection c1 = null;
 		Statement stmt1 = null;
 		c1 = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
@@ -710,7 +720,7 @@ public class Database_Keywords {
 			def queryString1 = "SELECT * FROM sde.work_order_loc WHERE objectid = " + objectid[i]
 			Statement stm1 = c1.createStatement()
 			ResultSet result1 = stm1.executeQuery(queryString1)
-			
+
 			while(result1.next()) {
 				images.add(result1.getString('image'))
 			}

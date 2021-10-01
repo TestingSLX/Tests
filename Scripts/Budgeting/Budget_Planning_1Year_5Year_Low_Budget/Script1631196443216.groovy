@@ -60,10 +60,6 @@ WebUI.setText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/P
 WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/label_Scenario name'), 
     'Scenario Name')
 
-//WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/span_Apply Management Section'))
-//
-//WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/span_Apply Management Section'))
-
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/span_Execute'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/canvas_Table_canvasjs-chart-canvas'))
@@ -111,109 +107,11 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Pag
 
 WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/h3_Test2'), 'ATest')
 
-//WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Maintenance Suggestion'), "Maintenance Suggestion")
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Crack Seal'), "Crack Seal")
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Preventive Maintenance'), "Preventive Maintenance")
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Defer Maintenance'), "Defer Maintenance")
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Reconstruction'), "Reconstruction")
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Mill and Overlay'), "Mill and Overlay")
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Rehabilitation'), "Rehabilitation")
-//
-//WebUI.scrollToElement(findTestObject('Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_others'), 0)
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_others'), "others")
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/span_Test'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Test (Features 1,192, Selected 0)'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_SS_ID'), 
-    'SS_ID')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_streetname'), 
-    'streetname')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_fromstreetname'), 
-    'fromstreetname')
-
-WebUI.scrollToElement(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_tostreetname'), 
-    0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_tostreetname'), 
-    'tostreetname')
-
-WebUI.scrollToElement(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_PCI'), 
-    0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_PCI'), 
-    'PCI')
-
-WebUI.scrollToElement(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Functional Class'), 
-    0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Functional Class'), 
-    'Functional Class')
-
-WebUI.scrollToElement(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Length (ft)'), 
-    0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Length (ft)'), 
-    'Length (ft)')
-
-WebUI.scrollToElement(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Width (ft)'), 
-    0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Width (ft)'), 
-    'Width (ft)')
-
-WebUI.scrollToElement(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Maintenance Suggestion'), 
-    0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Maintenance Suggestion'), 
-    'Maintenance Suggestion')
-
-WebUI.scrollToElement(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Estimated Cost ()'), 
-    0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Estimated Cost ()'), 
-    'Estimated Cost ($)')
-
-WebUI.scrollToElement(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Repair Priority'), 
-    0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Repair Priority'), 
-    'Repair Priority')
-
-WebUI.scrollToElement(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Area (sy)'), 
-    0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Area (sy)'), 
-    'Area (sy)')
-
-WebUI.scrollToElement(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Ward'), 
-    0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Ward'), 
-    'Ward')
-
-WebUI.scrollToElement(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Surface Type'), 
-    0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Surface Type'), 
-    'Surface Type')
-
-WebUI.scrollToElement(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Year'), 
-    0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/vaadin-grid-sorter_Year'), 
-    'Year')
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/button_ExportCSV'))
 

@@ -13,11 +13,15 @@
          <key>CSS</key>
          <value>div.sc-iCoGMd.bfMiYE.visible > div.sc-fujyAs.gAMrCi > h1.esri-widget__heading</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//h1[(text() = 'Budget Estimator' or . = 'Budget Estimator')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

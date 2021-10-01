@@ -58,7 +58,7 @@ println(currentdate)
 def repeatUntil = ''
 
 use(TimeCategory, { 
-        def sevenDays = today + 3.years
+        def sevenDays = today + 4.years
 
         repeatUntil = sevenDays.format(acceptedFormat)
 
@@ -79,7 +79,8 @@ WebUI.click(findTestObject('Object Repository/Work_Orders/Create_Recurring_Work_
 WebUI.click(findTestObject('Object Repository/Work_Orders/Create_Recurring_Work_Orders/Page_Streetlogix/h6_Select Form'))
 
 def countAfter = CustomKeywords.'com.database_keywords.test.Database_Keywords.getWorkOrdersCount'()
-
+println(countAfter)
+println(countBefore)
 if (countAfter == (countBefore + 2)) {
     println('Work Order Created')
 } else {

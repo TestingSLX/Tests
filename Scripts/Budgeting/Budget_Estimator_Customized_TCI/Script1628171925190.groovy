@@ -35,13 +35,7 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_
 
 WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Customized_TCI/Page_Streetlogix/div_No Filter'))
 
-List<WebElement> listLayers = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/ul_filterby'), 30)
-
-for(filter in listLayers) {
-	if(filter.getProperties()['text'] == "No Filter") {
-		filter.click()
-	}
-}
+WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Customized_TCI/Page_Streetlogix/li_No Filter'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Customized_TCI/Page_Streetlogix/label_Program duration'))
 
@@ -53,15 +47,9 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Customized_TCI/Page_Streetlogix/svg_Target condition index_MuiSvgIcon-root-446'))
 
-String CI = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/span_CI_text'))
+def CI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCI'()
 
-String TCI = CI.replaceAll("[^0-9/s.]+|/.(?!/d)", "")
-
-String stringCI = TCI.substring(0,4)
-
-double doubleCI = stringCI.toDouble()
-
-String targetCI = doubleCI.round() + 1
+String targetCI = CI + 1
 
 WebUI.setText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Customized_TCI/Page_Streetlogix/input_Budget for Year 1_MuiInputBase-input-_141922'), 
     targetCI)
@@ -96,7 +84,7 @@ WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Customiz
 
 WebUI.setText(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Customized_TCI/Page_Streetlogix/input_11'), targetCI)
 
-String targetCI2 = doubleCI.round() + 2
+String targetCI2 = CI + 2
 
 WebUI.setText(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_Customized_TCI/Page_Streetlogix/input_22'), targetCI2)
 

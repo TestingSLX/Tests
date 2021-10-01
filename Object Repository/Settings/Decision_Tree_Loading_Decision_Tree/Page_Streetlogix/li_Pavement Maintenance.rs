@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_1</name>
+   <name>li_Pavement Maintenance</name>
    <tag></tag>
-   <elementGuidId>c5a3cdd8-093f-4cad-bf3b-631de2a397f9</elementGuidId>
+   <elementGuidId>2de9a0df-7ea3-4ef1-9877-42157d0aee9f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -11,17 +11,13 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>li.MuiButtonBase-root-462.MuiListItem-root-651.MuiMenuItem-root-648.Mui-selected.MuiMenuItem-gutters-649.MuiListItem-gutters-656.MuiListItem-button-657.Mui-selected</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//li[(text() = '1' or . = '1')]</value>
+         <value>li.MuiButtonBase-root-439.MuiListItem-root-582.MuiMenuItem-root-579.Mui-selected.MuiMenuItem-gutters-580.MuiListItem-gutters-587.MuiListItem-button-588.Mui-selected.Mui-focusVisible.Mui-focusVisible</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -32,7 +28,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root-462 MuiListItem-root-651 MuiMenuItem-root-648 Mui-selected MuiMenuItem-gutters-649 MuiListItem-gutters-656 MuiListItem-button-657 Mui-selected</value>
+      <value>MuiButtonBase-root-439 MuiListItem-root-582 MuiMenuItem-root-579 Mui-selected MuiMenuItem-gutters-580 MuiListItem-gutters-587 MuiListItem-button-588 Mui-selected Mui-focusVisible Mui-focusVisible</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -67,21 +63,21 @@
       <matchCondition>equals</matchCondition>
       <name>data-value</name>
       <type>Main</type>
-      <value>1</value>
+      <value>Pavement_Maintenance_6816</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>1</value>
+      <value>Pavement Maintenance</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-534 MuiMenu-paper-449 MuiPopover-paper-452 MuiPaper-elevation8-545 MuiPaper-rounded-535&quot;]/ul[@class=&quot;MuiList-root-644 MuiMenu-list-450 MuiList-padding-645&quot;]/li[@class=&quot;MuiButtonBase-root-462 MuiListItem-root-651 MuiMenuItem-root-648 Mui-selected MuiMenuItem-gutters-649 MuiListItem-gutters-656 MuiListItem-button-657 Mui-selected&quot;]</value>
+      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-547 MuiMenu-paper-534 MuiPopover-paper-537 MuiPaper-elevation8-558 MuiPaper-rounded-548&quot;]/ul[@class=&quot;MuiList-root-575 MuiMenu-list-535 MuiList-padding-576&quot;]/li[@class=&quot;MuiButtonBase-root-439 MuiListItem-root-582 MuiMenuItem-root-579 Mui-selected MuiMenuItem-gutters-580 MuiListItem-gutters-587 MuiListItem-button-588 Mui-selected Mui-focusVisible Mui-focusVisible&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -95,14 +91,28 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[2]/following::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[3]/following::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[2]/following::li[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sidewalk Maintenance'])[2]/preceding::li[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sign Maintenance'])[2]/preceding::li[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
