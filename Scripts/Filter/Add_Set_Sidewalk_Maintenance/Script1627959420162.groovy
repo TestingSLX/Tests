@@ -25,22 +25,22 @@ WebUI.click(findTestObject('Object Repository/Filter/Add_Set_Sidewalk_Maintenanc
 
 WebUI.click(findTestObject('Filter/Add_Set_Sidewalk_Maintenance/Page_Streetlogix/div_Pavement Evaluation'))
 
-//List<WebElement> listLayers = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_layers_list'),
-//	30)
-//
-//List<WebElement> allLayersList1 = new ArrayList()
-//
-//def allLayersList2 = ((['Sidewalk Evaluation', 'Pavement Maintenance', 'Sidewalk Maintenance', 'Pavement Evaluation']) as String[])
-//
-//for (WebElement el : listLayers) {
-//allLayersList1.add(el.getText())
-//}
-//
-//if (allLayersList1.containsAll(allLayersList2)) {
-//println('All Layers Present')
-//} else {
-//throw new Exception('All layers are not in the dropdown')
-//}
+List<WebElement> listLayers = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Filter/Filter_Pavement_Evaluation/Page_Streetlogix/div_layers_list'),
+	30)
+
+List<WebElement> allLayersList1 = new ArrayList()
+
+def allLayersList2 = ((['Pavement Maintenance', 'Sidewalk Maintenance', 'Sign Maintenance', 'Work Orders', 'Pavement Condition Index', 'Ramp Evaluation', 'Sidewalk Condition Index', 'Sign Types', 'Manholes and Utility Covers', 'Pavement Distress', 'PavementMarkings', 'PavementMarkings Lines']) as String[])
+
+for (WebElement el : listLayers) {
+allLayersList1.add(el.getText())
+}
+
+if (allLayersList1.containsAll(allLayersList2)) {
+println('All Layers Present')
+} else {
+throw new Exception('All layers are not in the dropdown')
+}
 
 WebUI.click(findTestObject('Object Repository/Filter/Add_Set_Sidewalk_Maintenance/Page_Streetlogix/li_Sidewalk Maintenance'))
 

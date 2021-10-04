@@ -1,110 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>vaadin-grid-sorter_objectid</name>
+   <name>li_Pavement Distress</name>
    <tag></tag>
-   <elementGuidId>45a64094-d512-4a02-9d07-b8c6d634e7db</elementGuidId>
+   <elementGuidId>6b30edf1-dcc9-4d8b-b17b-8da571436d9a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>vaadin-grid-sorter.esri-column__sorter</value>
+         <key>XPATH</key>
+         <value>//div[@id='menu-']/div[3]/ul/li</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[11]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[2]/vaadin-grid-sorter</value>
+         <key>BASIC</key>
+         <value>//li[(text() = 'Pavement Distress' or . = 'Pavement Distress')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li.MuiButtonBase-root-425.MuiListItem-root-611.MuiMenuItem-root-608.MuiMenuItem-gutters-609.MuiListItem-gutters-616.MuiListItem-button-617</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>vaadin-grid-sorter</value>
+      <value>li</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>esri-column__sorter</value>
+      <value>MuiButtonBase-root-425 MuiListItem-root-611 MuiMenuItem-root-608 MuiMenuItem-gutters-609 MuiListItem-gutters-616 MuiListItem-button-617</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>path</name>
+      <name>tabindex</name>
       <type>Main</type>
-      <value>objectid</value>
+      <value>-1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>innerhtml</name>
+      <name>role</name>
       <type>Main</type>
-      <value>objectid</value>
+      <value>option</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-disabled</name>
+      <type>Main</type>
+      <value>false</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-value</name>
+      <type>Main</type>
+      <value>Sidewalk_Evaluation_1197</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>objectid</value>
+      <value>Pavement Distress</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;17b09af6dde-widget-91_grid&quot;)/vaadin-grid-cell-content[@class=&quot;esri-field-column__header-content&quot;]/vaadin-grid-sorter[@class=&quot;esri-column__sorter&quot;]</value>
+      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiPaper-root-576 MuiMenu-paper-529 MuiPopover-paper-532 MuiPaper-elevation8-587 MuiPaper-rounded-577&quot;]/ul[@class=&quot;MuiList-root-604 MuiMenu-list-530 MuiList-padding-605&quot;]/li[@class=&quot;MuiButtonBase-root-425 MuiListItem-root-611 MuiMenuItem-root-608 MuiMenuItem-gutters-609 MuiListItem-gutters-616 MuiListItem-button-617&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//vaadin-grid[@id='17b09af6dde-widget-91_grid']/vaadin-grid-cell-content[2]/vaadin-grid-sorter</value>
+      <value>//div[@id='menu-']/div[3]/ul/li</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pavement Evaluation - Pavement Condition Index (Features: 1,461, Selected: 0)'])[1]/following::vaadin-grid-sorter[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pavement Evaluation - Pavement Condition Index'])[1]/following::vaadin-grid-sorter[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[2]/following::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='PCI_historic'])[1]/preceding::vaadin-grid-sorter[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pavement Evaluation'])[5]/preceding::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Notes'])[1]/preceding::vaadin-grid-sorter[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='objectid']/parent::*</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sidewalk Maintenance'])[2]/preceding::li[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//vaadin-grid-sorter</value>
+      <value>//div[3]/ul/li</value>
    </webElementXpaths>
 </WebElementEntity>

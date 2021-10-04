@@ -10,14 +10,17 @@
          <value>//div[@id='menu-']/div[3]/ul/li[9]</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//li[(text() = 'All groups' or . = 'All groups')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -63,7 +66,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>All Groups</value>
+      <value>All groups</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -11,11 +11,10 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//li[(text() = 'All Groups' or . = 'All Groups')]</value>
+         <value>//li[(text() = 'All groups' or . = 'All groups')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -67,7 +66,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>All Groups</value>
+      <value>All groups</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

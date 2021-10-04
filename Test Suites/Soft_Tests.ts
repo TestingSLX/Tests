@@ -147,7 +147,7 @@
       <guid>3de782fa-7e93-456b-9577-ee8078decd65</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Filter/Add_Set_Sidewalk_Evaluation</testCaseId>
+      <testCaseId>Test Cases/Filter/Add_Set_Pavement_Distress</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d839c7eb-7b21-467d-9ca9-69e46c8b87a3</guid>

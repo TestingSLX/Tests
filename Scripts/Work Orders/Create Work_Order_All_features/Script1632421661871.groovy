@@ -69,9 +69,9 @@ WebUI.setText(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/in
 
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/p_Address'))
 
-WebUI.setText(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/input_Address'), 'Forest Ave, Portland, ME, 04103, USA')
-
-WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/li_FOREST AVE, Portland, ME, USA'))
+//WebUI.setText(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/input_Address'), 'Forest Ave, Portland, ME, 04103, USA')
+//
+//WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/li_FOREST AVE, Portland, ME, USA'))
 
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/p_Note'))
 

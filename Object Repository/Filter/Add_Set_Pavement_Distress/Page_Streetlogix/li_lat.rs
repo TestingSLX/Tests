@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_SCI_historic</name>
+   <name>li_lat</name>
    <tag></tag>
    <elementGuidId>a6bcd0f7-562f-4e1a-9242-8d7d3659c9c5</elementGuidId>
    <selectorCollection>
@@ -10,14 +10,17 @@
          <value>//div[@id='menu-field']/div[3]/ul/li[2]</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//li[(text() = 'lat' or . = 'lat')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -63,7 +66,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>SCI_historic</value>
+      <value>lat</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

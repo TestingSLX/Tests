@@ -10,14 +10,17 @@
          <value>//div[@id='menu-field']/div[3]/ul/li[2]</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//li[(text() = 'PCI_historic' or . = 'PCI_historic')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -63,7 +66,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>PCI_historic</value>
+      <value>PCI</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

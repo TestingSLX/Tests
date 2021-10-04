@@ -309,7 +309,8 @@ def array = ((['12', '13', 'ABBOTT ST', 'ADAMS ST', 'ACCESS RD', '0', 'Reconstru
 	, '0102000020110F00000200000046B6F3750AD95DC14013619BCDAB544128ED0DC222D95DC1C8073DCFF4AB5441']) as String[])
 
 def newData = ((CustomKeywords.'com.database_keywords.test.Database_Keywords.array'()) as String[])
-
+println(newData)
+println(array)
 if (array == newData) {
 	println('Attributes changed for selected feature')
 } else {

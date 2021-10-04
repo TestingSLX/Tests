@@ -30,7 +30,7 @@ List<WebElement> listLayers = WebUiCommonHelper.findWebElements(findTestObject('
 
 List<WebElement> allLayersList1 = new ArrayList()
 
-def allLayersList2 = ((['Sidewalk Evaluation', 'Pavement Maintenance', 'Sidewalk Maintenance', 'Pavement Evaluation']) as String[])
+def allLayersList2 = ((['Pavement Maintenance', 'Sidewalk Maintenance', 'Sign Maintenance', 'Work Orders', 'Pavement Condition Index', 'Ramp Evaluation', 'Sidewalk Condition Index', 'Sign Types', 'Manholes and Utility Covers', 'Pavement Distress', 'PavementMarkings', 'PavementMarkings Lines']) as String[])
 
 for (WebElement el : listLayers) {
 allLayersList1.add(el.getText())
@@ -72,19 +72,19 @@ WebUI.click(findTestObject('Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix
 
 WebUI.click(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/li_is'))
 
-WebUI.setText(findTestObject('Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/input__input2'), '80')
+WebUI.setText(findTestObject('Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/input__input2'), '95')
 
 WebUI.click(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/button_Pavement Maintenance'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/button_Pavement Maintenance'), 'PAVEMENT MAINTENANCE')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/vaadin-grid-sorter_OBJECTID'), 'OBJECTID')
+WebUI.verifyElementText(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/vaadin-grid-sorter_OBJECTID'), 'objectid')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/vaadin-grid-sorter_PCI_historic'), 'PCI_historic')
+WebUI.verifyElementText(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/vaadin-grid-sorter_PCI_historic'), 'PCI')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_3'), '3')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_80'), '80')
+WebUI.verifyElementText(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_80'), '95')
 
 WebUI.click(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
 

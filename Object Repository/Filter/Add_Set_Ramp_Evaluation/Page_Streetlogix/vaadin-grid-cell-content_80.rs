@@ -3,15 +3,14 @@
    <description></description>
    <name>vaadin-grid-cell-content_80</name>
    <tag></tag>
-   <elementGuidId>2376c791-3983-4c72-aa33-2b3f016ea524</elementGuidId>
+   <elementGuidId>83c483a7-d305-4de1-a5e3-12ca4056576d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[10]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[101]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[9]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[159]</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +27,7 @@
       <matchCondition>equals</matchCondition>
       <name>slot</name>
       <type>Main</type>
-      <value>vaadin-grid-cell-content-158</value>
+      <value>vaadin-grid-cell-content-178</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,28 +41,28 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;17b09e075b9-widget-169_grid&quot;)/vaadin-grid-cell-content[159]</value>
+      <value>id(&quot;17b099cc85e-widget-89_grid&quot;)/vaadin-grid-cell-content[179]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//vaadin-grid[@id='17b09e075b9-widget-169_grid']/vaadin-grid-cell-content[159]</value>
+      <value>//vaadin-grid[@id='17b099cc85e-widget-89_grid']/vaadin-grid-cell-content[179]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='st_length(shape)'])[1]/following::vaadin-grid-cell-content[120]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='st_length(shape)'])[1]/following::vaadin-grid-cell-content[135]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='need_year'])[1]/following::vaadin-grid-cell-content[121]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Load Associated Deducts'])[1]/following::vaadin-grid-cell-content[136]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -84,6 +83,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//vaadin-grid-cell-content[159]</value>
+      <value>//vaadin-grid-cell-content[179]</value>
    </webElementXpaths>
 </WebElementEntity>

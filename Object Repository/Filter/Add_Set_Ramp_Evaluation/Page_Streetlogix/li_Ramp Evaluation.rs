@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_Pavement Evaluation</name>
+   <name>li_Ramp Evaluation</name>
    <tag></tag>
    <elementGuidId>8fd97522-8455-4596-a8a7-a3a6595cb5e1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>li.MuiButtonBase-root-425.MuiListItem-root-611.MuiMenuItem-root-608.Mui-selected.MuiMenuItem-gutters-609.MuiListItem-gutters-616.MuiListItem-button-617.Mui-selected.Mui-focusVisible.Mui-focusVisible</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='menu-']/div[3]/ul/li[2]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//li[(text() = 'Pavement Evaluation' or . = 'Pavement Evaluation')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li.MuiButtonBase-root-425.MuiListItem-root-611.MuiMenuItem-root-608.Mui-selected.MuiMenuItem-gutters-609.MuiListItem-gutters-616.MuiListItem-button-617.Mui-selected.Mui-focusVisible.Mui-focusVisible</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -70,7 +74,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Pavement Evaluation</value>
+      <value>Ramp Evaluation</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -57,15 +57,9 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Surface_Type/Page_Streetlogix/label_Target condition index'))
 
-String CI = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Functional_Class/Page_Streetlogix/span_CI_text'))
+def CI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCI'()
 
-String TCI = CI.replaceAll("[^0-9/s.]+|/.(?!/d)", "")
-
-String stringCI = TCI.substring(0,4)
-
-double doubleCI = stringCI.toDouble()
-
-String targetCI = doubleCI.round() + 1
+String targetCI = CI + 3
 
 WebUI.setText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_Surface_Type/Page_Streetlogix/input_Target condition index_MuiInputBase-i_43b0a5'), 
     targetCI)

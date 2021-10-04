@@ -10,14 +10,17 @@
          <value>//div[@id='menu-']/div[3]/ul/li[4]</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//li[(text() = 'Pavement Maintenance' or . = 'Pavement Maintenance')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

@@ -43,11 +43,11 @@ WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priori
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/button_Add Factor'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_PCI_historic'), 'PCI_historic')
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_PCI_historic'), 'Estimated Cost ($)')
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_TravelLane'), 'TravelLane')
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_TravelLane'), 'Repair Priority')
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
 
@@ -59,63 +59,61 @@ WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priori
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Estimated Cost ()'), 'Estimated Cost ($)')
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Estimated Cost ()'), 'Area (sy)')
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Repair Priority'), 'Repair Priority')
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Repair Priority'), 'Last Repair Cost')
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Area (sy)'), 'Area (sy)')
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Area (sy)'), 'Ward')
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Last Repair Cost'), 'Last Repair Cost')
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Last Repair Cost'), 'Management Section')
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
 
-WebUI.verifyElementText(findTestObject('Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Width (ft)1'), 'Width (ft)')
+WebUI.verifyElementText(findTestObject('Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Width (ft)1'), 'need_year')
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
 
-WebUI.verifyElementText(findTestObject('Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Length (ft)1'), 'Length (ft)')
+WebUI.verifyElementText(findTestObject('Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Length (ft)1'), 'L/T Crack Density')
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Ward'), 'Ward')
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Ward'), 'Alligator Crack Density')
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Surface Type ID'), 'Surface Type ID')
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Surface Type ID'), 'Bump Density')
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Management Section'), 'Management Section')
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Management Section'), 'Load Associated Deducts')
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Need Year'), 'Need Year')
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Need Year'), 'TravelLane')
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_LT Crack Density'), 'L/T Crack Density')
-
-WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Alligator Crack Density'), 'Alligator Crack Density')
-
-WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Bump Density'), 'Bump Density')
-
-WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Load Associated Deducts'), 'Load Associated Deducts')
-
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/button_Add Factor'))
-
-WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/div_Add Factor'))
+//
+//WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Alligator Crack Density'), 'Alligator Crack Density')
+//
+//WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Bump Density'), 'Bump Density')
+//
+//WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/td_Load Associated Deducts'), 'Load Associated Deducts')
+//
+//WebUI.verifyElementNotClickable(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/button_Add Factor'))
+//
+WebUI.verifyElementHasAttribute(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/button_Add Factor'), 'disabled', 0)
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Reset'))
 

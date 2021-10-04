@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>vaadin-grid-cell-content_3</name>
+   <name>vaadin-grid-sorter_OBJECTID</name>
    <tag></tag>
-   <elementGuidId>0563266d-0cbb-4b54-8655-bc9c44924814</elementGuidId>
+   <elementGuidId>83adb7f7-a977-4c0d-9348-df910061a2a3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[11]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[2]/vaadin-grid-sorter</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[11]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[178]</value>
+         <key>CSS</key>
+         <value>vaadin-grid-sorter.esri-column__sorter</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,76 +21,83 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>vaadin-grid-cell-content</value>
+      <value>vaadin-grid-sorter</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>slot</name>
+      <name>class</name>
       <type>Main</type>
-      <value>vaadin-grid-cell-content-177</value>
+      <value>esri-column__sorter</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>path</name>
+      <type>Main</type>
+      <value>objectid</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>innerhtml</name>
+      <type>Main</type>
+      <value>OBJECTID</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>3</value>
+      <value>OBJECTID</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;17b099cc85e-widget-89_grid&quot;)/vaadin-grid-cell-content[178]</value>
+      <value>id(&quot;17b09e075b9-widget-169_grid&quot;)/vaadin-grid-cell-content[@class=&quot;esri-field-column__header-content&quot;]/vaadin-grid-sorter[@class=&quot;esri-column__sorter&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//vaadin-grid[@id='17b099cc85e-widget-89_grid']/vaadin-grid-cell-content[178]</value>
+      <value>//vaadin-grid[@id='17b09e075b9-widget-169_grid']/vaadin-grid-cell-content[2]/vaadin-grid-sorter</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='st_length(shape)'])[1]/following::vaadin-grid-cell-content[134]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sidewalk Evaluation (Features: 1, Selected: 0)'])[1]/following::vaadin-grid-sorter[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Load Associated Deducts'])[1]/following::vaadin-grid-cell-content[135]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sidewalk Evaluation'])[4]/following::vaadin-grid-sorter[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='BAY VIEW DR'])[1]/preceding::vaadin-grid-cell-content[6]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SCI_historic'])[2]/preceding::vaadin-grid-sorter[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='CHENERY ST'])[1]/preceding::vaadin-grid-cell-content[7]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='3']/parent::*</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='notes'])[1]/preceding::vaadin-grid-sorter[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//vaadin-grid-cell-content[178]</value>
+      <value>//vaadin-grid-sorter</value>
    </webElementXpaths>
 </WebElementEntity>
