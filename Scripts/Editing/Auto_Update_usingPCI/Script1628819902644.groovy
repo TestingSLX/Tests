@@ -82,6 +82,12 @@ double newEstimatedCost = estimatedCost.toDouble()
 
 WebUI.verifyMatch(newEstimatedCost.toString(), finalEstimatedCost.toString(), false)
 
+WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Repair Priority'))
+
+String repairPriority = WebUI.getText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__repair_priority'))
+
+
+
 //println(newEstimatedCost)
 //println(finalEstimatedCost)
 

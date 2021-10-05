@@ -2,26 +2,37 @@ import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.ResultSet
 import java.sql.Statement
-import java.lang.Number
 
-        Connection c = null;
-		Statement stmt = null;
-		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/development_portal", "sde", "V0ters!23");
-		def queryString = "SELECT * from sde.sidewalk_evaluation_loc"
-		Statement stm = c.createStatement()
-		ResultSet result = stm.executeQuery(queryString)
-		double SCI = 0;
-		double totalLength = 0;
-		double sciLength = 0;
-		double length = 0;
-		double product = 0;
-		while(result.next()) {
-			SCI = result.getInt('sci')
-			length = result.getInt('length_ft')
-			sciLength = sciLength + SCI * length
-			totalLength = totalLength + length
-		}
-		double avgSCI = sciLength / totalLength
-		println( avgSCI)
-		
-		
+import groovy.json.JsonSlurper
+
+def min =[]
+def max =[]
+
+def minID = CustomKeywords.'com.database_keywords.test.Database_Keywords.getMinimumFunctionalCLassID'()
+min.add(minID)
+
+def maxID = CustomKeywords.'com.database_keywords.test.Database_Keywords.getMaximumFunctionalCLassID'()
+max.add(maxID)
+
+def minPCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getMinimumPCI'()
+min.add(minPCI)
+
+def maxPCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getMaximumPCI'()
+max.add(maxPCI)
+
+println(min)
+println(max)
+
+def weight = [4,-3]
+def factors = [7, 80]
+def newRp = 0
+for(i=0; i< weight.size(); i++) {
+	if (weight[i] > 0) {
+		newRp += Math.abs((((factors[i] - min[i]) / (max[i] - min[i])) * weight[i]) / 7);
+	} else {
+		newRp += Math.abs(((1 - (factors[i] - min[i]) / (max[i] - min[i])) * weight[i]) / 7);
+	}
+}
+
+println(newRp*100)
+

@@ -62,6 +62,62 @@ public class Database_Keywords {
 		return avgPCI.round()
 		closeConnection()
 	}
+	
+	@Keyword
+	public int getMinimumPCI() {
+		openConnection()
+		def queryString = "SELECT * from sde.pavement_evaluation_loc order by pci ASC LIMIT 1"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		double PCI = 0;
+		while(result.next()) {
+			PCI = result.getInt('pci')
+		}
+		return PCI
+		closeConnection()
+	}
+	
+	@Keyword
+	public int getMaximumPCI() {
+		openConnection()
+		def queryString = "SELECT * from sde.pavement_evaluation_loc order by pci DESC LIMIT 1"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		double PCI = 0;
+		while(result.next()) {
+			PCI = result.getInt('pci')
+		}
+		return PCI
+		closeConnection()
+	}
+	
+	@Keyword
+	public int getMinimumFunctionalCLassID() {
+		openConnection()
+		def queryString = "SELECT * from sde.pavement_evaluation_loc order by functional_class_id ASC LIMIT 1"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		def id = 0;
+		while(result.next()) {
+			id = result.getInt('functional_class_id')
+		}
+		return id
+		closeConnection()
+	}
+	
+	@Keyword
+	public int getMaximumFunctionalCLassID() {
+		openConnection()
+		def queryString = "SELECT * from sde.pavement_evaluation_loc order by functional_class_id DESC LIMIT 1"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		def id = 0;
+		while(result.next()) {
+			id = result.getInt('functional_class_id')
+		}
+		return id
+		closeConnection()
+	}
 
 	@Keyword
 	public int getPavementMiles() {
@@ -735,5 +791,24 @@ public class Database_Keywords {
 		}
 		return status
 		closeConnection()
+	}
+
+	@Keyword
+	def getRepairPriority() {
+		openConnection()
+		Connection c = null;
+		Statement stmt = null;
+		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/_common_db", "sde", "V0ters!23");
+
+		def queryString = "SELECT * FROM sde.priority_factors WHERE id = 17"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+
+		def decisionTree = null
+		def list = null
+		while(result.next()){
+			decisionTree = result.getString('weights')
+		}
+		return decisionTree
 	}
 }
