@@ -62,7 +62,7 @@ public class Database_Keywords {
 		return avgPCI.round()
 		closeConnection()
 	}
-	
+
 	@Keyword
 	public int getMinimumPCI() {
 		openConnection()
@@ -76,7 +76,7 @@ public class Database_Keywords {
 		return PCI
 		closeConnection()
 	}
-	
+
 	@Keyword
 	public int getMaximumPCI() {
 		openConnection()
@@ -90,7 +90,7 @@ public class Database_Keywords {
 		return PCI
 		closeConnection()
 	}
-	
+
 	@Keyword
 	public int getMinimumFunctionalCLassID() {
 		openConnection()
@@ -104,7 +104,7 @@ public class Database_Keywords {
 		return id
 		closeConnection()
 	}
-	
+
 	@Keyword
 	public int getMaximumFunctionalCLassID() {
 		openConnection()
@@ -219,7 +219,7 @@ public class Database_Keywords {
 	}
 
 	@Keyword
-	def autoUpdate() {
+	def autoUpdate(def PCI) {
 		openConnection()
 		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/_common_db", "sde", "V0ters!23");
 		def queryString = "SELECT * FROM sde.decision_tree ORDER BY id DESC LIMIT 1"
@@ -245,7 +245,7 @@ public class Database_Keywords {
 		}
 
 		def map = [maintenanceSuggestion, pciBoundary, costs].transpose()
-		def pci = 85
+		def pci = PCI
 		def val = null
 		int min = 0
 		int max = 0
@@ -800,15 +800,14 @@ public class Database_Keywords {
 		Statement stmt = null;
 		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/_common_db", "sde", "V0ters!23");
 
-		def queryString = "SELECT * FROM sde.priority_factors WHERE id = 17"
+		def queryString = "SELECT * FROM sde.priority_factors WHERE id = 18"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
 
-		def decisionTree = null
-		def list = null
+		def repair_priority = null
 		while(result.next()){
-			decisionTree = result.getString('weights')
+			repair_priority = result.getString('weights')
 		}
-		return decisionTree
+		return repair_priority
 	}
 }

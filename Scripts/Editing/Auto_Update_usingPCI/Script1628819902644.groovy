@@ -21,8 +21,10 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 
 CustomKeywords.'com.gis_url.test.URL.redirectURL'()
 
-def maintenanceSuggestionDecisionTree = CustomKeywords.'com.database_keywords.test.Database_Keywords.autoUpdate'()
+def pci = 45
 
+def maintenanceSuggestionDecisionTree = CustomKeywords.'com.database_keywords.test.Database_Keywords.autoUpdate'(pci)
+println(maintenanceSuggestionDecisionTree)
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/div_Editing'))
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/div_Attribute Editor'))
@@ -54,7 +56,9 @@ WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Street
 
 WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_PCI'), Keys.chord(Keys.BACK_SPACE))
 
-WebUI.setText(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_PCI'), '85')
+WebUI.setText(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_PCI'), pci.toString())
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input_Maintenance Suggestion'))
 
@@ -84,9 +88,55 @@ WebUI.verifyMatch(newEstimatedCost.toString(), finalEstimatedCost.toString(), fa
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Repair Priority'))
 
-String repairPriority = WebUI.getText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__repair_priority'))
+String repairPriority = WebUI.getAttribute(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__repair_priority'), 'value')
 
+String functionalClassId = WebUI.getAttribute(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__functional_class_id'), 'value')
 
+def min =[]
+def max =[]
+
+def minID = CustomKeywords.'com.database_keywords.test.Database_Keywords.getMinimumFunctionalCLassID'()
+min.add(minID)
+
+def maxID = CustomKeywords.'com.database_keywords.test.Database_Keywords.getMaximumFunctionalCLassID'()
+max.add(maxID)
+
+def minPCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getMinimumPCI'()
+min.add(minPCI)
+
+def maxPCI = CustomKeywords.'com.database_keywords.test.Database_Keywords.getMaximumPCI'()
+max.add(maxPCI)
+
+def RPriority = CustomKeywords.'com.database_keywords.test.Database_Keywords.getRepairPriority'()
+
+println(repairPriority.getClass())
+println(min)
+println(max)
+
+def weight = Eval.me(RPriority)
+def totalWeight = 0
+
+for(i=0; i < weight.size(); i++) {
+	totalWeight = totalWeight + Math.abs(weight[i])
+}
+
+def factors = [functionalClassId.toInteger(), pci]
+def newRp = 0
+for(i=0; i< weight.size(); i++) {
+	if (weight[i] > 0) {
+		newRp += Math.abs((((factors[i] - min[i]) / (max[i] - min[i])) * weight[i]) / totalWeight);
+	} else {
+		newRp += Math.abs(((1 - (factors[i] - min[i]) / (max[i] - min[i])) * weight[i]) / totalWeight);
+	}
+}
+
+def finalRP = (newRp*100).round()
+
+if(finalRP == repairPriority.toInteger()) {
+	println('Repair Priority Autoupdated')
+} else {
+	throw new Exception('Repair priority calculated is incorrect')
+}
 
 //println(newEstimatedCost)
 //println(finalEstimatedCost)

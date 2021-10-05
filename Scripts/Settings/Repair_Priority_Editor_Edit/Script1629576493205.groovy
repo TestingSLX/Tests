@@ -43,10 +43,12 @@ String order1 = WebUI.getText(findTestObject('Object Repository/Settings/Repair_
 
 WebUI.click(findTestObject('Settings/Repair_Priority_Editor/Page_Streetlogix/button_Edit_Values'))
 
-WebUI.sendKeys(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.sendKeys(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'), 
+    Keys.chord(Keys.CONTROL, 'a'))
 
-WebUI.sendKeys(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'), Keys.chord(Keys.BACK_SPACE))
-	
+WebUI.sendKeys(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'), 
+    Keys.chord(Keys.BACK_SPACE))
+
 WebUI.setText(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'), 
     '4')
 
@@ -62,12 +64,14 @@ WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priori
 
 WebUI.click(findTestObject('Settings/Repair_Priority_Editor/Page_Streetlogix/button_Edit_Values'))
 
-WebUI.sendKeys(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.sendKeys(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'), 
+    Keys.chord(Keys.CONTROL, 'a'))
 
-WebUI.sendKeys(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'), Keys.chord(Keys.BACK_SPACE))
+WebUI.sendKeys(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'), 
+    Keys.chord(Keys.BACK_SPACE))
 
 WebUI.setText(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'), 
-    "4")
+    '5')
 
 WebUI.click(findTestObject('Settings/Repair_Priority_Editor/Page_Streetlogix/div_DESC'))
 
@@ -75,17 +79,73 @@ WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Pa
 
 WebUI.click(findTestObject('Settings/Repair_Priority_Editor/Page_Streetlogix/button_Save_Edit'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/td_4'), "4")
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/td_4'), '5')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/td_ASC'), "ASC")
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/td_ASC'), 'ASC')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/td_Functional Class'), 'Functional Class')
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/td_Functional Class'), 
+    'Functional Class')
 
 WebUI.click(findTestObject('Settings/Repair_Priority_Editor/Page_Streetlogix/button_Delete'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/td_Functional Class'), 'PCI')
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/td_Functional Class'), 
+    'PCI')
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/button_Reset'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/td_Functional Class'), "Functional Class")
+WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/td_Functional Class'), 
+    'Functional Class')
+
+WebUI.click(findTestObject('Settings/Repair_Priority_Editor/Page_Streetlogix/button_Edit_Values'))
+
+WebUI.sendKeys(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'),
+	Keys.chord(Keys.CONTROL, 'a'))
+
+WebUI.sendKeys(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'),
+	Keys.chord(Keys.BACK_SPACE))
+
+WebUI.setText(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'),
+	'5')
+
+WebUI.click(findTestObject('Settings/Repair_Priority_Editor/Page_Streetlogix/div_DESC'))
+
+WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/li_ASC'))
+
+WebUI.click(findTestObject('Settings/Repair_Priority_Editor/Page_Streetlogix/button_Save_Edit'))
+
+WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/button_Save_RP'))
+
+WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/button_OK'))
+
+def RPriority = CustomKeywords.'com.database_keywords.test.Database_Keywords.getRepairPriority'()
+
+WebUI.verifyMatch(RPriority, '[5,-3]', false)
+
+WebUI.click(findTestObject('Settings/Repair_Priority_Editor/Page_Streetlogix/button_Edit_Values'))
+
+WebUI.sendKeys(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'),
+	Keys.chord(Keys.CONTROL, 'a'))
+
+WebUI.sendKeys(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'),
+	Keys.chord(Keys.BACK_SPACE))
+
+WebUI.setText(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/input_Functional Class_weight'),
+	'4')
+
+WebUI.click(findTestObject('Settings/Repair_Priority_Editor/Page_Streetlogix/div_DESC'))
+
+WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/li_ASC'))
+
+WebUI.click(findTestObject('Settings/Repair_Priority_Editor/Page_Streetlogix/button_Save_Edit'))
+
+WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/button_Save_RP'))
+
+WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/button_OK'))
+
+def RPriority1 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getRepairPriority'()
+println(RPriority)
+println(RPriority1)
+WebUI.verifyMatch(RPriority1, '[4,-3]', false)
+
+
 
