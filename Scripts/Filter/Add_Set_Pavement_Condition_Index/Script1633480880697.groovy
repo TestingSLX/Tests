@@ -42,7 +42,7 @@ println('All Layers Present')
 throw new Exception('All layers are not in the dropdown')
 }
 
-WebUI.click(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/li_Pavement Distress'))
+WebUI.click(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/li_Pavement Condition Index'))
 
 WebUI.click(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
 
@@ -72,29 +72,29 @@ WebUI.click(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/di
 
 WebUI.click(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/li_is'))
 
-WebUI.setText(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/input__input1'), '4')
+WebUI.setText(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/input__input1'), '3')
 
 WebUI.click(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/div_Select Field Name2'))
 
-WebUI.click(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/li_lat'))
+WebUI.click(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/li_SS_ID'))
 
 WebUI.click(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/div_Select Filter2'))
 
 WebUI.click(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/li_is'))
 
-WebUI.setText(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/input__input2'), '43.66990725')
+WebUI.setText(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/input__input2'), '4')
 
 WebUI.click(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/span_Sidewalk Evaluation'))
 
 WebUI.click(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/button_Sidewalk Evaluation'))
 
-WebUI.verifyElementText(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/vaadin-grid-sorter_OBJECTID'), 'objectid')
+WebUI.verifyElementText(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/vaadin-grid-sorter_objectid_PCI'), 'objectid')
 
-WebUI.verifyElementText(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/vaadin-grid-sorter_SCI_historic'), 'lat')
+WebUI.verifyElementText(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/vaadin-grid-sorter_SS_ID'), 'SS_ID')
 
-WebUI.verifyElementText(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/vaadin-grid-cell-content_3'), '4')
+WebUI.verifyElementText(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/vaadin-grid-cell-content_pci_objectid'), '3')
 
-WebUI.verifyElementText(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/vaadin-grid-cell-content_80'), '43.66990725')
+WebUI.verifyElementText(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/vaadin-grid-cell-content_pci_ssid'), '4')
 
 WebUI.click(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
 

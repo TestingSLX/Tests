@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_OBJECTID</name>
+   <name>li_SCI_historic</name>
    <tag></tag>
-   <elementGuidId>43448f78-c3c0-4a59-ac73-e826cc4cd92a</elementGuidId>
+   <elementGuidId>d063f802-7097-4391-a4f5-3f48e92bf2a4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='menu-field']/div[3]/ul/li</value>
+         <value>//div[@id='menu-field']/div[3]/ul/li[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//li[(text() = 'OBJECTID' or . = 'OBJECTID')]</value>
+         <value>//li[(text() = 'SCI_historic' or . = 'SCI_historic')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#menu-field > div.MuiPaper-root-620.MuiMenu-paper-529.MuiPopover-paper-532.MuiPaper-elevation8-631.MuiPaper-rounded-621 > ul.MuiList-root-672.MuiMenu-list-530.MuiList-padding-673 > li.MuiButtonBase-root-425.MuiListItem-root-679.MuiMenuItem-root-676.MuiMenuItem-gutters-677.MuiListItem-gutters-684.MuiListItem-button-685</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -32,14 +32,14 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root-425 MuiListItem-root-679 MuiMenuItem-root-676 MuiMenuItem-gutters-677 MuiListItem-gutters-684 MuiListItem-button-685</value>
+      <value>MuiButtonBase-root-139 MuiListItem-root-434 MuiMenuItem-root-431 MuiMenuItem-gutters-432 MuiListItem-gutters-439 MuiListItem-button-440</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tabindex</name>
       <type>Main</type>
-      <value>0</value>
+      <value>-1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -60,62 +60,62 @@
       <matchCondition>equals</matchCondition>
       <name>data-value</name>
       <type>Main</type>
-      <value>objectid</value>
+      <value>sci_historic</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>OBJECTID</value>
+      <value>SCI_historic</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;menu-field&quot;)/div[@class=&quot;MuiPaper-root-620 MuiMenu-paper-529 MuiPopover-paper-532 MuiPaper-elevation8-631 MuiPaper-rounded-621&quot;]/ul[@class=&quot;MuiList-root-672 MuiMenu-list-530 MuiList-padding-673&quot;]/li[@class=&quot;MuiButtonBase-root-425 MuiListItem-root-679 MuiMenuItem-root-676 MuiMenuItem-gutters-677 MuiListItem-gutters-684 MuiListItem-button-685&quot;]</value>
+      <value>id(&quot;menu-field&quot;)/div[@class=&quot;MuiPaper-root-375 MuiMenu-paper-243 MuiPopover-paper-246 MuiPaper-elevation8-386 MuiPaper-rounded-376&quot;]/ul[@class=&quot;MuiList-root-427 MuiMenu-list-244 MuiList-padding-428&quot;]/li[@class=&quot;MuiButtonBase-root-139 MuiListItem-root-434 MuiMenuItem-root-431 MuiMenuItem-gutters-432 MuiListItem-gutters-439 MuiListItem-button-440&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='menu-field']/div[3]/ul/li</value>
+      <value>//div[@id='menu-field']/div[3]/ul/li[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='unique'])[2]/following::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='OBJECTID'])[3]/following::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='field'])[2]/following::li[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='unique'])[2]/following::li[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='SCI_historic'])[2]/preceding::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='notes'])[4]/preceding::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='notes'])[2]/preceding::li[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='UID'])[4]/preceding::li[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/ul/li</value>
+      <value>//div[3]/ul/li[2]</value>
    </webElementXpaths>
 </WebElementEntity>
