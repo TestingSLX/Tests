@@ -7,14 +7,18 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div[2]/div/div/div/div</value>
+         <value>/html/body/div[1]/div[3]/div[1]/div[1]/div[2]/div/div[1]/div[2]/div/div</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'demo-simple-select-outlined']</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>div.MuiSelect-root-492.MuiSelect-select-493.MuiSelect-selectMenu-496.MuiSelect-outlined-495.MuiInputBase-input-522.MuiOutlinedInput-input-509.MuiInputBase-inputMarginDense-523.MuiOutlinedInput-inputMarginDense-510</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,7 +56,7 @@
       <value>listbox</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -64,6 +68,13 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;sc-hiKfDv tAuRw&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-397 MuiBox-root-398&quot;]/div[@class=&quot;MuiBox-root-397 MuiBox-root-399&quot;]/div[@class=&quot;sc-jcwpoC hjitKo&quot;]/div[@class=&quot;MuiBox-root-397 MuiBox-root-487&quot;]/div[@class=&quot;MuiFormControl-root-488&quot;]/div[@class=&quot;MuiInputBase-root-514 MuiOutlinedInput-root-502 MuiInputBase-formControl-515 MuiInputBase-marginDense-518 MuiOutlinedInput-marginDense-506&quot;]/div[@class=&quot;MuiSelect-root-492 MuiSelect-select-493 MuiSelect-selectMenu-496 MuiSelect-outlined-495 MuiInputBase-input-522 MuiOutlinedInput-input-509 MuiInputBase-inputMarginDense-523 MuiOutlinedInput-inputMarginDense-510&quot;]</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>demo-simple-select-outlined</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

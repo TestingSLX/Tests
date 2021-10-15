@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "7D467B32D69F11D758AB61B72CC41223",
+  "keywordFileContentHash": "4581423AD7A554025F7A222929F28D29",
   "keywordClasses": [
     {
       "name": "com.database_keywords.test.Database_Keywords",
@@ -220,6 +220,16 @@
         },
         {
           "name": "verifyAttachmentsUploaded",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "verifyVideosUploaded",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "verifyDocumentUploaded",
           "parameters": [],
           "javadoc": ""
         },

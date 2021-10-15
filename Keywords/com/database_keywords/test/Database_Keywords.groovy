@@ -658,6 +658,48 @@ public class Database_Keywords {
 		return status
 		closeConnection()
 	}
+	
+	@Keyword
+	def verifyVideosUploaded() {
+		openConnection()
+		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
+		def queryString = "SELECT * FROM sde.work_order_loc ORDER BY objectid DESC LIMIT 1"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		def items = []
+		while(result.next()) {
+			items.add(result.getString('videos'))
+		}
+		def status = ""
+		if(items[0].toString() == "[]" || items[0].toString() == "null") {
+			status = 'Not Uploaded'
+		} else if(items[0].toString() != "[]" || items[0].toString() != "null") {
+			status = 'Uploaded'
+		}
+		return status
+		closeConnection()
+	}
+	
+	@Keyword
+	def verifyDocumentUploaded() {
+		openConnection()
+		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
+		def queryString = "SELECT * FROM sde.work_order_loc ORDER BY objectid DESC LIMIT 1"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		def items = []
+		while(result.next()) {
+			items.add(result.getString('documents'))
+		}
+		def status = ""
+		if(items[0].toString() == "[]" || items[0].toString() == "null") {
+			status = 'Not Uploaded'
+		} else if(items[0].toString() != "[]" || items[0].toString() != "null") {
+			status = 'Uploaded'
+		}
+		return status
+		closeConnection()
+	}
 
 	@Keyword
 	def workOrderResources() {
@@ -718,7 +760,7 @@ public class Database_Keywords {
 		Connection c = null;
 		Statement stmt = null;
 		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
-		def queryString = "SELECT * FROM sde.work_order_loc ORDER BY objectid DESC LIMIT 4"
+		def queryString = "SELECT * FROM sde.work_order_loc ORDER BY objectid DESC LIMIT 3"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
 		def objectid = []
@@ -760,7 +802,7 @@ public class Database_Keywords {
 		Connection c = null;
 		Statement stmt = null;
 		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/client_workorder", "sde", "V0ters!23");
-		def queryString = "SELECT * FROM sde.work_order_loc ORDER BY objectid DESC LIMIT 4"
+		def queryString = "SELECT * FROM sde.work_order_loc ORDER BY objectid DESC LIMIT 3"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
 		def objectid = []

@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>b22acf13-983d-4ee3-8afa-fc7e74be9fa6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Budgeting/Budger_Estimator_Ward</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -26,7 +26,7 @@
    <testCaseLink>
       <guid>0ba3059f-d462-4ede-ae9a-257f388dbc56</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Budgeting/Budget_Comparison_Functional_Class</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -50,13 +50,13 @@
    <testCaseLink>
       <guid>d7217806-d68a-44ee-9654-8a7ed217f6ff</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Budgeting/Budget_Estimator_Functional_Class</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f3358a3c-e63a-41f1-b616-3fa6c039bdbd</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Budgeting/Budget_Estimator_Surface_Type</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -68,7 +68,7 @@
    <testCaseLink>
       <guid>7108f11e-17b1-4b4b-a922-cc84d56caf14</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Budgeting/Budget_Planner_Download_Reports</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -92,121 +92,121 @@
    <testCaseLink>
       <guid>1b804e92-ec94-452f-b720-a79604e2a411</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Check_Create_Chart_Sections</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9a7db351-de6f-4d8f-b673-7a03f4a04b7f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Customize_Charts_Pavement_Count_By_Category</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>85878df7-d15a-4e62-a0de-e56b7e6b246c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Customize_Charts_Sidewalk_Count_By_Category</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c97c5e46-8638-44f2-afa7-33a2a5ea2c81</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Customize_Charts_Sign_Count_By_Category</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>6d89a79f-824b-4c70-9ef1-6eb6b931bc66</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Pavement_Average_PCI_Stats</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>53b5a86c-36e8-4f2e-b8fc-a058752e3e33</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Pavement_Distribution_Of_Area</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>1eed4818-16e8-4e7e-b7e8-f86e475bd441</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Pavement_Distribution_Of_Length</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>431d04fc-0eb8-4be8-845d-adee1b11d3d6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Pavement_Distribution_Of_Repairs</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>5b0a3470-a051-4536-bb0f-ba93f290ae42</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Pavement_Maintenance_Backlog_Stats</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>7c2200c0-83c7-4cf5-8486-cb2263262a3f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Sidewalk_Average_SCI_Stats</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9d243c3e-941c-4a00-8bb6-9e0207949da1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Sidewalk_Distribution_Of_Area</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c3f2e46f-3515-4658-b1c9-74aed371b48d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Sidewalk_Distribution_Of_Length</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>0a3e7339-eaa1-4a8c-a6c4-4cf39a8995e1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Sidewalk_Distribution_Of_Repairs</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>94b5aff4-b650-4aed-a209-c0f53ba23838</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Sidewalk_Maintenance_Backlog_Stats</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2e814800-3f1e-473f-8046-912995b814dc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Sign_Number_Of_Sign_Stats</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>13d42056-e33e-4ee0-bb15-ff0355b9a10b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Sign_Percentage_Of_Sign_Stats</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>966833a0-ae47-47c1-b7ab-7147984db43f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Sign_Sign_Backlog_Stats</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>cd096d56-ff13-4b71-9c74-69be07b6a4bd</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/Sign_Sign_Category_Stats</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f3abb442-4993-43ea-86b7-5a781505efa0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/WorkOrder_Number_Of_WorkOrder_Stats</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>899860ca-b673-45d7-ac66-1203cb805dcf</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Create_Charts/WorkOrder_Workorder_Type_Stats</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -321,7 +321,7 @@
       <guid>1096ef81-ca30-4e54-9ed0-85b09f728545</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Work Orders/Create_Work_Orders</testCaseId>
+      <testCaseId>Test Cases/Work Orders/Create_Work_Orders_Upload_Image</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9f8910c7-5e0b-4470-94f8-a889967d1291</guid>
@@ -448,5 +448,47 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Settings/Repair_Priority_Editor_Edit</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8455168e-5780-4ff9-a6d1-f6cb865b260a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Filter/Add_Set_Manhole_and_Utility_Cover</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d0382d53-7f93-4489-98b8-d9b45b53e291</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Filter/Add_Set_Pavement_Condition_Index</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>75c5d8c3-42f2-485c-bfcb-808dd936d16c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Filter/Add_Set_Pavement_Markings</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e4ec760c-a50a-41d4-9332-663e19daa875</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Filter/Add_Set_Pavement_Markings_Lines</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>15333819-84ae-4e0d-a658-2efea1caeac4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Filter/Add_Set_Sidewalk_Condition_Index</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d9300dc2-f73e-4671-a0d2-ac5700f4913a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Filter/Add_Set_Work_Orders</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>00fcc41d-c251-41a5-80d3-0de7abe1eaf8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Filter/Add_Set_Sign_Types</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

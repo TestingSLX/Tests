@@ -10,12 +10,12 @@
          <value>/html/body/div[1]/div[3]/div[1]/div[2]/div[2]/div[2]/div/div[1]/div[9]/div</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>div.MuiBox-root-793.MuiBox-root-1007</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[(text() = 'Upload' or . = 'Upload')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.MuiBox-root-793.MuiBox-root-1007</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

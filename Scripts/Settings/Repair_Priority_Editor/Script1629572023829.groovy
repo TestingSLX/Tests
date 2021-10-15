@@ -72,7 +72,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priori
 WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor_UI/Page_Streetlogix/td_6'), '3')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priority_Editor_UI/Page_Streetlogix/td_ASC'), 
-    'ASC')
+    'DESC')
 
 WebUI.verifyElementPresent(findTestObject('Settings/Repair_Priority_Editor_UI/Page_Streetlogix/td_Edit2'), 0)
 
@@ -87,9 +87,10 @@ WebUI.verifyElementText(findTestObject('Object Repository/Settings/Repair_Priori
     'SAVE')
 
 def priorityFactors = CustomKeywords.'com.database_keywords.test.Database_Keywords.getRepairPriority'()
-
-if(priorityFactors == "[4,3]") {
-	println("Correct Priority Weights Loaded")
+println(priorityFactors)
+if (priorityFactors == '[4,-3]') {
+    println('Correct Priority Weights Loaded')
 } else {
-	throw new Exception('Incorrect Priority Weights Loaded')
+    throw new Exception('Incorrect Priority Weights Loaded')
 }
+

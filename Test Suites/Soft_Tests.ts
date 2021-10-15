@@ -207,7 +207,7 @@
       <guid>93960a8e-8e03-4d0e-be7a-d0a31a430393</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Work Orders/Create_Work_Orders</testCaseId>
+      <testCaseId>Test Cases/Work Orders/Create_Work_Orders_Upload_Image</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>92a41ecd-eaa1-4402-b9ce-9ee689b8dfc7</guid>

@@ -24,7 +24,7 @@ WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/p_Fi
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/p_Filter by name'))
 
 WebUI.setText(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/input_All Groups_MuiInputBase-input-450 Mui_1e97bd'), 
-    'ATest')
+    'ATest1')
 
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/div_ATest1'))
 
@@ -69,7 +69,7 @@ WebUI.setText(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/in
 
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/p_Address'))
 
-//WebUI.setText(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/input_Address'), 'Forest Ave, Portland, ME, 04103, USA')
+//WebUI.setText(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/input_Address'), 'Forest Ave')
 //
 //WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/li_FOREST AVE, Portland, ME, USA'))
 
@@ -91,6 +91,9 @@ WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/li_I
 
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/p_Attachments'))
 
+//
+//CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'), 'Charts.jpeg')
+//
 //CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'), 'C:\\Users\\shrut\\Downloads\\Streetlogix_Upload_Docs\\Charts.jpeg')
 //
 //CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'), 'C:\\Users\\shrut\\Downloads\\Streetlogix_Upload_Docs\\BudgetPlannerResult.docx')
@@ -99,113 +102,16 @@ WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/p_At
 //
 //CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'), 'C:\\Users\\shrut\\Downloads\\Streetlogix_Upload_Docs\\GroupsData.csv')
 //
-//CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'), 'C:\\Users\\shrut\\Downloads\\Streetlogix_Upload_Docs\\screencapture.webm')
+CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'), 'video.mp4')
 //
 //CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'), 'C:\\Users\\shrut\\Downloads\\Streetlogix_Upload_Docs\\WorkorderData.xlsx')
 
 WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/p_Repeating'))
 
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/p_Equipment'))
+WebUI.click(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/p_Asset'))
 
-WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Euipment_Switch'))
-
-WebUI.setText(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Equipment1'), 'Axe')
-
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/li_Axe-Hr-3'))
-
-WebUI.setText(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Equipment_Quantity1'),
-	'10')
-
-WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/span_Add Item Equipment'))
-
-WebUI.setText(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Equipment2'), 'Snow Plow')
-
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/li_Snow Plow-Hr-115'))
-
-WebUI.setText(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Equipment_Quantity2'),
-	'10')
-
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/p_Material'))
-
-WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Material_Switch'))
-
-WebUI.setText(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Material1'), 'Concrete')
-
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/li_Concrete-Ton-125.3'))
-
-WebUI.setText(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Material_Quantity1'),
-	'10')
-
-WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/span_Add Item Quantity'))
-
-WebUI.setText(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Material2'), 'Asphalt')
-
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/li_Asphalt-Ton-15'))
-
-WebUI.setText(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Material_Quantity2'),
-	'10')
-
-WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Labor_Switch'))
-
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/p_Labor'))
-
-WebUI.setText(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Labor1'), 'Manager')
-
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/li_Manager-Hr-500'))
-
-WebUI.setText(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Labor_Quantity1'),
-	'10')
-
-WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/span_Add Item Labor'))
-
-WebUI.setText(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Labor2'), 'Supervisor')
-
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/li_Supervisor-Hr-90'))
-
-WebUI.setText(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Labor_Quantity2'),
-	'10')
-
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/p_Total'))
-
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/div_8483.00'))
-
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_Recurring_Work_Orders/Page_Streetlogix/input_Upload_repeating'))
-
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_Recurring_Work_Orders/Page_Streetlogix/div_Daily'))
-
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_Recurring_Work_Orders/Page_Streetlogix/li_Weekly'))
-
-WebUI.click(findTestObject('Object Repository/Work_Orders/Create_Recurring_Work_Orders/Page_Streetlogix/input__till'))
-
-WebUI.sendKeys(findTestObject('Object Repository/Work_Orders/Create_Recurring_Work_Orders/Page_Streetlogix/input__till'),
-	Keys.chord(Keys.CONTROL, 'a'))
-
-WebUI.sendKeys(findTestObject('Object Repository/Work_Orders/Create_Recurring_Work_Orders/Page_Streetlogix/input__till'),
-	Keys.chord(Keys.DELETE))
-
-def acceptedFormat1 = 'MM/dd/yyyy'
-
-def today1 = new Date()
-
-def currentdate1 = today1.format(acceptedFormat1)
-
-println(currentdate1)
-
-def repeatUntil1 = ''
-
-use(TimeCategory, {
-		def sevenDays1 = today1 + 4.weeks
-
-		repeatUntil1 = sevenDays1.format(acceptedFormat1)
-
-		println(repeatUntil1)
-	})
-
-WebUI.setText(findTestObject('Object Repository/Work_Orders/Create_Recurring_Work_Orders/Page_Streetlogix/input__till'),
-	repeatUntil1)
-
-CustomKeywords.'com.database_keywords.test.Database_Keywords.uploadFile'(findTestObject('Object Repository/Work_Orders/Create_Work_Orders/Page_Streetlogix/div_Upload'),
-	'Charts.jpeg')
+WebUI.verifyElementHasAttribute(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/input_Upload_asset'), 'disabled', 
+    0)
 
 WebUI.verifyElementText(findTestObject('Work_Orders/Create_Work_Orders/Page_Streetlogix/button_Save'), 'SAVE')
 
@@ -221,30 +127,16 @@ WebUI.verifyElementText(findTestObject('Work_Orders/Create_Work_Orders/Page_Stre
 
 def countAfter = CustomKeywords.'com.database_keywords.test.Database_Keywords.getWorkOrdersCount'()
 
-if(countAfter == countBefore + 3) {
+if(countAfter == countBefore + 1) {
 	println('Work Order Created')
 } else {
 	throw new Exception('All Work Orders are not Created')
 }
 
-def statusAttachment = CustomKeywords.'com.database_keywords.test.Database_Keywords.verifyAttachmentForRepeatingWorkorders'()
+def status = CustomKeywords.'com.database_keywords.test.Database_Keywords.verifyVideosUploaded'()
 
-WebUI.verifyMatch(statusAttachment, 'Uploaded', false)
+WebUI.verifyMatch(status, 'Uploaded', false)
 
-def resources = []
-resources = CustomKeywords.'com.database_keywords.test.Database_Keywords.workOrderResources'()
-
-def demoResources = ['Axe', 'Snow Plow', 'Concrete', 'Asphalt', 'Manager', 'Supervisor']
-
-if(resources == demoResources) {
-	println('All resources are stored in database')
-} else {
-	throw new Exception('Resources not stored in database')
-}
-
-def statusResources = CustomKeywords.'com.database_keywords.test.Database_Keywords.verifyResourcesInRepeatingWorkOrders'()
-
-WebUI.verifyMatch(statusResources, 'True', false)
 
 
 

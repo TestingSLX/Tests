@@ -10,11 +10,15 @@
          <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div/div/div[2]/div/div/div/div</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>div.MuiSelect-root-477.MuiSelect-select-478.MuiSelect-selectMenu-481.MuiSelect-outlined-480.MuiInputBase-input-507.MuiOutlinedInput-input-494.MuiInputBase-inputMarginDense-508.MuiOutlinedInput-inputMarginDense-495</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,7 +56,7 @@
       <value>listbox</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -64,6 +68,13 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;sc-bYwzuL hKaSEl&quot;]/div[@class=&quot;sc-dIsUp eioKjI&quot;]/div[@class=&quot;sc-iCoGMd bfMiYE visible&quot;]/div[@class=&quot;sc-pNWdM kieaXL&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-383&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-384&quot;]/div[@class=&quot;sc-hiKfDv fhMykk&quot;]/div[@class=&quot;MuiBox-root-382 MuiBox-root-472&quot;]/div[@class=&quot;MuiFormControl-root-473&quot;]/div[@class=&quot;MuiInputBase-root-499 MuiOutlinedInput-root-487 Mui-focused Mui-focused MuiInputBase-formControl-500 MuiInputBase-marginDense-503 MuiOutlinedInput-marginDense-491&quot;]/div[@class=&quot;MuiSelect-root-477 MuiSelect-select-478 MuiSelect-selectMenu-481 MuiSelect-outlined-480 MuiInputBase-input-507 MuiOutlinedInput-input-494 MuiInputBase-inputMarginDense-508 MuiOutlinedInput-inputMarginDense-495&quot;]</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>demo-simple-select-outlined</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
