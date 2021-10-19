@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "4581423AD7A554025F7A222929F28D29",
+  "keywordFileContentHash": "E2D8BB3E4BD340C1CC5D162BC548AC38",
   "keywordClasses": [
     {
       "name": "com.database_keywords.test.Database_Keywords",
@@ -66,6 +66,11 @@
         },
         {
           "name": "array",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "getLastEditTime",
           "parameters": [],
           "javadoc": ""
         },

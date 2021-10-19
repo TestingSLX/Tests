@@ -491,4 +491,16 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Filter/Add_Set_Sign_Types</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>f7dc1417-1350-42f5-b4eb-15c966805c4c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Work Orders/Create_Work_Orders_Upload_Video</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>15e85c0c-88e3-4c6a-87f4-c701206a5fb3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Work Orders/Create_Work_Orders_Upload_Attachment</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

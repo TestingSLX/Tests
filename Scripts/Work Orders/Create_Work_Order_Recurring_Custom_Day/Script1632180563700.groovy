@@ -81,7 +81,7 @@ WebUI.click(findTestObject('Object Repository/Work_Orders/Create_Recurring_Work_
 def countAfter = CustomKeywords.'com.database_keywords.test.Database_Keywords.getWorkOrdersCount'()
 println(countAfter)
 println(countBefore)
-if (countAfter == (countBefore + 10)) {
+if (countAfter == (countBefore + 11)) {
     println('Work Order Created')
 } else {
     throw new Exception('Work Orders are not Created')

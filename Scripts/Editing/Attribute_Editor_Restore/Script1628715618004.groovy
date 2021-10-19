@@ -110,7 +110,7 @@ WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Street
 WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__repair_priority'), Keys.chord(
         Keys.BACK_SPACE))
 
-WebUI.setText(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__repair_priority'), '77.66')
+WebUI.setText(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__repair_priority'), '66.77')
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Functional Class'))
 
@@ -131,7 +131,7 @@ WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Street
         Keys.BACK_SPACE))
 
 WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__functional_class_id'), 
-    '7')
+    '4')
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Length (ft)'))
 
@@ -141,7 +141,7 @@ WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Street
 WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__length_ft'), Keys.chord(Keys.BACK_SPACE))
 
 WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__length_ft'), 
-    '222')
+    '22')
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Width (ft)'))
 
@@ -161,7 +161,7 @@ WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Street
 WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__area_sy'), Keys.chord(Keys.BACK_SPACE))
 
 WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__area_sy'), 
-    '4444')
+    '44')
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_Surface Type'))
 
@@ -216,7 +216,7 @@ WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Street
 
 WebUI.sendKeys(findTestObject('Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__notes'), Keys.chord(Keys.BACK_SPACE))
 
-WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__notes'), 'Test')
+WebUI.setText(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/input__notes'), 'Testing')
 
 WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_Edit/Page_Streetlogix/p_UID'))
 
@@ -296,10 +296,13 @@ WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_E
 
 WebUI.delay(10)
 
-def array = ((['12', '13', 'ABBOTT ST', 'ADAMS ST', 'ACCESS RD', '85', 'Reconstruction', '8888', '77.66000000', 'Minor Arterial', '7', '222', '33', '4444', 
+def time = CustomKeywords.'com.database_keywords.test.Database_Keywords.getLastEditTime'()
+
+def array = ((['12', '13', 'ABBOTT ST', 'ADAMS ST', 'ACCESS RD', '85', 'Reconstruction', '8888', '66.77000000', 'Minor Arterial', '4', '22', '33', '44', 
 	'<iframe src="http://pavemon.com/RAID/bulkmedia/ME_Portland_PMT_2019/customer_movies/851.mp4" width="500" height ="400" allowfullscreen></iframe>', 
-	'Preventive Maintenance', '56565', null, 'Test', 'Shrutika Sawant', '1026', '2021-09-29 18:51:12', 'Test', null, null, 'Asphalt', 'Portland', 'ME', 'USA', 
-	'27', '3', '10', '10', '10', '90', '2', 'Test', '15031_1', null, '0102000020110F00000200000046B6F3750AD95DC14013619BCDAB544128ED0DC222D95DC1C8073DCFF4AB5441']) as String[])
+	'Preventive Maintenance', '56565', null, 'Test', 'Shrutika Sawant', '1026', time, 'Test', null, null, 'Asphalt', 'Portland', 
+	'ME', 'USA', '27', '3', '10', '10', '10', '90', '2', 'Testing', '15031_1', null, 
+	'0102000020110F00000200000046B6F3750AD95DC14013619BCDAB544128ED0DC222D95DC1C8073DCFF4AB5441']) as String[])
 
 def newData = ((CustomKeywords.'com.database_keywords.test.Database_Keywords.array'()) as String[])
 

@@ -139,9 +139,9 @@ WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resou
 
 WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/span_Equipment1'))
 
-WebUI.verifyElementAttributeValue(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Equipment1_Dashboard'), 'value', 'Axe', 0)
+WebUI.verifyElementAttributeValue(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Equipment1_Dashboard'), 'value', 'Snow Plow', 0)
 
-WebUI.verifyElementAttributeValue(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Equipment2_Dashboard'), 'value', 'Snow Plow', 0)
+WebUI.verifyElementAttributeValue(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/input_Equipment2_Dashboard'), 'value', 'Axe', 0)
 
 WebUI.click(findTestObject('Work_Orders/Create_WorkOrder_Resource_Management/Page_Streetlogix/span_Material1'))
 

@@ -217,6 +217,22 @@ public class Database_Keywords {
 		return woww
 		closeConnection()
 	}
+	
+	@Keyword
+	def getLastEditTime() {
+		openConnection()
+		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/development_portal", "sde", "V0ters!23");
+		def queryString = "SELECT * from sde.pavement_evaluation_loc WHERE objectid = 12"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		def date = 0
+		
+		while(result.next()) {
+			date = result.getString('last_edit')
+		}
+		return date
+		closeConnection()
+	}
 
 	@Keyword
 	def autoUpdate(def PCI) {
@@ -658,7 +674,7 @@ public class Database_Keywords {
 		return status
 		closeConnection()
 	}
-	
+
 	@Keyword
 	def verifyVideosUploaded() {
 		openConnection()
@@ -679,7 +695,7 @@ public class Database_Keywords {
 		return status
 		closeConnection()
 	}
-	
+
 	@Keyword
 	def verifyDocumentUploaded() {
 		openConnection()

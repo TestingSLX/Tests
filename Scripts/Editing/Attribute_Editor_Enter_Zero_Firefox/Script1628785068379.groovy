@@ -293,14 +293,17 @@ WebUI.click(findTestObject('Object Repository/Editing/Attribute_Editor_Restore_E
 
 WebUI.delay(10)
 
+def time = CustomKeywords.'com.database_keywords.test.Database_Keywords.getLastEditTime'()
+
 def array = ((['12', '13', 'ABBOTT ST', 'ADAMS ST', 'ACCESS RD', '0', 'Reconstruction', '0', '0.00000000', 'Minor Arterial', '0', '0', '0', '0'
 	, '<iframe src="http://pavemon.com/RAID/bulkmedia/ME_Portland_PMT_2019/customer_movies/851.mp4" width="500" height ="400" allowfullscreen></iframe>'
-	, 'Preventive Maintenance', '0', null, 'Test', 'Shrutika Sawant', '1026', '2021-09-29 18:51:12', 'Test', null, null, 'Asphalt', 'Portland'
-	, 'ME', 'USA', '27', '3', '10', '10', '10', '90', '0', 'Test', '0', null
+	, 'Preventive Maintenance', '0', null, 'Test', 'Shrutika Sawant', '1026', time, 'Test', null, null, 'Asphalt', 'Portland'
+	, 'ME', 'USA', '27', '3', '10', '10', '10', '90', '0', ' Test', '0', null
 	, '0102000020110F00000200000046B6F3750AD95DC14013619BCDAB544128ED0DC222D95DC1C8073DCFF4AB5441']) as String[])
 
 def newData = ((CustomKeywords.'com.database_keywords.test.Database_Keywords.array'()) as String[])
-
+println(array)
+println(newData)
 if (array == newData) {
 	println('Attributes changed for selected feature')
 } else {
