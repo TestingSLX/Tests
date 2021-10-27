@@ -27,56 +27,80 @@ WebUI.click(findTestObject('Editing/Symbology_Editor_Sidewalk_Evaluation/Page_St
 
 WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/li_Sidewalk Evaluation'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/h1_Symbology Editor'), 'Symbology Editor')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/h1_Symbology Editor'), 
+    'Symbology Editor')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/label_Select asset'), 'Select asset')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/label_Select asset'), 
+    'Select asset')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Label'), 'Label')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Label'), 
+    'Label')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Symbol'), 'Symbol')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Symbol'), 
+    'Symbol')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Count'), 'Count')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Count'), 
+    'Count')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Failed (0 - 10)'), 'Failed (0 - 10)')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Failed (0 - 10)'), 
+    'Failed (0 - 10)')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Serious (10 - 25)'), 'Serious (10 - 25)')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Serious (10 - 25)'), 
+    'Serious (10 - 25)')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Very Poor (25 - 40)'), 'Very Poor (25 - 40)')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Very Poor (25 - 40)'), 
+    'Very Poor (25 - 40)')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Poor (40 - 55)'), 'Poor (40 - 55)')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Poor (40 - 55)'), 
+    'Poor (40 - 55)')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Fair (55 - 70)'), 'Fair (55 - 70)')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Fair (55 - 70)'), 
+    'Fair (55 - 70)')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Good (70 - 85)'), 'Good (70 - 85)')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Good (70 - 85)'), 
+    'Good (70 - 85)')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Excellent (85 - 100)'), 'Excellent (85 - 100)')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/th_Excellent (85 - 100)'), 
+    'Excellent (85 - 100)')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/p_Transparency'), 'Transparency:')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/p_Transparency'), 
+    'Transparency:')
 
 WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Transparency050100'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/h3_Sidewalk Evaluation'), 'Sidewalk Evaluation')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/h3_Sidewalk Evaluation'), 
+    'Sidewalk Evaluation')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Sidewalk Condition Index'), 'Sidewalk Condition Index')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Sidewalk Condition Index'), 
+    'Sidewalk Condition Index')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Excellent (85 - 100)'), 'Excellent (85 - 100)')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Excellent (85 - 100)'), 
+    'Excellent (85 - 100)')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Good (70 - 85)'), 'Good (70 - 85)')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Good (70 - 85)'), 
+    'Good (70 - 85)')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Fair (55 - 70)'), 'Fair (55 - 70)')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Fair (55 - 70)'), 
+    'Fair (55 - 70)')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Poor (40 - 55)'), 'Poor (40 - 55)')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Poor (40 - 55)'), 
+    'Poor (40 - 55)')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Very Poor (25 - 40)'), 'Very Poor (25 - 40)')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Very Poor (25 - 40)'), 
+    'Very Poor (25 - 40)')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Serious (10 - 25)'), 'Serious (10 - 25)')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Serious (10 - 25)'), 
+    'Serious (10 - 25)')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Failed (0 - 10)'), 'Failed (0 - 10)')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Failed (0 - 10)'), 
+    'Failed (0 - 10)')
 
 WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/button_Sidewalk Evaluation'), 'SIDEWALK EVALUATION')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/button_Sidewalk Evaluation'), 
+    'SIDEWALK EVALUATION - RAMP EVALUATION')
 
 WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Sidewalk Evaluation (Features 1,455, Se_324a83'))
 
 WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
+

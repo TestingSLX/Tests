@@ -26,7 +26,7 @@
    <testCaseLink>
       <guid>bbb32724-6a3e-4f58-8509-247edf4cff0d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Budgeting/Budget_Comparison_Functional_Class</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -50,13 +50,13 @@
    <testCaseLink>
       <guid>4a624664-4314-4aae-9772-79f9eaefc93a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Budgeting/Budget_Estimator_Functional_Class</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>28def462-d321-41d2-a322-6f22586d0dde</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Budgeting/Budget_Estimator_Surface_Type</testCaseId>
    </testCaseLink>
    <testCaseLink>

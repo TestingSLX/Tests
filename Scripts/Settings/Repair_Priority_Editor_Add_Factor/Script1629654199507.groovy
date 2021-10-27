@@ -113,6 +113,9 @@ WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Facto
 //
 //WebUI.verifyElementNotClickable(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/button_Add Factor'))
 //
+
+WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Add Factor'))
+
 WebUI.verifyElementHasAttribute(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/button_Add Factor'), 'disabled', 0)
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Add_Factor/Page_Streetlogix/span_Reset'))

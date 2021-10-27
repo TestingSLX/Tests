@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[14]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[154]</value>
+         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[13]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[162]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

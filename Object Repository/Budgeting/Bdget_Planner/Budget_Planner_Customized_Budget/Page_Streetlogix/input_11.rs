@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[97]/div[3]/div/div[2]/div[1]/div/input</value>
+         <value>/html/body/div[99]/div[3]/div/div[2]/div[1]/div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -117,8 +117,10 @@ WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Pa
 
 WebUI.click(findTestObject('Object Repository/Settings/Repair_Priority_Editor/Page_Streetlogix/button_OK'))
 
-def RPriority = CustomKeywords.'com.database_keywords.test.Database_Keywords.getRepairPriority'()
+WebUI.delay(5)
 
+def RPriority = CustomKeywords.'com.database_keywords.test.Database_Keywords.getRepairPriority'()
+println(RPriority)
 WebUI.verifyMatch(RPriority, '[5,-3]', false)
 
 WebUI.click(findTestObject('Settings/Repair_Priority_Editor/Page_Streetlogix/button_Edit_Values'))

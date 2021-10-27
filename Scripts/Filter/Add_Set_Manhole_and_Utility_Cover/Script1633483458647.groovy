@@ -30,7 +30,7 @@ List<WebElement> listLayers = WebUiCommonHelper.findWebElements(findTestObject('
 
 List<WebElement> allLayersList1 = new ArrayList()
 
-def allLayersList2 = ((['Pavement Maintenance', 'Sidewalk Maintenance', 'Sign Maintenance', 'Work Orders', 'Pavement Condition Index', 'Ramp Evaluation', 'Sidewalk Condition Index', 'Sign Types', 'Manholes and Utility Covers', 'Pavement Distress', 'PavementMarkings', 'PavementMarkings Lines']) as String[])
+def allLayersList2 = ((['Pavement Maintenance', 'Sidewalk Maintenance', 'Sign Maintenance', 'Work Orders', 'Pavement Condition Index', 'Ramp Evaluation', 'Sidewalk Condition Index', 'Street Signs', 'Manholes and Utility Covers', 'Pavement Distress', 'PavementMarkings', 'PavementMarkings Lines']) as String[])
 
 for (WebElement el : listLayers) {
 allLayersList1.add(el.getText())

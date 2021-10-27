@@ -336,7 +336,8 @@ WebUI.delay(10)
 def newData2 = []
 
 newData2 = CustomKeywords.'com.database_keywords.test.Database_Keywords.array'()
-
+println(data)
+println(newData2)
 if (data.equals(newData2)) {
     println('Attributes restored')
 } else {

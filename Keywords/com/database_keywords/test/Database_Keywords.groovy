@@ -217,7 +217,7 @@ public class Database_Keywords {
 		return woww
 		closeConnection()
 	}
-	
+
 	@Keyword
 	def getLastEditTime() {
 		openConnection()
@@ -226,7 +226,7 @@ public class Database_Keywords {
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
 		def date = 0
-		
+
 		while(result.next()) {
 			date = result.getString('last_edit')
 		}
@@ -858,7 +858,7 @@ public class Database_Keywords {
 		Statement stmt = null;
 		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/_common_db", "sde", "V0ters!23");
 
-		def queryString = "SELECT * FROM sde.priority_factors WHERE id = 18"
+		def queryString = "SELECT * FROM sde.priority_factors WHERE id = 20"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
 

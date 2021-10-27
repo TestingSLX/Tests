@@ -21,7 +21,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 
 CustomKeywords.'com.gis_url.test.URL.redirectURL'()
 
-def pci = 45
+def pci = 58
 
 def maintenanceSuggestionDecisionTree = CustomKeywords.'com.database_keywords.test.Database_Keywords.autoUpdate'(pci)
 println(maintenanceSuggestionDecisionTree)
@@ -79,7 +79,7 @@ double finalEstimatedCost = 00.00
 if(maintenanceSuggestionDecisionTree[1] == 0) {	
 	finalEstimatedCost = estimate * maintenanceSuggestionDecisionTree[1]
 } else {
-    finalEstimatedCost = estimate * Double.parseDouble(maintenanceSuggestionDecisionTree[1])
+    finalEstimatedCost = estimate * maintenanceSuggestionDecisionTree[1]
 }
 
 double newEstimatedCost = estimatedCost.toDouble()
@@ -132,12 +132,15 @@ for(i=0; i< weight.size(); i++) {
 
 def finalRP = (newRp*100).round()
 
+println(finalRP)
+println(repairPriority.toInteger())
 if(finalRP == repairPriority.toInteger()) {
 	println('Repair Priority Autoupdated')
 } else {
 	throw new Exception('Repair priority calculated is incorrect')
 }
-
+println(finalRP)
+println(repairPriority.toInteger())
 //println(newEstimatedCost)
 //println(finalEstimatedCost)
 

@@ -27,49 +27,69 @@ WebUI.click(findTestObject('Editing/Symbology_Editor_Pavement_Maintenance/Page_S
 
 WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/li_Pavement Maintenance'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/h1_Symbology Editor'), 'Symbology Editor')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/h1_Symbology Editor'), 
+    'Symbology Editor')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/label_Select asset'), 'Select asset')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/label_Select asset'), 
+    'Select asset')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Label'), 'Label')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Label'), 
+    'Label')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Symbol'), 'Symbol')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Symbol'), 
+    'Symbol')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Count'), 'Count')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Count'), 
+    'Count')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Preventive Maintenance'), 'Reconstruction')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Preventive Maintenance'), 
+    'Reconstruction')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Defer Maintenance'), 'Preventive Maintenance')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Defer Maintenance'), 
+    'Chip Seal')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Reconstruction'), 'Chip Seal')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Reconstruction'), 
+    'Preventive Maintenance')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Mill and Overlay'), 'Defer Maintenance')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Mill and Overlay'), 
+    'Defer Maintenance')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Rehabilitation'), 'Crack Seal')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Rehabilitation'), 
+    'Crack Seal')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/p_Transparency'), 'Transparency:')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/p_Transparency'), 
+    'Transparency:')
 
 WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Transparency050100'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/h3_Pavement Maintenance'), 'Pavement Maintenance')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/h3_Pavement Maintenance'), 
+    'Pavement Maintenance')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Maintenance Suggestion'), 'Maintenance Suggestion')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Maintenance Suggestion'), 
+    'Maintenance Suggestion')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Preventive Maintenance'), 'Reconstruction')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Preventive Maintenance'), 
+    'Reconstruction')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Defer Maintenance'), 'Preventive Maintenance')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Defer Maintenance'), 
+    'Chip Seal')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Reconstruction'), 'Chip Seal')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Reconstruction'), 
+    'Preventive Maintenance')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Mill and Overlay'), 'Defer Maintenance')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Mill and Overlay'), 
+    'Defer Maintenance')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Rehabilitation'), 'Crack Seal')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Rehabilitation'), 
+    'Crack Seal')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_others'), 'Rehabilitation')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_others'), 
+    'Rehabilitation')
 
 WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/button_Pavement Maintenance'), 'PAVEMENT MAINTENANCE')
+WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/button_Pavement Maintenance'), 
+    'PAVEMENT MAINTENANCE')
 
 WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Pavement Maintenance (Features 1,460, S_69b520'))
 

@@ -169,7 +169,7 @@ if(updatedRepairImpactAutoUpdate1 == []) {
 	
 	int estimate1 = cost1.round()
 	
-	double finalEstimatedCost1 = estimate1 * Double.parseDouble(updatedRepairImpactAutoUpdate1[2])
+	double finalEstimatedCost1 = estimate1 * (updatedRepairImpactAutoUpdate1[2])
 	
 	double estimatedCost1 = newEstimatedCost1.toDouble()
 	println(estimatedCost1)
@@ -249,7 +249,7 @@ if(updatedRepairImpactAutoUpdate2 == []) {
 	
 	int estimate2 = cost2.round()
 	
-	double finalEstimatedCost2 = estimate2 * Double.parseDouble(updatedRepairImpactAutoUpdate2[2])
+	double finalEstimatedCost2 = estimate2 * (updatedRepairImpactAutoUpdate2[2])
 	
 	double estimatedCost2 = newEstimatedCost2.toDouble()
 	println(estimatedCost2)
@@ -329,7 +329,7 @@ if(updatedRepairImpactAutoUpdate3 == []) {
 	
 	int estimate3 = cost3.round()
 	
-	double finalEstimatedCost3 = estimate3 * Double.parseDouble(updatedRepairImpactAutoUpdate3[2])
+	double finalEstimatedCost3 = estimate3 * (updatedRepairImpactAutoUpdate3[2])
 	
 	double estimatedCost3 = newEstimatedCost3.toDouble()
 	println(estimatedCost3)
@@ -409,7 +409,7 @@ if(updatedRepairImpactAutoUpdate4 == []) {
 	
 	int estimate4 = cost4.round()
 	
-	double finalEstimatedCost4 = estimate4 * Double.parseDouble(updatedRepairImpactAutoUpdate4[2])
+	double finalEstimatedCost4 = estimate4 * (updatedRepairImpactAutoUpdate4[2])
 	
 	double estimatedCost4 = newEstimatedCost4.toDouble()
 	println(estimatedCost4)
