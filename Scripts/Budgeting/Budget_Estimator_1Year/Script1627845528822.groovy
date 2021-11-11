@@ -97,7 +97,7 @@ WebUI.setText(findTestObject('Object Repository/Budgeting/Budget_Estimator/Page_
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Estimator/Page_Streetlogix/span_Calculate'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Estimator/Page_Streetlogix/div_Cannot achieve the target condition rating'), "Cannot achieve the target condition rating.")
+WebUI.verifyElementText(findTestObject('Object Repository/Budgeting/Budget_Estimator/Page_Streetlogix/div_Cannot achieve the target condition rating'), "Target cannot be achieved because it is too low")
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Estimator/Page_Streetlogix/svg_Cannot achieve the target condition rat_518d8b'))
 

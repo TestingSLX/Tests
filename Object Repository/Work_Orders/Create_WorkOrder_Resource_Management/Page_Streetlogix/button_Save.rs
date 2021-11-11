@@ -6,6 +6,10 @@
    <elementGuidId>2a2acc26-aa74-4267-b421-476679e13ef5</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and (text() = 'Save' or . = 'Save')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>(//button[@type='button'])[28]</value>
       </entry>
@@ -14,7 +18,7 @@
          <value>button.MuiButtonBase-root-911.MuiButton-root-1009.MuiButton-text-1011.MuiButton-textPrimary-1012.MuiButton-textSizeLarge-1023.MuiButton-sizeLarge-1029</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

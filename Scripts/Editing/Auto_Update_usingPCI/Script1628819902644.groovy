@@ -74,12 +74,12 @@ double cost = Integer.parseInt(length)*Integer.parseInt(width)*0.111
 
 int estimate = cost.round()
 
-double finalEstimatedCost = 00.00
+double finalEstimatedCost = 0
 
 if(maintenanceSuggestionDecisionTree[1] == 0) {	
-	finalEstimatedCost = estimate * maintenanceSuggestionDecisionTree[1]
+	finalEstimatedCost = estimate * Integer.parseInt(maintenanceSuggestionDecisionTree[1])
 } else {
-    finalEstimatedCost = estimate * maintenanceSuggestionDecisionTree[1]
+    finalEstimatedCost = estimate * Integer.parseInt(maintenanceSuggestionDecisionTree[1])
 }
 
 double newEstimatedCost = estimatedCost.toDouble()
@@ -130,11 +130,11 @@ for(i=0; i< weight.size(); i++) {
 	}
 }
 
-def finalRP = (newRp*100).round()
+def finalRP = (newRp*100)
 
 println(finalRP)
-println(repairPriority.toInteger())
-if(finalRP == repairPriority.toInteger()) {
+println(repairPriority.toDouble())
+if(finalRP == repairPriority.toDouble()) {
 	println('Repair Priority Autoupdated')
 } else {
 	throw new Exception('Repair priority calculated is incorrect')

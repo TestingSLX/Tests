@@ -112,14 +112,14 @@ WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Pag
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/span_Test'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Test (Features 1,192, Selected 0)'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/button_ExportCSV'))
-
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/label_Export to CSV'))
+//
+//WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/button_ExportCSV'))
+//
+//WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/label_Export to CSV'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
 
-WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Edit Scenario Year'))
+WebUI.click(findTestObject('Budgeting/Budget_Planner_1Year/Page_Streetlogix/div_Edit Scenario Year'))
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget_Planner_1Year/Page_Streetlogix/li_1'))
 

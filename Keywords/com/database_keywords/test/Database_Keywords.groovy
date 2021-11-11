@@ -207,14 +207,14 @@ public class Database_Keywords {
 		def queryString = "SELECT * from sde.pavement_evaluation_loc WHERE objectid = 12"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
-		def woww = []
+		def attributes = []
 
 		while(result.next()) {
 			for(int i=1; i <= 40 ; i++) {
-				woww.add(result.getString(i))
+				attributes.add(result.getString(i))
 			}
 		}
-		return woww
+		return attributes
 		closeConnection()
 	}
 
