@@ -6,12 +6,12 @@
    <elementGuidId>5347be37-9a61-4cd2-8666-faa9a767f72d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[1]/div[2]/div[2]/div[2]/div/div[1]/div[9]/div</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[(text() = 'Upload' or . = 'Upload')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[1]/div[2]/div[2]/div[2]/div/div[1]/div[10]/div</value>
       </entry>
       <entry>
          <key>CSS</key>

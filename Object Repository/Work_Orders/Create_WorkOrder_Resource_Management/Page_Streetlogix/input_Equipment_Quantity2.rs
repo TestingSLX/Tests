@@ -6,15 +6,15 @@
    <elementGuidId>ad7045fc-416d-49db-bf0a-3bdaa55b5880</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//input[@placeholder = 'Qty' and @type = 'number']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div[2]/div/div/div[12]/div[3]/div[3]/div/input</value>
+         <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div[2]/div/div/div[13]/div[3]/div[3]/div/input</value>
       </entry>
       <entry>
          <key>CSS</key>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//input[@placeholder = 'Qty' and @type = 'number']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

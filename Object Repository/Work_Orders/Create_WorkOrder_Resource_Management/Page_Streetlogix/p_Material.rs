@@ -10,11 +10,14 @@
          <value>//div[@id='root']/div[3]/div/div[2]/div[2]/div[2]/div/div/div[13]/div/p</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Material' or . = 'Material')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

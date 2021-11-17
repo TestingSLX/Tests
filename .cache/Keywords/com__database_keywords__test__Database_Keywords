@@ -1,78 +1,95 @@
 {
-  "keywordFileContentHash": "FE0059DAC93AC4C4C750F18656EB2EEA",
+  "keywordFileContentHash": "4D207EB93A90967DFC4E8D3FC9875B14",
   "keywordClasses": [
     {
       "name": "com.database_keywords.test.Database_Keywords",
       "keywordMethods": [
         {
           "name": "openConnection",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "closeConnection",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getAveragePCI",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
+        },
+        {
+          "name": "getAveragePCIByFilter",
+          "parameters": [
+            {
+              "name": "filter",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "category",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         },
         {
           "name": "getMinimumPCI",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getMaximumPCI",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getMinimumFunctionalCLassID",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getMaximumFunctionalCLassID",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getPavementMiles",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getPavementBacklog",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getAverageSCI",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getSidewalkMiles",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getSidewalkBacklog",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "array",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getLastEditTime",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "autoUpdate",
@@ -90,53 +107,43 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "decisionTreeMinMaxPCI",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "decisionTreeMaintenanceSuggestion",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "decisionTreeCost",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "decisionTreeMinMaxPCILoadNew",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "decisionTreeMaintenanceSuggestionLoadNew",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "decisionTreeCostLoadNew",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "repairImpactMaintenanceSuggestion",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "repairImpactValues",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "repairImpactBoundaries",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "repairImpactAttributeEditorValidation",
@@ -154,13 +161,11 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "getGroups",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getForms",
@@ -178,13 +183,11 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "getAllForms",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "uploadFile",
@@ -215,51 +218,42 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "getWorkOrdersCount",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "verifyAttachmentsUploaded",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "verifyVideosUploaded",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "verifyDocumentUploaded",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "workOrderResources",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "verifyResourcesInRepeatingWorkOrders",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "verifyAttachmentForRepeatingWorkorders",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getRepairPriority",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
