@@ -235,8 +235,9 @@ def resources = []
 resources = CustomKeywords.'com.database_keywords.test.Database_Keywords.workOrderResources'()
 
 def demoResources = ['Axe', 'Snow Plow', 'Concrete', 'Asphalt', 'Manager', 'Supervisor']
-
-if(resources == demoResources) {
+println(resources)
+println(demoResources)
+if(demoResources.containsAll(resources)) {
 	println('All resources are stored in database')
 } else {
 	throw new Exception('Resources not stored in database')

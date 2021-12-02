@@ -98,7 +98,7 @@ WebUI.verifyElementText(findTestObject('Filter/Add_Set_Pavement_Distress/Page_St
 
 WebUI.click(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
 
-WebUI.verifyElementText(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/h3_Sidewalk Evaluation'), 'Sign Types')
+WebUI.verifyElementText(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/h3_Sidewalk Evaluation'), 'Street Signs')
 
 WebUI.click(findTestObject('Filter/Add_Set_Pavement_Distress/Page_Streetlogix/svg_delete set'))
 

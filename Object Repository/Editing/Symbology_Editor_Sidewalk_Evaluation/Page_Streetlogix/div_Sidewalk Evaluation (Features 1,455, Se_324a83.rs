@@ -6,12 +6,12 @@
    <elementGuidId>82a131cf-f333-4cdf-93aa-7f8b2e6209a6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='attribute-table-Sidewalk_Evaluation_1197-1']/div/div[2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.esri-feature-table__title</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[10]/div/div[1]/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

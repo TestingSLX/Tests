@@ -72,7 +72,7 @@ WebUI.click(findTestObject('Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix
 
 WebUI.click(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/li_is'))
 
-WebUI.setText(findTestObject('Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/input__input2'), '95')
+WebUI.setText(findTestObject('Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/input__input2'), '87')
 
 WebUI.click(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/button_Pavement Maintenance'))
 
@@ -84,7 +84,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Filter/Add_Set_Pavemen
 
 WebUI.verifyElementText(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_3'), '3')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_80'), '95')
+WebUI.verifyElementText(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/vaadin-grid-cell-content_80'), '87')
 
 WebUI.click(findTestObject('Object Repository/Filter/Add_Set_Pavement_Maintenance/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
 

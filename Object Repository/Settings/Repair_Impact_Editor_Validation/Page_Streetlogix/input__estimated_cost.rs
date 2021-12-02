@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@name='estimated_cost']</value>
+         <value>/html/body/div[1]/div[3]/div[1]/div[2]/div[2]/div[2]/div/div[1]/div[7]/div/div/input</value>
       </entry>
       <entry>
          <key>CSS</key>

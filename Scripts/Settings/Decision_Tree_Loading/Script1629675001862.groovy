@@ -84,7 +84,8 @@ ms.add(ms4)
 def msDB = []
 
 msDB = CustomKeywords.'com.database_keywords.test.Database_Keywords.decisionTreeMaintenanceSuggestion'()
-
+println(ms)
+println(msDB)
 if (ms == msDB) {
 	println('Correct Decision Tree Loaded')
 } else {

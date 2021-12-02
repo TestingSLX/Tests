@@ -503,4 +503,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Work Orders/Create_Work_Orders_Upload_Attachment</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>41a945ac-fd7a-403e-9c4a-87de8472e9c7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Budgeting/Budget_Estimator_verifyPCI</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

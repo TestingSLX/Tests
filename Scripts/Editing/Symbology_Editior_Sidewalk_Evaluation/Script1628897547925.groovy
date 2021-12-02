@@ -98,7 +98,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Edit
 WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Esri_sc-gKAaRy bVZRMQ'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/button_Sidewalk Evaluation'), 
-    'SIDEWALK EVALUATION - RAMP EVALUATION')
+    'SIDEWALK EVALUATION - SIDEWALK CONDITION INDEX')
 
 WebUI.click(findTestObject('Object Repository/Editing/Symbology_Editor_Sidewalk_Evaluation/Page_Streetlogix/div_Sidewalk Evaluation (Features 1,455, Se_324a83'))
 

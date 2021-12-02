@@ -168,7 +168,7 @@ WebUI.click(findTestObject('Object Repository/Work_Orders/Create_WorkOrder_Resou
 
 def demoResources = ['Axe', 'Snow Plow', 'Concrete', 'Asphalt', 'Manager', 'Supervisor']
 
-if(resources == demoResources) {
+if(demoResources.containsAll(resources)) {
 	println('All resources are stored in database')
 } else {
 	throw new Exception('Resources not stored in database')

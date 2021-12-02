@@ -62,11 +62,33 @@ public class Database_Keywords {
 		return avgPCI.round()
 		closeConnection()
 	}
-	
+
 	@Keyword
 	public int getAveragePCIByFilter(def filter, def category) {
 		openConnection()
 		def queryString = "SELECT * from sde.pavement_evaluation_loc where " + filter + " = '" + category + "'"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		double PCI = 0;
+		double totalLength = 0;
+		double pciLength = 0;
+		double length = 0;
+		double product = 0;
+		while(result.next()) {
+			PCI = result.getInt('pci')
+			length = result.getInt('length_ft')
+			pciLength = pciLength + PCI * length
+			totalLength = totalLength + length
+		}
+		double avgPCI = pciLength / totalLength
+		return avgPCI.round()
+		closeConnection()
+	}
+	
+	@Keyword
+	public int getAveragePCIByFilterForNullWard() {
+		openConnection()
+		def queryString = "SELECT * from sde.pavement_evaluation_loc where ward is null"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
 		double PCI = 0;
@@ -175,6 +197,50 @@ public class Database_Keywords {
 	public int getAverageSCI() {
 		openConnection()
 		def queryString = "SELECT * from sde.sidewalk_evaluation_loc"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		double SCI = 0;
+		double totalLength = 0;
+		double sciLength = 0;
+		double length = 0;
+		double product = 0;
+		while(result.next()) {
+			SCI = result.getInt('sci')
+			length = result.getInt('length_ft')
+			sciLength = sciLength + SCI * length
+			totalLength = totalLength + length
+		}
+		double avgSCI = sciLength / totalLength
+		return avgSCI.round()
+		closeConnection()
+	}
+	
+	@Keyword
+	public int getAverageSCIByFilter(def filter, def category) {
+		openConnection()
+		def queryString = "SELECT * from sde.sidewalk_evaluation_loc where " + filter + " = '" + category + "'"
+		Statement stm = c.createStatement()
+		ResultSet result = stm.executeQuery(queryString)
+		double SCI = 0;
+		double totalLength = 0;
+		double sciLength = 0;
+		double length = 0;
+		double product = 0;
+		while(result.next()) {
+			SCI = result.getInt('sci')
+			length = result.getInt('length_ft')
+			sciLength = sciLength + SCI * length
+			totalLength = totalLength + length
+		}
+		double avgSCI = sciLength / totalLength
+		return avgSCI.round()
+		closeConnection()
+	}
+	
+	@Keyword
+	public int getAverageSCIByFilterForNullWard() {
+		openConnection()
+		def queryString = "SELECT * from sde.sidewalk_evaluation_loc where ward is null"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
 		double SCI = 0;
@@ -308,7 +374,7 @@ public class Database_Keywords {
 	def decisionTreeMinMaxPCI() {
 		openConnection()
 		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/_common_db", "sde", "V0ters!23");
-		def queryString = "SELECT * FROM sde.decision_tree ORDER BY id DESC LIMIT 1"
+		def queryString = "SELECT * FROM sde.decision_tree WHERE id = 144"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
 
@@ -333,7 +399,7 @@ public class Database_Keywords {
 	def decisionTreeMaintenanceSuggestion() {
 		openConnection()
 		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/_common_db", "sde", "V0ters!23");
-		def queryString = "SELECT * FROM sde.decision_tree ORDER BY id DESC LIMIT 1"
+		def queryString = "SELECT * FROM sde.decision_tree WHERE id = 144"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
 
@@ -355,7 +421,7 @@ public class Database_Keywords {
 	def decisionTreeCost() {
 		openConnection()
 		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/_common_db", "sde", "V0ters!23");
-		def queryString = "SELECT * FROM sde.decision_tree ORDER BY id DESC LIMIT 1"
+		def queryString = "SELECT * FROM sde.decision_tree WHERE id = 144"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
 
@@ -526,7 +592,7 @@ public class Database_Keywords {
 	def repairImpactAttributeEditorValidation(def pci) {
 		openConnection()
 		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/_common_db", "sde", "V0ters!23");
-		def queryString = "SELECT * FROM sde.decision_tree ORDER BY id DESC LIMIT 1"
+		def queryString = "SELECT * FROM sde.decision_tree WHERE id = 144"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
 

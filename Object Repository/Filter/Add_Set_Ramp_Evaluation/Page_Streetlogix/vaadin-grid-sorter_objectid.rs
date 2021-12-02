@@ -6,12 +6,12 @@
    <elementGuidId>45a64094-d512-4a02-9d07-b8c6d634e7db</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[10]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[2]/vaadin-grid-sorter</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>vaadin-grid-sorter.esri-column__sorter</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[9]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[2]/vaadin-grid-sorter</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -10,12 +10,11 @@
          <value>//div[@id='menu-']/div[3]/ul/li[8]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//li[(text() = 'Sign Types' or . = 'Sign Types')]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//li[(text() = 'Street Signs' or . = 'Street Signs')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -67,7 +66,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Sign Types</value>
+      <value>Street Signs</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

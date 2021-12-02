@@ -6,12 +6,11 @@
    <elementGuidId>d35c9f40-596c-4c80-b4a5-7309258e4f00</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[9]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[159]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div[3]/div[2]/div[3]/div/div[2]/div[10]/div/div[2]/div/div/vaadin-grid/vaadin-grid-cell-content[163]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

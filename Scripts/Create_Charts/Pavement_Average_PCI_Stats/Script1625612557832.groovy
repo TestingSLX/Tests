@@ -61,23 +61,33 @@ WebUI.verifyMatch(tdPCI, 'pci', false)
 
 String Ftd1 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_62.219'))
 
-WebUI.verifyGreaterThan(Ftd1, 0)
+String DBFtd1 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('functional_class', 'Local').toString()
+
+WebUI.verifyMatch(Ftd1, DBFtd1, false)
 
 String Ftd2 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_71.71'))
 
-WebUI.verifyGreaterThan(Ftd2, 0)
+String DBFtd2 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('functional_class', 'Major/urb collector').toString()
+
+WebUI.verifyMatch(Ftd2, DBFtd2, false)
 
 String Ftd3 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_70.527'))
 
-WebUI.verifyGreaterThan(Ftd3, 0)
+String DBFtd3 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('functional_class', 'Minor Arterial').toString()
+
+WebUI.verifyMatch(Ftd3, DBFtd3, false)
 
 String Ftd4 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_73.462'))
 
-WebUI.verifyGreaterThan(Ftd4, 0)
+String DBFtd4 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('functional_class', 'Other princ arterial').toString()
+
+WebUI.verifyMatch(Ftd4, DBFtd4, false)
 
 String Ftd5 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_72.375'))
 
-WebUI.verifyGreaterThan(Ftd5, 0)
+String DBFtd5 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('functional_class', 'Principal Arterial').toString()
+
+WebUI.verifyMatch(Ftd5, DBFtd5, false)
 
 WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/span_Chart'))
 
@@ -123,29 +133,51 @@ WebUI.verifyMatch(pci1, 'pci', false)
 
 String Wtd1 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_62.118'))
 
-WebUI.verifyGreaterThan(Wtd1, 0)
+String DBWtd1 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('Ward', '1').toString()
+
+WebUI.verifyMatch(Wtd1, DBWtd1, false)
 
 String Wtd2 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_62.588'))
 
-WebUI.verifyGreaterThan(Wtd2, 0)
+String DBWtd2 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('Ward', '2').toString()
+
+WebUI.verifyMatch(Wtd2, DBWtd2, false)
 
 String Wtd3 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_66.303'))
 
-WebUI.verifyGreaterThan(Wtd3, 0)
+String DBWtd3 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('Ward', '3').toString()
+
+WebUI.verifyMatch(Wtd3, DBWtd3, false)
 
 String Wtd4 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_65.308'))
 
-WebUI.verifyGreaterThan(Wtd4, 0)
+String DBWtd4 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('Ward', '4').toString()
+
+WebUI.verifyMatch(Wtd4, DBWtd4, false)
 
 String Wtd5 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_66.183'))
 
-WebUI.verifyGreaterThan(Wtd5, 0)
+String DBWtd5 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('Ward', '5').toString()
 
-WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_72'))
+WebUI.verifyMatch(Wtd5, DBWtd5, false)
 
-WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_70'))
+String Wtd6 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_72'))
 
-WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_57.467'))
+String DBWtd6 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('Ward', '43').toString()
+
+WebUI.verifyMatch(Wtd6, DBWtd6, false)
+
+String Wtd7 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_70'))
+
+String DBWtd7 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('Ward', '50').toString()
+
+WebUI.verifyMatch(Wtd7, DBWtd7, false)
+
+String Wtd8 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_57.467'))
+
+String DBWtd8 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilterForNullWard'().toString()
+
+WebUI.verifyMatch(Wtd8, DBWtd8, false)
 
 WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/span_Chart1'))
 
@@ -165,21 +197,15 @@ String asphalt = WebUI.getText(findTestObject('Object Repository/Create_Charts/P
 
 WebUI.verifyMatch(asphalt, 'Asphalt', false)
 
-String concrete = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/th_Concrete'))
-
-WebUI.verifyMatch(concrete, 'Concrete', false)
-
 String pci2 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_pci2'))
 
 WebUI.verifyMatch(pci2, 'pci', false)
 
 String Std1 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_64.652'))
 
-WebUI.verifyGreaterThan(Std1, 0)
+String DBStd1 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('surface_type', 'Asphalt').toString()
 
-String Std2 = WebUI.getText(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/td_56.5'))
-
-WebUI.verifyGreaterThan(Std2, 0)
+WebUI.verifyMatch(Std1, DBStd1, false)
 
 WebUI.click(findTestObject('Object Repository/Create_Charts/Pavement/Average_PCI_Stats/Page_Streetlogix/span_Chart2'))
 

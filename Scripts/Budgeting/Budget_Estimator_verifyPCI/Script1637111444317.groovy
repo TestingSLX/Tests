@@ -70,6 +70,8 @@ for (def category : listCategories) {
     }
 }
 
+WebUI.delay(2)
+
 String msPci1 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
 String maintenanceSuggestionAvgPCI1 = msPci1.replaceAll("[^0-9]", "")
@@ -90,6 +92,8 @@ for (def category1 : listCategories1) {
     }
 }
 
+WebUI.delay(2)
+
 String msPci2 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
 String maintenanceSuggestionAvgPCI2 = msPci2.replaceAll("[^0-9]", "")
@@ -107,16 +111,18 @@ List<WebElement> listCategories2 = WebUiCommonHelper.findWebElements(findTestObj
     30)
 
 for (def category2 : listCategories2) {
-    if ((category2.getProperties()['text']) == 'Preventive Maintenance') {
+    if ((category2.getProperties()['text']) == 'Preventive') {
         category2.click()
     }
 }
+
+WebUI.delay(2)
 
 String msPci3 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
 String maintenanceSuggestionAvgPCI3 = msPci3.replaceAll("[^0-9]", "")
 
-def maintenanceSuggestionPCI3 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('maintenance_suggestion', 'Preventive Maintenance')
+def maintenanceSuggestionPCI3 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('maintenance_suggestion', 'Preventive ')
 println(maintenanceSuggestionAvgPCI3)
 println(maintenanceSuggestionPCI3)
 WebUI.verifyMatch(maintenanceSuggestionAvgPCI3.toString(), maintenanceSuggestionPCI3.toString(), false)
@@ -131,6 +137,8 @@ for (def category3 : listCategories3) {
         category3.click()
     }
 }
+
+WebUI.delay(2)
 
 String msPci4 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
@@ -152,6 +160,8 @@ for (def category4 : listCategories4) {
     }
 }
 
+WebUI.delay(2)
+
 String msPci5 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
 String maintenanceSuggestionAvgPCI5 = msPci5.replaceAll("[^0-9]", "")
@@ -171,6 +181,8 @@ for (def category5 : listCategories5) {
         category5.click()
     }
 }
+
+WebUI.delay(2)
 
 String msPci6 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
@@ -203,6 +215,8 @@ for (def category6 : listCategories6) {
     }
 }
 
+WebUI.delay(2)
+
 String fcPci1 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
 String functionalClassAvgPCI1 = fcPci1.replaceAll("[^0-9]", "")
@@ -222,6 +236,8 @@ for (def category7 : listCategories7) {
         category7.click()
     }
 }
+
+WebUI.delay(2)
 
 String fcPci2 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
@@ -243,6 +259,8 @@ for (def category8 : listCategories8) {
     }
 }
 
+WebUI.delay(2)
+
 String fcPci3 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
 String functionalClassAvgPCI3 = fcPci3.replaceAll("[^0-9]", "")
@@ -263,6 +281,8 @@ for (def category9 : listCategories9) {
     }
 }
 
+WebUI.delay(2)
+
 String fcPci4 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
 String functionalClassAvgPCI4 = fcPci4.replaceAll("[^0-9]", "")
@@ -282,6 +302,8 @@ for (def category10 : listCategories10) {
         category10.click()
     }
 }
+
+WebUI.delay(2)
 
 String fcPci5 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
@@ -314,6 +336,8 @@ for (def category11 : listCategories11) {
     }
 }
 
+WebUI.delay(2)
+
 String lrmPci1 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
 String lastRepairMethodAvgPCI1 = lrmPci1.replaceAll("[^0-9]", "")
@@ -333,6 +357,8 @@ for (def category12 : listCategories12) {
         category12.click()
     }
 }
+
+WebUI.delay(2)
 
 String lrmPci2 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
@@ -354,6 +380,8 @@ for (def category13 : listCategories13) {
     }
 }
 
+WebUI.delay(2)
+
 String lrmPci3 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
 String lastRepairMethodAvgPCI3 = lrmPci3.replaceAll("[^0-9]", "")
@@ -373,6 +401,8 @@ for (def category14 : listCategories14) {
         category14.click()
     }
 }
+
+WebUI.delay(2)
 
 String lrmPci4 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
@@ -394,6 +424,8 @@ for (def category15 : listCategories15) {
     }
 }
 
+WebUI.delay(2)
+
 String lrmPci5 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
 String lastRepairMethodAvgPCI5 = lrmPci5.replaceAll("[^0-9]", "")
@@ -414,6 +446,8 @@ for (def filter4 : listLayers4) {
     }
 }
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 30'))
 
 WebUI.click(findTestObject('Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/div_Select_category'))
@@ -426,6 +460,8 @@ for (def category16 : listCategories16) {
         category16.click()
     }
 }
+
+WebUI.delay(2)
 
 String wPci1 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
@@ -447,6 +483,8 @@ for (def category17 : listCategories17) {
     }
 }
 
+WebUI.delay(2)
+
 String wPci2 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
 String wardAvgPCI2 = wPci2.replaceAll("[^0-9]", "")
@@ -466,6 +504,8 @@ for (def category18 : listCategories18) {
         category18.click()
     }
 }
+
+WebUI.delay(2)
 
 String wPci3 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
@@ -487,6 +527,8 @@ for (def category19 : listCategories19) {
     }
 }
 
+WebUI.delay(2)
+
 String wPci4 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
 String wardAvgPCI4 = wPci4.replaceAll("[^0-9]", "")
@@ -506,6 +548,9 @@ for (def category20 : listCategories20) {
         category20.click()
     }
 }
+
+WebUI.delay(2)
+
 String wPci5 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
 String wardAvgPCI5 = wPci5.replaceAll("[^0-9]", "")
@@ -525,6 +570,8 @@ for (def category21 : listCategories21) {
         category21.click()
     }
 }
+
+WebUI.delay(2)
 
 String wPci6 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
@@ -546,6 +593,8 @@ for (def category22 : listCategories22) {
     }
 }
 
+WebUI.delay(2)
+
 String wPci7 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
 String wardAvgPCI7 = wPci7.replaceAll("[^0-9]", "")
@@ -565,6 +614,8 @@ for (def category23 : listCategories23) {
         category23.click()
     }
 }
+
+WebUI.delay(2)
 
 String wPci8 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
@@ -597,6 +648,8 @@ for (def category24 : listCategories24) {
     }
 }
 
+WebUI.delay(2)
+
 String stPci1 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 19'))
 
 String surfaceTypeAvgPCI1 = stPci1.replaceAll("[^0-9]", "")
@@ -616,6 +669,8 @@ for (def filter6 : listLayers6) {
         filter6.click()
     }
 }
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/Budgeting/Budget Estimator/Budget_Estimator_verifyPCI/Page_Streetlogix/span_Current average condition index 73'))
 

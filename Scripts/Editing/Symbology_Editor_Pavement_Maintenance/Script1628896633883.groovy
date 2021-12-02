@@ -46,10 +46,10 @@ WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Edit
     'Reconstruction')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Defer Maintenance'), 
-    'Chip Seal')
+    'Preventive Maintenance')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Reconstruction'), 
-    'Preventive Maintenance')
+    'Chip Seal')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/th_Mill and Overlay'), 
     'Defer Maintenance')
@@ -72,10 +72,10 @@ WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Edit
     'Reconstruction')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Defer Maintenance'), 
-    'Chip Seal')
+    'Preventive Maintenance')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Reconstruction'), 
-    'Preventive Maintenance')
+    'Chip Seal')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Editing/Symbology_Editor_Pavement_Maintenance/Page_Streetlogix/div_Mill and Overlay'), 
     'Defer Maintenance')

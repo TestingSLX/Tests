@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "4D207EB93A90967DFC4E8D3FC9875B14",
+  "keywordFileContentHash": "D29D103EAEF1E8DAB6A3534AFF73D1B8",
   "keywordClasses": [
     {
       "name": "com.database_keywords.test.Database_Keywords",
@@ -48,6 +48,10 @@
           ]
         },
         {
+          "name": "getAveragePCIByFilterForNullWard",
+          "parameters": []
+        },
+        {
           "name": "getMinimumPCI",
           "parameters": []
         },
@@ -73,6 +77,41 @@
         },
         {
           "name": "getAverageSCI",
+          "parameters": []
+        },
+        {
+          "name": "getAverageSCIByFilter",
+          "parameters": [
+            {
+              "name": "filter",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "category",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "getAverageSCIByFilterForNullWard",
           "parameters": []
         },
         {
