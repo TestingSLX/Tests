@@ -21,5 +21,3 @@ while(result.next()) {
 	pciLength = pciLength + PCI * length
 	totalLength = totalLength + length
 }
-double avgPCI = pciLength / totalLength
-println(avgPCI.round())
