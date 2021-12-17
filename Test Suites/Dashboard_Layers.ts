@@ -12,12 +12,6 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>5bbe88b0-9d36-4a33-868e-a3dbd7717c28</testSuiteGuid>
    <testCaseLink>
-      <guid>e91ccfbd-d061-4672-9c6d-a6f1548bfdf4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Dashboard_Layers/Check_Media_Pano</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>793cf75b-0c08-4e93-8ef4-07d666b9bb57</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
