@@ -14,8 +14,6 @@ double PCI = 0;
 double totalLength = 0;
 double pciLength = 0;
 
-double product = 0;
-while(result.next()) {
 	PCI = result.getInt('pci')
 	length = result.getInt('length_ft')
 	pciLength = pciLength + PCI * length
