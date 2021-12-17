@@ -13,7 +13,7 @@ ResultSet result = stm.executeQuery(queryString)
 double PCI = 0;
 double totalLength = 0;
 double pciLength = 0;
-double length = 0;
+
 double product = 0;
 while(result.next()) {
 	PCI = result.getInt('pci')
@@ -21,3 +21,5 @@ while(result.next()) {
 	pciLength = pciLength + PCI * length
 	totalLength = totalLength + length
 }
+double avgPCI = pciLength / totalLength
+println(avgPCI.round())
