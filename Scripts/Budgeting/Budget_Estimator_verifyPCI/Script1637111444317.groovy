@@ -111,7 +111,7 @@ List<WebElement> listCategories2 = WebUiCommonHelper.findWebElements(findTestObj
     30)
 
 for (def category2 : listCategories2) {
-    if ((category2.getProperties()['text']) == 'Preventive Maintenanc') {
+    if ((category2.getProperties()['text']) == 'Preventive Maintenance') {
         category2.click()
     }
 }
