@@ -111,7 +111,7 @@ List<WebElement> listCategories2 = WebUiCommonHelper.findWebElements(findTestObj
     30)
 
 for (def category2 : listCategories2) {
-    if ((category2.getProperties()['text']) == 'Preventive') {
+    if ((category2.getProperties()['text']) == 'Preventive Maintenanc') {
         category2.click()
     }
 }
@@ -122,7 +122,7 @@ String msPci3 = WebUI.getText(findTestObject('Object Repository/Budgeting/Budget
 
 String maintenanceSuggestionAvgPCI3 = msPci3.replaceAll("[^0-9]", "")
 
-def maintenanceSuggestionPCI3 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('maintenance_suggestion', 'Preventive ')
+def maintenanceSuggestionPCI3 = CustomKeywords.'com.database_keywords.test.Database_Keywords.getAveragePCIByFilter'('maintenance_suggestion', 'Preventive Maintenance')
 println(maintenanceSuggestionAvgPCI3)
 println(maintenanceSuggestionPCI3)
 WebUI.verifyMatch(maintenanceSuggestionAvgPCI3.toString(), maintenanceSuggestionPCI3.toString(), false)
