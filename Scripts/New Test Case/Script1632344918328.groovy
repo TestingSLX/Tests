@@ -18,6 +18,6 @@ double pciLength = 0;
 	length = result.getInt('length_ft')
 	pciLength = pciLength + PCI * length
 	totalLength = totalLength + length
-}
+
 double avgPCI = pciLength / totalLength
 println(avgPCI.round())
