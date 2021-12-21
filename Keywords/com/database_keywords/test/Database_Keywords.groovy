@@ -21,13 +21,14 @@ public class Database_Keywords {
 
 	Connection c = null;
 	Statement stmt = null;
+	def DB_Name = 'development_portal'
 
 	@Keyword
 	public void openConnection() {
 
 		try {
 			Class.forName("org.postgresql.Driver");
-			c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/development_portal", "sde", "V0ters!23");
+			c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/"+ DB_Name, "sde", "V0ters!23");
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.err.println(e.getClass().getName()+": "+e.getMessage());
@@ -84,7 +85,7 @@ public class Database_Keywords {
 		return avgPCI.round()
 		closeConnection()
 	}
-	
+
 	@Keyword
 	public int getAveragePCIByFilterForNullWard() {
 		openConnection()
@@ -214,7 +215,7 @@ public class Database_Keywords {
 		return avgSCI.round()
 		closeConnection()
 	}
-	
+
 	@Keyword
 	public int getAverageSCIByFilter(def filter, def category) {
 		openConnection()
@@ -236,7 +237,7 @@ public class Database_Keywords {
 		return avgSCI.round()
 		closeConnection()
 	}
-	
+
 	@Keyword
 	public int getAverageSCIByFilterForNullWard() {
 		openConnection()
@@ -309,7 +310,6 @@ public class Database_Keywords {
 	@Keyword
 	def getLastEditTime() {
 		openConnection()
-		c = DriverManager.getConnection("jdbc:postgresql://castreetlogix.ckjgcig5seif.ca-central-1.rds.amazonaws.com/development_portal", "sde", "V0ters!23");
 		def queryString = "SELECT * from sde.pavement_evaluation_loc WHERE objectid = 12"
 		Statement stm = c.createStatement()
 		ResultSet result = stm.executeQuery(queryString)
