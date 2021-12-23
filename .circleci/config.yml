@@ -1,12 +1,9 @@
-jobs:
-  test:
-    steps:
-      - checkout
-      - run: echo "this is the test job"
-      - bat('cd "C:/Users/shrut/Desktop/Katalon/Katalon_Studio_Engine_Windows" && katalonc -noSplash -runMode=console -projectPath="%WORKSPACE%/Streetlogix-GIS-Tests-Portland.prj" -retry=0 -testSuitePath="Test Suites/Dashboard_Layers" -executionProfile="default" -browserType="Chrome" -apiKey="42c2bc68-24f4-46e7-b59e-5658c614dbfd" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true')
- 
-# Orchestrate our job run sequence
+version: 2.1
+orbs:
+  katalon-studio: katalon/katalon-studio@23.0.2
 workflows:
-  build_and_test:
+  build:
     jobs:
-      - test
+      - katalon-studio/run:
+          version: latest
+          command_arguments: >--browserType='Chrome' -retry=0 -statusDelay=15 -testSuitePath='Test Suites/Dashboard_Layers'
