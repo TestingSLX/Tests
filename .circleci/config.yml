@@ -6,4 +6,4 @@ workflows:
     jobs:
       - katalon-studio/run:
           version: latest
-          command_arguments: 'cd "C:/Users/shrut/Desktop/Katalon/Katalon_Studio_Engine_Windows" && katalonc -noSplash -runMode=console -retry=0 -testSuitePath="Test Suites/Demo" -browserType="Chrome" -apiKey="05488a6b-57d1-40a0-a4b9-8ecdedc5680d"'
+          command_arguments: 'cd "C:/Users/shrut/Desktop/Katalon/Katalon_Studio_Engine_Windows" && katalonc -noSplash -runMode=console -retry=0 -testSuitePath="Test Suites/Dashboard_Layers" -browserType="Chrome" -apiKey="05488a6b-57d1-40a0-a4b9-8ecdedc5680d"'
