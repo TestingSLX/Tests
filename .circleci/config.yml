@@ -6,4 +6,4 @@ workflows:
     jobs:
       - katalon-studio/run:
           version: latest
-          command_arguments: 'cd "C:/Users/shrut/Desktop/Katalon/Katalon_Studio_Engine_Windows" && katalonc -noSplash -runMode=console -retry=0 -testSuitePath="Test Suites/Dashboard_Layers" -executionProfile="default" -browserType="Chrome" -apiKey="42c2bc68-24f4-46e7-b59e-5658c614dbfd" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true'
+          command_arguments: 'cd "C:/Users/shrut/Desktop/Katalon/Katalon_Studio_Engine_Windows" && katalonc -noSplash -runMode=console -projectPath="C:\Users\shrut\Katalon Studio\Streetlogix-GIS3.1-Tests\Streetlogix-GIS-Tests-Portland.prj" -retry=0 -testSuitePath="Test Suites/Demo" -executionProfile="default" -browserType="Chrome" -apiKey="05488a6b-57d1-40a0-a4b9-8ecdedc5680d" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true'
